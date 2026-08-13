@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArumPrefab — Ghép skin Soldier</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --card2:#1e222b; --line:#2a2f3a;
+    --text:#e8eaf0; --sub:#9aa2b1; --accent:#6ea8fe; --accent2:#3b82f6;
+    --ok:#2ecc71; --warn:#f5a623; --err:#ff5d5d; --blue:#3b82f6; --red:#e0503a;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  .screen{display:none;padding:14px;max-width:640px;margin:0 auto;}
+  .screen.active{display:block;}
+  .topbar{position:sticky;top:0;background:var(--bg);z-index:10;padding:12px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;max-width:640px;margin:0 auto;}
+  .topbar h1{font-size:16px;margin:0;flex:1;}
+  .backbtn{background:none;border:none;color:var(--accent);font-size:20px;cursor:pointer;padding:2px 6px;}
+  .toggle{display:flex;background:var(--card2);border-radius:10px;padding:3px;margin-bottom:14px;}
+  .toggle button{flex:1;background:none;border:none;color:var(--sub);padding:9px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;}
+  .toggle button.active.blue{background:var(--blue);color:#fff;}
+  .toggle button.active.red{background:var(--red);color:#fff;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .targetcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 10px;text-align:center;cursor:pointer;font-size:13px;font-weight:600;}
+  .targetcard:active{background:var(--card2);}
+  .searchbox{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--text);font-size:14px;margin-bottom:10px;}
+  .chiprow{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;margin-bottom:6px;-webkit-overflow-scrolling:touch;}
+  .chiprow::-webkit-scrollbar{display:none;}
+  .chip{flex:none;background:var(--card2);border:1px solid var(--line);border-radius:20px;padding:7px 14px;font-size:13px;color:var(--sub);cursor:pointer;white-space:nowrap;}
+  .chip.active{background:var(--accent2);border-color:var(--accent2);color:#fff;}
+  .sourcelist{display:flex;flex-direction:column;gap:6px;}
+  .sourceitem{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 12px;cursor:pointer;}
+  .sourceitem:active{background:var(--card2);}
+  .sourceitem .av{width:34px;height:34px;border-radius:8px;background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:15px;flex:none;}
+  .sourceitem .info{flex:1;min-width:0;}
+  .sourceitem .name{font-size:14px;font-weight:600;}
+  .sourceitem .role{font-size:11px;color:var(--sub);}
+  .empty{color:var(--sub);text-align:center;padding:30px 10px;font-size:13px;}
+  .skinlist{display:flex;flex-direction:column;gap:6px;}
+  .skinbtn{display:flex;align-items:center;gap:8px;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:11px 12px;text-align:left;color:var(--text);cursor:pointer;font-size:13px;width:100%;}
+  .skinbtn:active{border-color:var(--accent);}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px;}
+  .card h2{font-size:14px;margin:0 0 10px;color:var(--accent);}
+  .btn{background:var(--accent2);border:none;color:#fff;border-radius:8px;padding:12px 16px;font-size:15px;cursor:pointer;width:100%;font-weight:600;}
+  .btn:disabled{background:#333844;color:#777;cursor:not-allowed;}
+  .btn.secondary{background:var(--card2);border:1px solid var(--line);color:var(--text);font-weight:400;}
+  .log{background:#0b0d11;border:1px solid var(--line);border-radius:8px;padding:10px;font-family:ui-monospace,Menlo,monospace;font-size:12px;max-height:260px;overflow-y:auto;white-space:pre-wrap;}
+  .log .ok{color:var(--ok);} .log .ins{color:var(--accent);} .log .skip{color:var(--warn);} .log .err{color:var(--err);}
+  .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#20242e;border:1px solid var(--line);padding:10px 16px;border-radius:8px;font-size:13px;box-shadow:0 6px 20px rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:.2s;z-index:50;max-width:90vw;}
+  .toast.show{opacity:1;}
+  .toast.err{border-color:var(--err);color:#ffb3b3;}
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid #ffffff55;border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;margin-right:8px;vertical-align:-2px;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .subhead{color:var(--sub);font-size:12px;margin:-6px 0 14px;}
+</style>
+</head>
+<body>
+
+<div class="topbar" id="topbar">
+  <button class="backbtn" id="backBtn" style="visibility:hidden;">←</button>
+  <h1 id="topTitle">ArumPrefab</h1>
+</div>
+
+<!-- Screen 1: chọn file đích -->
+<div class="screen active" id="screen-targets">
+  <div class="toggle">
+    <button class="blue active" id="toggleBlue">Phe Xanh</button>
+    <button class="red" id="toggleRed">Phe Đỏ</button>
+  </div>
+  <div class="grid" id="targetGrid"></div>
+</div>
+
+<!-- Screen 2: chọn nguồn -->
+<div class="screen" id="screen-sources">
+  <input class="searchbox" id="sourceSearch" placeholder="Tìm tướng...">
+  <div class="chiprow" id="roleChips"></div>
+  <div class="sourcelist" id="sourceList"></div>
+</div>
+
+<!-- Screen 3: chọn skin -->
+<div class="screen" id="screen-skins">
+  <div class="subhead" id="skinSubhead"></div>
+  <div class="skinlist" id="skinList"></div>
+</div>
+
+<!-- Screen 4: xác nhận & áp dụng -->
+<div class="screen" id="screen-apply">
+  <div class="card">
+    <h2>Xác nhận ghép skin</h2>
+    <div class="subhead" id="applySummary"></div>
+    <button class="btn" id="applyBtn">Ghép &amp; tạo file pkg mới</button>
+  </div>
+  <div class="card" id="logCard" style="display:none;">
+    <h2>Kết quả</h2>
+    <div id="logBox"></div>
+    <button class="btn secondary" id="downloadBtn" style="display:none;margin-top:10px;">⬇ Tải Prefab_Soldier.pkg.bytes</button>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="assets/js/jszip.min.js"></script>
+<script src="assets/js/zstd-codec.bundle.js"></script>
+<script src="assets/js/engine.js"></script>
+<script src="assets/js/pkgio.js"></script>
+<script>
+'use strict';
+const ROLES = ['Đấu sĩ','Đỡ đòn','Pháp sư','Sát thủ','Trợ thủ','Xạ thủ'];
+
+const state = {
+  team: 'blue',
+  targetIndex: null,      // dữ liệu index/Prefab_Soldier.pkg.json
+  selectedTarget: null,   // {team,folder,entryPath,label}
+  sources: [],            // danh sách index nguồn đã fetch { baseName, pkgFile, entryPath, label, role, skins }
+  roleFilter: 'All',
+  searchText: '',
+  selectedSource: null,
+  selectedSkin: null,     // {type:'default'} | {type:'skin', index}
+  resultBlob: null,
+};
+
+function $(sel){ return document.querySelector(sel); }
+function $$(sel){ return Array.from(document.querySelectorAll(sel)); }
+function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function toast(msg, isErr){
+  const t = $('#toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (isErr?' err':'');
+  clearTimeout(toast._t);
+  toast._t = setTimeout(()=> t.className='toast', isErr?4500:2200);
+}
+
+/* ---------------- điều hướng màn hình ---------------- */
+const SCREENS = ['targets','sources','skins','apply'];
+const nav = []; // stack lịch sử để nút back hoạt động
+function showScreen(name, title){
+  SCREENS.forEach(s => $('#screen-'+s).classList.toggle('active', s===name));
+  $('#topTitle').textContent = title || 'ArumPrefab';
+  $('#backBtn').style.visibility = nav.length ? 'visible' : 'hidden';
+}
+function goTo(name, title){
+  nav.push({name: currentScreen, title: currentTitle});
+  currentScreen = name; currentTitle = title;
+  showScreen(name, title);
+}
+function goBack(){
+  if(!nav.length) return;
+  const prev = nav.pop();
+  currentScreen = prev.name; currentTitle = prev.title;
+  showScreen(currentScreen, currentTitle);
+}
+let currentScreen = 'targets', currentTitle = 'ArumPrefab';
+$('#backBtn').addEventListener('click', goBack);
+
+/* ---------------- Screen 1: chọn file đích ---------------- */
+async function loadTargetIndex(){
+  const resp = await fetch('index/Prefab_Soldier.pkg.json');
+  if(!resp.ok) throw new Error('Không tải được index/Prefab_Soldier.pkg.json');
+  state.targetIndex = await resp.json();
+  renderTargetGrid();
+}
+function renderTargetGrid(){
+  const list = state.targetIndex.targets.filter(t=>t.team===state.team);
+  $('#targetGrid').innerHTML = list.map((t,i)=>
+    `<div class="targetcard" data-i="${i}">${escapeHtml(t.label)}</div>`).join('');
+  $$('.targetcard', $('#targetGrid')).forEach((el,i)=>{
+    el.addEventListener('click', ()=>{
+      state.selectedTarget = list[i];
+      nav.length = 0; // bắt đầu luồng mới từ đây
+      goTo('sources', 'Chọn tướng nguồn');
+      renderSourceList();
+    });
+  });
+}
+$('#toggleBlue').addEventListener('click', ()=>{ state.team='blue'; $('#toggleBlue').classList.add('active'); $('#toggleRed').classList.remove('active'); renderTargetGrid(); });
+$('#toggleRed').addEventListener('click', ()=>{ state.team='red'; $('#toggleRed').classList.add('active'); $('#toggleBlue').classList.remove('active'); renderTargetGrid(); });
+
+/* ---------------- Screen 2: chọn nguồn ---------------- */
+async function loadAllSources(){
+  const resp = await fetch('index/sources.json');
+  if(!resp.ok) throw new Error('Không tải được index/sources.json');
+  const manifest = await resp.json();
+  const results = await Promise.allSettled(manifest.sources.map(async baseName=>{
+    const r = await fetch('index/'+baseName+'.json');
+    if(!r.ok) throw new Error(baseName+': HTTP '+r.status);
+    const data = await r.json();
+    data._baseName = baseName;
+    return data;
+  }));
+  const ok = [], failed = [];
+  results.forEach((r,i)=>{
+    if(r.status==='fulfilled') ok.push(r.value);
+    else failed.push(manifest.sources[i]+' — '+r.reason.message);
+  });
+  state.sources = ok;
+  if(failed.length) console.warn('Một số nguồn tải lỗi (bỏ qua):', failed);
+}
+
+function renderRoleChips(){
+  const chips = ['All'].concat(ROLES);
+  $('#roleChips').innerHTML = chips.map(r=>
+    `<div class="chip${r===state.roleFilter?' active':''}" data-role="${escapeHtml(r)}">${escapeHtml(r)}</div>`).join('');
+  $$('.chip', $('#roleChips')).forEach(el=>{
+    el.addEventListener('click', ()=>{
+      state.roleFilter = el.dataset.role;
+      renderRoleChips();
+      renderSourceList();
+    });
+  });
+}
+
+function renderSourceList(){
+  renderRoleChips();
+  const q = state.searchText.trim().toLowerCase();
+  let list = state.sources.filter(s=>{
+    if(state.roleFilter!=='All'){
+      const role = s.role || 'Chưa phân loại';
+      if(role !== state.roleFilter) return false;
+    }
+    if(q && !s.label.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  list.sort((a,b)=> a.label.localeCompare(b.label));
+
+  if(list.length===0){
+    $('#sourceList').innerHTML = `<div class="empty">Không tìm thấy tướng nào phù hợp.</div>`;
+    return;
+  }
+  $('#sourceList').innerHTML = list.map((s,i)=>`
+    <div class="sourceitem" data-i="${i}">
+      <div class="av">🎭</div>
+      <div class="info">
+        <div class="name">${escapeHtml(s.label)}</div>
+        <div class="role">${escapeHtml(s.role || 'Chưa phân loại')} · ${s.skins.length-1} skin</div>
+      </div>
+    </div>`).join('');
+  $$('.sourceitem', $('#sourceList')).forEach((el,i)=>{
+    el.addEventListener('click', ()=>{
+      state.selectedSource = list[i];
+      goTo('skins', escapeHtml(list[i].label));
+      renderSkinList();
+    });
+  });
+}
+$('#sourceSearch').addEventListener('input', e=>{ state.searchText = e.target.value; renderSourceList(); });
+
+/* ---------------- Screen 3: chọn skin ---------------- */
+function renderSkinList(){
+  const src = state.selectedSource;
+  $('#skinSubhead').textContent = `Ghép vào "${state.selectedTarget.label}"`;
+  $('#skinList').innerHTML = src.skins.map((sk,i)=>`
+    <button class="skinbtn" data-i="${i}"><span>🎭</span>${escapeHtml(sk.label)}</button>`).join('');
+  $$('.skinbtn', $('#skinList')).forEach((btn,i)=>{
+    btn.addEventListener('click', ()=>{
+      const sk = src.skins[i];
+      state.selectedSkin = sk.type==='default' ? {type:'default'} : {type:'skin', index:sk.index};
+      state.resultBlob = null;
+      $('#logCard').style.display = 'none';
+      $('#downloadBtn').style.display = 'none';
+      $('#applySummary').innerHTML =
+        `Nguồn: <b>${escapeHtml(src.label)}</b> — ${escapeHtml(sk.label)}<br>Đích: <b>${escapeHtml(state.selectedTarget.label)}</b>`;
+      goTo('apply', 'Xác nhận');
+    });
+  });
+}
+
+/* ---------------- Screen 4: áp dụng ---------------- */
+async function applyTransplant(){
+  const btn = $('#applyBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span>Đang xử lý...';
+  $('#logCard').style.display = 'block';
+  $('#logBox').innerHTML = '<div class="log">Đang tải &amp; giải nén dữ liệu...</div>';
+  $('#downloadBtn').style.display = 'none';
+
+  try{
+    const target = state.selectedTarget;
+    const source = state.selectedSource;
+
+    const dictBytes = await PkgIO.fetchDict(state.targetIndex.dictFile);
+    const [targetZip, sourceZip] = await Promise.all([
+      PkgIO.loadPkgZip(state.targetIndex.pkgFile),
+      PkgIO.loadPkgZip(source.pkgFile),
+    ]);
+
+    // đọc entry đích hiện tại từ zip đã load
+    const targetFileObj = targetZip.file(target.entryPath);
+    if(!targetFileObj) throw new Error('Không tìm thấy entry đích "'+target.entryPath+'" trong pkg');
+    const targetEntryBytes = new Uint8Array(await targetFileObj.async('uint8array'));
+    const targetPlain = await PkgIO.decodeEntry(targetEntryBytes, dictBytes);
+
+    // đọc entry nguồn
+    const sourceFileObj = sourceZip.file(source.entryPath);
+    if(!sourceFileObj) throw new Error('Không tìm thấy entry nguồn "'+source.entryPath+'" trong '+source.pkgFile);
+    const sourceEntryBytes = new Uint8Array(await sourceFileObj.async('uint8array'));
+    const sourcePlain = await PkgIO.decodeEntry(sourceEntryBytes, dictBytes);
+
+    AOV.parseTopLevel(targetPlain);
+    AOV.parseTopLevel(sourcePlain);
+
+    $('#logBox').innerHTML = '<div class="log">Đang ghép field...</div>';
+    const {bytes: newPlain, ops} = Transplant.applySkinToTarget(targetPlain, sourcePlain, state.selectedSkin);
+
+    // validate lại trước khi cho tải
+    AOV.parseTopLevel(newPlain);
+    (function deepValidate(b, start, end){
+      const recs = AOV.walkRecords(b, start, end);
+      for(const r of recs){
+        const inner = AOV.getContainerRecords(b, r.contentStart, r.contentEnd);
+        if(inner) deepValidate(b, inner.outerLenPos+8, r.contentEnd);
+      }
+    })(newPlain, AOV.getRootContainer(newPlain).outerLenPos+8, newPlain.length);
+
+    $('#logBox').innerHTML = '<div class="log">Đang nén lại &amp; đóng gói pkg...</div>';
+    await PkgIO.writeEntryPlain(targetZip, target.entryPath, newPlain, dictBytes, 19);
+    const blob = await PkgIO.exportPkgBlob(targetZip);
+    state.resultBlob = blob;
+
+    const lines = ops.map(o=>{
+      const cls = o.action==='overwrite'?'ok':o.action==='insert'?'ins':'skip';
+      const tag = o.action==='overwrite'?'GHI ĐÈ':o.action==='insert'?'CHÈN MỚI':'BỎ QUA';
+      return `<span class="${cls}">[${tag}]</span> ${escapeHtml(o.name)}`;
+    });
+    $('#logBox').innerHTML = `<div class="log">${lines.join('\n')}\n\n<b>Kích thước actorinfo: ${targetPlain.length} → ${newPlain.length} byte</b>\nĐã validate lại toàn bộ cấu trúc — OK.\nĐã nén lại &amp; đóng gói vào pkg — sẵn sàng tải.</div>`;
+    $('#downloadBtn').style.display = 'block';
+    toast('Ghép thành công!');
+  }catch(err){
+    $('#logBox').innerHTML = `<div class="log"><span class="err">LỖI: ${escapeHtml(err.message)}</span></div>`;
+    toast('Lỗi: '+err.message, true);
+    console.error(err);
+  }finally{
+    btn.disabled = false;
+    btn.textContent = 'Ghép & tạo file pkg mới';
+  }
+}
+$('#applyBtn').addEventListener('click', applyTransplant);
+$('#downloadBtn').addEventListener('click', ()=>{
+  if(!state.resultBlob) return;
+  const url = URL.createObjectURL(state.resultBlob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'Prefab_Soldier.pkg.bytes';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+});
+
+/* ---------------- khởi động ---------------- */
+(async () => {
+  try{
+    await loadTargetIndex();
+    await loadAllSources();
+  }catch(err){
+    toast('Lỗi tải dữ liệu: '+err.message, true);
+    console.error(err);
+  }
+})();
+</script>
+</body>
+</html>
