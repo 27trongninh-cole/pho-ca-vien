@@ -100,6 +100,10 @@
   <div class="card">
     <h2>Danh sách thay đổi</h2>
     <div class="subhead" id="pendingSummary"></div>
+    <label style="display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px;">
+      <input type="checkbox" id="debugRawMode">
+      Debug: xuất file trần (bỏ mã hoá zstd) — <b>không chạy được trong game</b>, chỉ để soi bug
+    </label>
   </div>
   <div class="card" id="logCard" style="display:none;">
     <h2>Kết quả</h2>
@@ -319,14 +323,19 @@ async function generateAll(){
 
   const items = Array.from(state.pending.values());
   const logLines = [];
+  const debugRaw = $('#debugRawMode').checked;
   function setLog(extra){
     $('#logBox').innerHTML = `<div class="log">${logLines.join('\n')}${extra?'\n\n'+extra:''}</div>`;
   }
   setLog('Đang tải dữ liệu...');
+  if(debugRaw) logLines.push('<i>[Debug mode: xuất file trần, KHÔNG mã hoá zstd — dùng để soi bug, không dùng trong game]</i>');
 
   try{
     const dictBytes = await PkgIO.fetchDict(state.targetIndex.dictFile);
     const targetZip = await PkgIO.loadPkgZip(state.targetIndex.pkgFile);
+    // Ở chế độ debug, tạo 1 zip riêng chứa actorinfo "trần" (đã ghép, chưa nén zstd),
+    // không đụng vào targetZip thật để tránh nhầm lẫn 2 loại output.
+    const debugZip = debugRaw ? new JSZip() : null;
 
     // cache zip nguồn theo pkgFile để không load lại nhiều lần nếu dùng chung 1 nguồn cho nhiều đích
     const sourceZipCache = new Map();
@@ -365,7 +374,12 @@ async function generateAll(){
         }
       })(newPlain, AOV.getRootContainer(newPlain).outerLenPos+8, newPlain.length);
 
-      await PkgIO.writeEntryPlain(targetZip, target.entryPath, newPlain, dictBytes, 19);
+      if(debugRaw){
+        // Ghi bytes trần trực tiếp, không qua encodeEntry/zstd — nén zip = STORE để không đụng gì thêm.
+        debugZip.file(target.entryPath.replace(/\.bytes$/, '.raw.bin'), newPlain, {binary:true, compression:'STORE'});
+      } else {
+        await PkgIO.writeEntryPlain(targetZip, target.entryPath, newPlain, dictBytes, 19);
+      }
 
       const ovr = ops.filter(o=>o.action==='overwrite').length;
       const ins = ops.filter(o=>o.action==='insert').length;
@@ -373,10 +387,19 @@ async function generateAll(){
       setLog('Đang xử lý mục tiếp theo...');
     }
 
-    setLog('Đang nén &amp; đóng gói pkg cuối cùng...');
-    const blob = await PkgIO.exportPkgBlob(targetZip);
-    state.resultBlob = blob;
-    setLog('<b>Hoàn tất! Đã ghép '+items.length+' file, sẵn sàng tải.</b>');
+    if(debugRaw){
+      setLog('Đang đóng gói zip debug (không nén)...');
+      const blob = await debugZip.generateAsync({type:'blob', compression:'STORE'});
+      state.resultBlob = blob;
+      state.resultIsDebug = true;
+      setLog('<b>Hoàn tất (debug)! Đã ghép '+items.length+' file, tải về để soi bug — KHÔNG dùng file này trong game.</b>');
+    } else {
+      setLog('Đang nén &amp; đóng gói pkg cuối cùng...');
+      const blob = await PkgIO.exportPkgBlob(targetZip);
+      state.resultBlob = blob;
+      state.resultIsDebug = false;
+      setLog('<b>Hoàn tất! Đã ghép '+items.length+' file, sẵn sàng tải.</b>');
+    }
     $('#downloadBtn').style.display = 'block';
     toast('Tạo file thành công!');
   }catch(err){
@@ -391,7 +414,7 @@ $('#downloadBtn').addEventListener('click', ()=>{
   if(!state.resultBlob) return;
   const url = URL.createObjectURL(state.resultBlob);
   const a = document.createElement('a');
-  a.href = url; a.download = 'Prefab_Soldier.pkg.bytes';
+  a.href = url; a.download = state.resultIsDebug ? 'debug_raw_actorinfo.zip' : 'Prefab_Soldier.pkg.bytes';
   document.body.appendChild(a); a.click(); a.remove();
   URL.revokeObjectURL(url);
 });

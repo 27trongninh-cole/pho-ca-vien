@@ -55,10 +55,17 @@ const PkgIO = (() => {
     const zstd = await getZstd();
     const simple = new zstd.Simple();
     const ddict = new zstd.Dict.Decompression(dictBytes);
-    const compressed = entryBytes.subarray(8); // bỏ 8-byte header
-    const decompressed = simple.decompressUsingDict(compressed, ddict);
-    if(!decompressed) throw new Error('Giải nén zstd thất bại (entry hỏng hoặc sai dictionary)');
-    return decompressed;
+    try {
+      const compressed = entryBytes.subarray(8); // bỏ 8-byte header
+      const decompressed = simple.decompressUsingDict(compressed, ddict);
+      if(!decompressed) throw new Error('Giải nén zstd thất bại (entry hỏng hoặc sai dictionary)');
+      return decompressed;
+    } finally {
+      // QUAN TRỌNG: object dict phía WASM phải giải phóng thủ công, nếu không
+      // sẽ rò rỉ heap của module zstd — ghép càng nhiều file/entry trong 1 lần
+      // "Tạo file" càng dễ cạn bộ nhớ WASM và ném lỗi không phải Error (message=undefined).
+      ddict.delete();
+    }
   }
 
   /* Mã hoá lại 1 actorinfo "trần" -> bytes entry hoàn chỉnh (8-byte header + zstd frame)
@@ -68,12 +75,17 @@ const PkgIO = (() => {
     const zstd = await getZstd();
     const simple = new zstd.Simple();
     const cdict = new zstd.Dict.Compression(dictBytes, compressionLevel || 19);
-    const compressed = simple.compressUsingDict(plainBytes, cdict);
-    const header = buildHeader(plainBytes.length);
-    const out = new Uint8Array(header.length + compressed.length);
-    out.set(header, 0);
-    out.set(compressed, header.length);
-    return out;
+    try {
+      const compressed = simple.compressUsingDict(plainBytes, cdict);
+      if(!compressed) throw new Error('Nén zstd thất bại (dict hoặc dữ liệu đầu vào không hợp lệ)');
+      const header = buildHeader(plainBytes.length);
+      const out = new Uint8Array(header.length + compressed.length);
+      out.set(header, 0);
+      out.set(compressed, header.length);
+      return out;
+    } finally {
+      cdict.delete();
+    }
   }
 
   /* Tải + giải nén zip 1 pkg.bytes từ URL, trả về JSZip instance (chưa đụng tới zstd entry nào). */
