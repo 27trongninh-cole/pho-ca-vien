@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_534_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/534_Grantwish/534_Grantwish_actorinfo.bytes",
+  "label": "grantwish",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5342",
+      "label": "5342_grantwish"
+    },
+    {
+      "index": 1,
+      "id": "5343",
+      "label": "5343_grantwish"
+    },
+    {
+      "index": 2,
+      "id": "5345",
+      "label": "5345_grantwish"
+    },
+    {
+      "index": 3,
+      "id": "5346",
+      "label": "5346_grantwish"
+    },
+    {
+      "index": 4,
+      "id": "5347",
+      "label": "5347_grantwish"
+    },
+    {
+      "index": 5,
+      "id": "5348",
+      "label": "5348_grantwish"
+    },
+    {
+      "index": 6,
+      "id": "5349",
+      "label": "5349_grantwish"
+    }
+  ]
+}

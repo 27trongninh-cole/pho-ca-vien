@@ -1,0 +1,12 @@
+{
+  "pkgFile": "pkg/Actor_797_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/797_moen/797_LiuBei_actorinfo.bytes",
+  "label": "moen",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    }
+  ]
+}

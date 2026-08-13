@@ -1,0 +1,42 @@
+{
+  "pkgFile": "pkg/Actor_153_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/153_LanLingWang/153_LanLingWang_actorinfo.bytes",
+  "label": "lanlingwang",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1532",
+      "label": "1532_lanlingwang"
+    },
+    {
+      "index": 1,
+      "id": "1533",
+      "label": "1533_lanlingwang"
+    },
+    {
+      "index": 2,
+      "id": "1534",
+      "label": "1534_lanlingwang"
+    },
+    {
+      "index": 3,
+      "id": "1535",
+      "label": "1535_lanlingwang"
+    },
+    {
+      "index": 4,
+      "id": "1536",
+      "label": "1536_lanlingwang"
+    },
+    {
+      "index": 5,
+      "id": "1537",
+      "label": "1537_lanlingwang"
+    }
+  ]
+}

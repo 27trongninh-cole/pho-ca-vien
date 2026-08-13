@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/Actor_127_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/127_ZhenJi/127_ZhenJi_actorinfo.bytes",
+  "label": "zhenji",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1272",
+      "label": "1272_zhenji"
+    },
+    {
+      "index": 1,
+      "id": "1273",
+      "label": "1273_zhenji"
+    },
+    {
+      "index": 2,
+      "id": "1274",
+      "label": "1274_zhenji"
+    },
+    {
+      "index": 3,
+      "id": "1275",
+      "label": "1275_zhenji"
+    },
+    {
+      "index": 4,
+      "id": "1276",
+      "label": "1276_zhenji"
+    },
+    {
+      "index": 5,
+      "id": "1277",
+      "label": "1277_zhenji"
+    },
+    {
+      "index": 6,
+      "id": "1278",
+      "label": "1278_zhenji"
+    },
+    {
+      "index": 7,
+      "id": "1279",
+      "label": "1279_zhenji"
+    }
+  ]
+}

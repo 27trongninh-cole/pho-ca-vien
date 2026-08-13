@@ -1,0 +1,12 @@
+{
+  "pkgFile": "pkg/Actor_593_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/593_MaChao/593_MaChao_actorinfo.bytes",
+  "label": "machao",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    }
+  ]
+}

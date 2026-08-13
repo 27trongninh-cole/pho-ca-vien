@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_137_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/137_SiMaYi/137_SiMaYi_actorinfo.bytes",
+  "label": "simayi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1372",
+      "label": "1372_simayi"
+    },
+    {
+      "index": 1,
+      "id": "1373",
+      "label": "1373_simayi"
+    },
+    {
+      "index": 2,
+      "id": "1374",
+      "label": "1374_simayi"
+    },
+    {
+      "index": 3,
+      "id": "1375",
+      "label": "1375_simayi"
+    },
+    {
+      "index": 4,
+      "id": "1376",
+      "label": "1376_simayi"
+    },
+    {
+      "index": 5,
+      "id": "1377",
+      "label": "1377_simayi"
+    },
+    {
+      "index": 6,
+      "id": "1378",
+      "label": "1378_simayi"
+    }
+  ]
+}

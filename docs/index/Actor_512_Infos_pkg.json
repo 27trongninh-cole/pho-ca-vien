@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/Actor_512_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/512_Rourke/512_Rourke_actorinfo.bytes",
+  "label": "rourke",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5122",
+      "label": "5122_rourke"
+    },
+    {
+      "index": 1,
+      "id": "5123",
+      "label": "5123_rourke"
+    },
+    {
+      "index": 2,
+      "id": "5124",
+      "label": "5124_rourke"
+    },
+    {
+      "index": 3,
+      "id": "5125",
+      "label": "5125_rourke"
+    },
+    {
+      "index": 4,
+      "id": "5126",
+      "label": "5126_rourke"
+    },
+    {
+      "index": 5,
+      "id": "5128",
+      "label": "5128_rourke"
+    },
+    {
+      "index": 6,
+      "id": "5129",
+      "label": "5129_rourke"
+    },
+    {
+      "index": 7,
+      "id": "51210",
+      "label": "51210_rourke"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "pkgFile": "pkg/Actor_187_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/187_DongHuangTaiYi/187_DongHuangTaiYi_actorinfo.bytes",
+  "label": "donghuangtaiyi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1872",
+      "label": "1872_donghuangtaiyi"
+    },
+    {
+      "index": 1,
+      "id": "1873",
+      "label": "1873_donghuangtaiyi"
+    },
+    {
+      "index": 2,
+      "id": "1874",
+      "label": "1874_donghuangtaiyi"
+    },
+    {
+      "index": 3,
+      "id": "1875",
+      "label": "1875_donghuangtaiyi"
+    },
+    {
+      "index": 4,
+      "id": "1876",
+      "label": "1876_donghuangtaiyi"
+    },
+    {
+      "index": 5,
+      "id": "1877",
+      "label": "1877_donghuangtaiyi"
+    },
+    {
+      "index": 6,
+      "id": "1879",
+      "label": "1879_donghuangtaiyi"
+    },
+    {
+      "index": 7,
+      "id": "18710",
+      "label": "18710_donghuangtaiyi"
+    },
+    {
+      "index": 8,
+      "id": "18713",
+      "label": "18713_donghuangtaiyi"
+    },
+    {
+      "index": 9,
+      "id": "18714",
+      "label": "18714_donghuangtaiyi"
+    },
+    {
+      "index": 10,
+      "id": "18715",
+      "label": "18715_donghuangtaiyi"
+    },
+    {
+      "index": 11,
+      "id": "18716",
+      "label": "18716_donghuangtaiyi"
+    }
+  ]
+}

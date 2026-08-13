@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_171_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/171_ZhangFei/171_ZhangFei_actorinfo.bytes",
+  "label": "zhangfei",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1712",
+      "label": "1712_zhangfei"
+    },
+    {
+      "index": 1,
+      "id": "1713",
+      "label": "1713_zhangfei"
+    },
+    {
+      "index": 2,
+      "id": "1714",
+      "label": "1714_zhangfei"
+    },
+    {
+      "index": 3,
+      "id": "1715",
+      "label": "1715_zhangfei"
+    },
+    {
+      "index": 4,
+      "id": "1717",
+      "label": "1717_zhangfei"
+    },
+    {
+      "index": 5,
+      "id": "1718",
+      "label": "1718_zhangfei"
+    },
+    {
+      "index": 6,
+      "id": "1719",
+      "label": "1719_zhangfei"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/Actor_177_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/177_ChengJiSiHan/177_ChengJiSiHan_actorinfo.bytes",
+  "label": "chengjisihan",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1772",
+      "label": "1772_chengjisihan"
+    },
+    {
+      "index": 1,
+      "id": "1773",
+      "label": "1773_chengjisihan"
+    },
+    {
+      "index": 2,
+      "id": "1774",
+      "label": "1774_chengjisihan"
+    },
+    {
+      "index": 3,
+      "id": "1775",
+      "label": "1775_chengjisihan"
+    },
+    {
+      "index": 4,
+      "id": "1776",
+      "label": "1776_chengjisihan"
+    },
+    {
+      "index": 5,
+      "id": "1777",
+      "label": "1777_chengjisihan"
+    },
+    {
+      "index": 6,
+      "id": "1779",
+      "label": "1779_chengjisihan"
+    },
+    {
+      "index": 7,
+      "id": "17710",
+      "label": "17710_chengjisihan"
+    }
+  ]
+}

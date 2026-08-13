@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/Actor_195_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/195_BaiLiXuanCe/195_BaiLiXuanCe_actorinfo.bytes",
+  "label": "bailixuance",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1952",
+      "label": "1952_bailixuance"
+    },
+    {
+      "index": 1,
+      "id": "1953",
+      "label": "1953_bailixuance"
+    },
+    {
+      "index": 2,
+      "id": "1954",
+      "label": "1954_bailixuance"
+    },
+    {
+      "index": 3,
+      "id": "1955",
+      "label": "1955_bailixuance"
+    },
+    {
+      "index": 4,
+      "id": "1956",
+      "label": "1956_bailixuance"
+    },
+    {
+      "index": 5,
+      "id": "1957",
+      "label": "1957_bailixuance"
+    },
+    {
+      "index": 6,
+      "id": "1959",
+      "label": "1959_bailixuance"
+    },
+    {
+      "index": 7,
+      "id": "19510",
+      "label": "19510_bailixuance"
+    },
+    {
+      "index": 8,
+      "id": "19511",
+      "label": "19511_bailixuance"
+    },
+    {
+      "index": 9,
+      "id": "19512",
+      "label": "19512_bailixuance"
+    }
+  ]
+}

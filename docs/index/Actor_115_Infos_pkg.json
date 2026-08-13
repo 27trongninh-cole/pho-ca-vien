@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_115_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/115_GaoJianLi/115_GaoJianLi_actorinfo.bytes",
+  "label": "gaojianli",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1152",
+      "label": "1152_gaojianli"
+    },
+    {
+      "index": 1,
+      "id": "1153",
+      "label": "1153_gaojianli"
+    },
+    {
+      "index": 2,
+      "id": "1154",
+      "label": "1154_gaojianli"
+    },
+    {
+      "index": 3,
+      "id": "1155",
+      "label": "1155_gaojianli"
+    },
+    {
+      "index": 4,
+      "id": "1157",
+      "label": "1157_gaojianli"
+    },
+    {
+      "index": 5,
+      "id": "1158",
+      "label": "1158_gaojianli"
+    },
+    {
+      "index": 6,
+      "id": "1159",
+      "label": "1159_gaojianli"
+    }
+  ]
+}

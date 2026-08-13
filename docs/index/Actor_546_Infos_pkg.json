@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_546_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/546_Hecate/546_Hecate_actorinfo.bytes",
+  "label": "hecate",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5462",
+      "label": "5462_hecate"
+    },
+    {
+      "index": 1,
+      "id": "5463",
+      "label": "5463_hecate"
+    },
+    {
+      "index": 2,
+      "id": "5464",
+      "label": "5464_hecate"
+    },
+    {
+      "index": 3,
+      "id": "5466",
+      "label": "5466_hecate"
+    },
+    {
+      "index": 4,
+      "id": "5467",
+      "label": "5467_hecate"
+    },
+    {
+      "index": 5,
+      "id": "5468",
+      "label": "5468_hecate"
+    },
+    {
+      "index": 6,
+      "id": "5469",
+      "label": "5469_hecate"
+    }
+  ]
+}

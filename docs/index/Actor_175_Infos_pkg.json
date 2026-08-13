@@ -1,0 +1,82 @@
+{
+  "pkgFile": "pkg/Actor_175_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/175_ZhongKui/175_ZhongKui_actorinfo.bytes",
+  "label": "zhongkui",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1752",
+      "label": "1752_zhongkui"
+    },
+    {
+      "index": 1,
+      "id": "1753",
+      "label": "1753_zhongkui"
+    },
+    {
+      "index": 2,
+      "id": "1754",
+      "label": "1754_zhongkui"
+    },
+    {
+      "index": 3,
+      "id": "1755",
+      "label": "1755_zhongkui"
+    },
+    {
+      "index": 4,
+      "id": "1756",
+      "label": "1756_zhongkui"
+    },
+    {
+      "index": 5,
+      "id": "1757",
+      "label": "1757_zhongkui"
+    },
+    {
+      "index": 6,
+      "id": "1758",
+      "label": "1758_zhongkui"
+    },
+    {
+      "index": 7,
+      "id": "1759",
+      "label": "1759_zhongkui"
+    },
+    {
+      "index": 8,
+      "id": "17510",
+      "label": "17510_zhongkui"
+    },
+    {
+      "index": 9,
+      "id": "17511",
+      "label": "17511_zhongkui"
+    },
+    {
+      "index": 10,
+      "id": "17513",
+      "label": "17513_zhongkui"
+    },
+    {
+      "index": 11,
+      "id": "17518",
+      "label": "17518_zhongkui"
+    },
+    {
+      "index": 12,
+      "id": "17519",
+      "label": "17519_zhongkui"
+    },
+    {
+      "index": 13,
+      "id": "17520",
+      "label": "17520_zhongkui"
+    }
+  ]
+}

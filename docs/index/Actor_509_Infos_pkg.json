@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_509_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/509_Ybneth/509_Ybneth_actorinfo.bytes",
+  "label": "ybneth",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5092",
+      "label": "5092_ybneth"
+    },
+    {
+      "index": 1,
+      "id": "5093",
+      "label": "5093_ybneth"
+    },
+    {
+      "index": 2,
+      "id": "5094",
+      "label": "5094_ybneth"
+    },
+    {
+      "index": 3,
+      "id": "5095",
+      "label": "5095_ybneth"
+    },
+    {
+      "index": 4,
+      "id": "5096",
+      "label": "5096_ybneth"
+    },
+    {
+      "index": 5,
+      "id": "5097",
+      "label": "5097_ybneth"
+    },
+    {
+      "index": 6,
+      "id": "5098",
+      "label": "5098_ybneth"
+    }
+  ]
+}

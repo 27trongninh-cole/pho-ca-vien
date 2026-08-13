@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_192_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/192_HuangZhong/192_HuangZhong_actorinfo.bytes",
+  "label": "huangzhong",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1922",
+      "label": "1922_huangzhong"
+    },
+    {
+      "index": 1,
+      "id": "1923",
+      "label": "1923_huangzhong"
+    },
+    {
+      "index": 2,
+      "id": "1924",
+      "label": "1924_huangzhong"
+    },
+    {
+      "index": 3,
+      "id": "1925",
+      "label": "1925_huangzhong"
+    },
+    {
+      "index": 4,
+      "id": "1926",
+      "label": "1926_huangzhong"
+    },
+    {
+      "index": 5,
+      "id": "1927",
+      "label": "1927_huangzhong"
+    },
+    {
+      "index": 6,
+      "id": "1928",
+      "label": "1928_huangzhong"
+    }
+  ]
+}

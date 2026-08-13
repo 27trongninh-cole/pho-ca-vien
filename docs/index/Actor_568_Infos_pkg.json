@@ -1,0 +1,22 @@
+{
+  "pkgFile": "pkg/Actor_568_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/568_MingShiYin/568_MingShiYin_actorinfo.bytes",
+  "label": "mingshiyin",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5682",
+      "label": "5682_mingshiyin"
+    },
+    {
+      "index": 1,
+      "id": "5683",
+      "label": "5683_mingshiyin"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/Actor_522_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/522_Errol/522_Errol_actorinfo.bytes",
+  "label": "errol",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5222",
+      "label": "5222_errol"
+    },
+    {
+      "index": 1,
+      "id": "5223",
+      "label": "5223_errol"
+    },
+    {
+      "index": 2,
+      "id": "5224",
+      "label": "5224_errol"
+    },
+    {
+      "index": 3,
+      "id": "5225",
+      "label": "5225_errol"
+    },
+    {
+      "index": 4,
+      "id": "5226",
+      "label": "5226_errol"
+    },
+    {
+      "index": 5,
+      "id": "5227",
+      "label": "5227_errol"
+    },
+    {
+      "index": 6,
+      "id": "5228",
+      "label": "5228_errol"
+    },
+    {
+      "index": 7,
+      "id": "5229",
+      "label": "5229_errol"
+    },
+    {
+      "index": 8,
+      "id": "52210",
+      "label": "52210_errol"
+    },
+    {
+      "index": 9,
+      "id": "52211",
+      "label": "52211_errol"
+    }
+  ]
+}

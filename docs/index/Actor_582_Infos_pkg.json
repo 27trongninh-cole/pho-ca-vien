@@ -1,0 +1,12 @@
+{
+  "pkgFile": "pkg/Actor_582_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/582_Ciyuanfashi/582_Ciyuanfashi_actorinfo.bytes",
+  "label": "ciyuanfashi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    }
+  ]
+}

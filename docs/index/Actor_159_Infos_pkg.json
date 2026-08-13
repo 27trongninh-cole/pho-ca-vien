@@ -1,0 +1,37 @@
+{
+  "pkgFile": "pkg/Actor_159_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/159_Dolia/159_Dolia_actorinfo.bytes",
+  "label": "dolia",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1592",
+      "label": "1592_dolia"
+    },
+    {
+      "index": 1,
+      "id": "1593",
+      "label": "1593_dolia"
+    },
+    {
+      "index": 2,
+      "id": "1594",
+      "label": "1594_dolia"
+    },
+    {
+      "index": 3,
+      "id": "1595",
+      "label": "1595_dolia"
+    },
+    {
+      "index": 4,
+      "id": "1596",
+      "label": "1596_dolia"
+    }
+  ]
+}

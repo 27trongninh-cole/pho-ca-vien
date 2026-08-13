@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_117_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/117_ZhongWuYan/117_ZhongWuYan_actorinfo.bytes",
+  "label": "zhongwuyan",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1172",
+      "label": "1172_zhongwuyan"
+    },
+    {
+      "index": 1,
+      "id": "1174",
+      "label": "1174_zhongwuyan"
+    },
+    {
+      "index": 2,
+      "id": "1175",
+      "label": "1175_zhongwuyan"
+    },
+    {
+      "index": 3,
+      "id": "1176",
+      "label": "1176_zhongwuyan"
+    },
+    {
+      "index": 4,
+      "id": "1177",
+      "label": "1177_zhongwuyan"
+    },
+    {
+      "index": 5,
+      "id": "1178",
+      "label": "1178_zhongwuyan"
+    },
+    {
+      "index": 6,
+      "id": "1179",
+      "label": "1179_zhongwuyan"
+    }
+  ]
+}

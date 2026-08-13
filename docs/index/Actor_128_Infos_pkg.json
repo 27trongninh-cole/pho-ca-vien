@@ -1,0 +1,67 @@
+{
+  "pkgFile": "pkg/Actor_128_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/128_CaoCao/128_CaoCao_actorinfo.bytes",
+  "label": "caocao",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1282",
+      "label": "1282_caocao"
+    },
+    {
+      "index": 1,
+      "id": "1283",
+      "label": "1283_caocao"
+    },
+    {
+      "index": 2,
+      "id": "1284",
+      "label": "1284_caocao"
+    },
+    {
+      "index": 3,
+      "id": "1285",
+      "label": "1285_caocao"
+    },
+    {
+      "index": 4,
+      "id": "1286",
+      "label": "1286_caocao"
+    },
+    {
+      "index": 5,
+      "id": "1287",
+      "label": "1287_caocao"
+    },
+    {
+      "index": 6,
+      "id": "1288",
+      "label": "1288_caocao"
+    },
+    {
+      "index": 7,
+      "id": "1289",
+      "label": "1289_caocao"
+    },
+    {
+      "index": 8,
+      "id": "12810",
+      "label": "12810_caocao"
+    },
+    {
+      "index": 9,
+      "id": "12811",
+      "label": "12811_caocao"
+    },
+    {
+      "index": 10,
+      "id": "12813",
+      "label": "12813_caocao"
+    }
+  ]
+}

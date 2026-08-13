@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/Actor_108_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/108_MoDi/108_modi_actorinfo.bytes",
+  "label": "modi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1082",
+      "label": "1082_modi"
+    },
+    {
+      "index": 1,
+      "id": "1083",
+      "label": "1083_modi"
+    },
+    {
+      "index": 2,
+      "id": "1084",
+      "label": "1084_modi"
+    },
+    {
+      "index": 3,
+      "id": "1085",
+      "label": "1085_modi"
+    },
+    {
+      "index": 4,
+      "id": "1086",
+      "label": "1086_modi"
+    },
+    {
+      "index": 5,
+      "id": "1087",
+      "label": "1087_modi"
+    },
+    {
+      "index": 6,
+      "id": "1088",
+      "label": "1088_modi"
+    },
+    {
+      "index": 7,
+      "id": "10810",
+      "label": "10810_modi"
+    },
+    {
+      "index": 8,
+      "id": "10812",
+      "label": "10812_modi"
+    },
+    {
+      "index": 9,
+      "id": "10813",
+      "label": "10813_modi"
+    }
+  ]
+}

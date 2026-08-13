@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/Actor_191_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/191_DaQiao/191_DaQiao_actorinfo.bytes",
+  "label": "daqiao",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1912",
+      "label": "1912_daqiao"
+    },
+    {
+      "index": 1,
+      "id": "1913",
+      "label": "1913_daqiao"
+    },
+    {
+      "index": 2,
+      "id": "1914",
+      "label": "1914_daqiao"
+    },
+    {
+      "index": 3,
+      "id": "1915",
+      "label": "1915_daqiao"
+    },
+    {
+      "index": 4,
+      "id": "1916",
+      "label": "1916_daqiao"
+    },
+    {
+      "index": 5,
+      "id": "1917",
+      "label": "1917_daqiao"
+    },
+    {
+      "index": 6,
+      "id": "1919",
+      "label": "1919_daqiao"
+    },
+    {
+      "index": 7,
+      "id": "19110",
+      "label": "19110_daqiao"
+    },
+    {
+      "index": 8,
+      "id": "19111",
+      "label": "19111_daqiao"
+    },
+    {
+      "index": 9,
+      "id": "19112",
+      "label": "19112_daqiao"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "pkgFile": "pkg/Actor_503_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/503_Zuka/503_Zuka_ActorInfo.bytes",
+  "label": "zuka",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5032",
+      "label": "5032_zuka"
+    },
+    {
+      "index": 1,
+      "id": "5033",
+      "label": "5033_zuka"
+    },
+    {
+      "index": 2,
+      "id": "5034",
+      "label": "5034_zuka"
+    },
+    {
+      "index": 3,
+      "id": "5035",
+      "label": "5035_zuka"
+    },
+    {
+      "index": 4,
+      "id": "5036",
+      "label": "5036_zuka"
+    },
+    {
+      "index": 5,
+      "id": "5037",
+      "label": "5037_zuka"
+    },
+    {
+      "index": 6,
+      "id": "5038",
+      "label": "5038_zuka"
+    },
+    {
+      "index": 7,
+      "id": "5039",
+      "label": "5039_zuka"
+    },
+    {
+      "index": 8,
+      "id": "50310",
+      "label": "50310_zuka"
+    },
+    {
+      "index": 9,
+      "id": "50311",
+      "label": "50311_zuka"
+    },
+    {
+      "index": 10,
+      "id": "50312",
+      "label": "50312_zuka"
+    },
+    {
+      "index": 11,
+      "id": "50314",
+      "label": "50314_zuka"
+    }
+  ]
+}

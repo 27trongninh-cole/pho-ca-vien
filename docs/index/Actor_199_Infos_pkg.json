@@ -1,0 +1,57 @@
+{
+  "pkgFile": "pkg/Actor_199_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/199_Li/199_Li_actorinfo.bytes",
+  "label": "li",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1992",
+      "label": "1992_li"
+    },
+    {
+      "index": 1,
+      "id": "1993",
+      "label": "1993_li"
+    },
+    {
+      "index": 2,
+      "id": "1994",
+      "label": "1994_li"
+    },
+    {
+      "index": 3,
+      "id": "1995",
+      "label": "1995_li"
+    },
+    {
+      "index": 4,
+      "id": "1996",
+      "label": "1996_li"
+    },
+    {
+      "index": 5,
+      "id": "1997",
+      "label": "1997_li"
+    },
+    {
+      "index": 6,
+      "id": "1998",
+      "label": "1998_li"
+    },
+    {
+      "index": 7,
+      "id": "1999",
+      "label": "1999_li"
+    },
+    {
+      "index": 8,
+      "id": "19910",
+      "label": "19910_li"
+    }
+  ]
+}

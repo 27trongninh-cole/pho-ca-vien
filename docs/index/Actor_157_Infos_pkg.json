@@ -1,0 +1,77 @@
+{
+  "pkgFile": "pkg/Actor_157_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/157_BuZhiHuoWu/157_BuZhiHuoWu_actorinfo.bytes",
+  "label": "buzhihuowu",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1572",
+      "label": "1572_buzhihuowu"
+    },
+    {
+      "index": 1,
+      "id": "1573",
+      "label": "1573_buzhihuowu"
+    },
+    {
+      "index": 2,
+      "id": "1574",
+      "label": "1574_buzhihuowu"
+    },
+    {
+      "index": 3,
+      "id": "1575",
+      "label": "1575_buzhihuowu"
+    },
+    {
+      "index": 4,
+      "id": "1576",
+      "label": "1576_buzhihuowu"
+    },
+    {
+      "index": 5,
+      "id": "1577",
+      "label": "1577_buzhihuowu"
+    },
+    {
+      "index": 6,
+      "id": "1578",
+      "label": "1578_buzhihuowu"
+    },
+    {
+      "index": 7,
+      "id": "1579",
+      "label": "1579_buzhihuowu"
+    },
+    {
+      "index": 8,
+      "id": "15710",
+      "label": "15710_buzhihuowu"
+    },
+    {
+      "index": 9,
+      "id": "15711",
+      "label": "15711_buzhihuowu"
+    },
+    {
+      "index": 10,
+      "id": "15712",
+      "label": "15712_buzhihuowu"
+    },
+    {
+      "index": 11,
+      "id": "15713",
+      "label": "15713_buzhihuowu"
+    },
+    {
+      "index": 12,
+      "id": "15715",
+      "label": "15715_buzhihuowu"
+    }
+  ]
+}

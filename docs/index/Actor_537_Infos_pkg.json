@@ -1,0 +1,57 @@
+{
+  "pkgFile": "pkg/Actor_537_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/537_Trip/537_Trip_actorinfo.bytes",
+  "label": "trip",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5372",
+      "label": "5372_trip"
+    },
+    {
+      "index": 1,
+      "id": "5373",
+      "label": "5373_trip"
+    },
+    {
+      "index": 2,
+      "id": "5374",
+      "label": "5374_trip"
+    },
+    {
+      "index": 3,
+      "id": "5375",
+      "label": "5375_trip"
+    },
+    {
+      "index": 4,
+      "id": "5376",
+      "label": "5376_trip"
+    },
+    {
+      "index": 5,
+      "id": "5377",
+      "label": "5377_trip"
+    },
+    {
+      "index": 6,
+      "id": "5378",
+      "label": "5378_trip"
+    },
+    {
+      "index": 7,
+      "id": "5379",
+      "label": "5379_trip"
+    },
+    {
+      "index": 8,
+      "id": "53710",
+      "label": "53710_trip"
+    }
+  ]
+}

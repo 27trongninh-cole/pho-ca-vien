@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_124_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/124_ZhouYu/124_ZhouYu_actorinfo.bytes",
+  "label": "zhouyu",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1242",
+      "label": "1242_zhouyu"
+    },
+    {
+      "index": 1,
+      "id": "1243",
+      "label": "1243_zhouyu"
+    },
+    {
+      "index": 2,
+      "id": "1244",
+      "label": "1244_zhouyu"
+    },
+    {
+      "index": 3,
+      "id": "1245",
+      "label": "1245_zhouyu"
+    },
+    {
+      "index": 4,
+      "id": "1246",
+      "label": "1246_zhouyu"
+    },
+    {
+      "index": 5,
+      "id": "1247",
+      "label": "1247_zhouyu"
+    },
+    {
+      "index": 6,
+      "id": "1248",
+      "label": "1248_zhouyu"
+    }
+  ]
+}

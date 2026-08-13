@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/Actor_529_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/529_Volkath/529_Volkath_actorinfo.bytes",
+  "label": "volkath",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5292",
+      "label": "5292_volkath"
+    },
+    {
+      "index": 1,
+      "id": "5293",
+      "label": "5293_volkath"
+    },
+    {
+      "index": 2,
+      "id": "5294",
+      "label": "5294_volkath"
+    },
+    {
+      "index": 3,
+      "id": "5295",
+      "label": "5295_volkath"
+    },
+    {
+      "index": 4,
+      "id": "5296",
+      "label": "5296_volkath"
+    },
+    {
+      "index": 5,
+      "id": "5297",
+      "label": "5297_volkath"
+    },
+    {
+      "index": 6,
+      "id": "5298",
+      "label": "5298_volkath"
+    },
+    {
+      "index": 7,
+      "id": "5299",
+      "label": "5299_volkath"
+    }
+  ]
+}

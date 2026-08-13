@@ -1,0 +1,92 @@
+{
+  "pkgFile": "pkg/Actor_109_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/109_DaJi/109_Daji_actorinfo.bytes",
+  "label": "daji",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1092",
+      "label": "1092_daji"
+    },
+    {
+      "index": 1,
+      "id": "1093",
+      "label": "1093_daji"
+    },
+    {
+      "index": 2,
+      "id": "1094",
+      "label": "1094_daji"
+    },
+    {
+      "index": 3,
+      "id": "1095",
+      "label": "1095_daji"
+    },
+    {
+      "index": 4,
+      "id": "1096",
+      "label": "1096_daji"
+    },
+    {
+      "index": 5,
+      "id": "1097",
+      "label": "1097_daji"
+    },
+    {
+      "index": 6,
+      "id": "1098",
+      "label": "1098_daji"
+    },
+    {
+      "index": 7,
+      "id": "1099",
+      "label": "1099_daji"
+    },
+    {
+      "index": 8,
+      "id": "10911",
+      "label": "10911_daji"
+    },
+    {
+      "index": 9,
+      "id": "10912",
+      "label": "10912_daji"
+    },
+    {
+      "index": 10,
+      "id": "10913",
+      "label": "10913_daji"
+    },
+    {
+      "index": 11,
+      "id": "10914",
+      "label": "10914_daji"
+    },
+    {
+      "index": 12,
+      "id": "10915",
+      "label": "10915_daji"
+    },
+    {
+      "index": 13,
+      "id": "10916",
+      "label": "10916_daji"
+    },
+    {
+      "index": 14,
+      "id": "10917",
+      "label": "10917_daji"
+    },
+    {
+      "index": 15,
+      "id": "10918",
+      "label": "10918_daji"
+    }
+  ]
+}

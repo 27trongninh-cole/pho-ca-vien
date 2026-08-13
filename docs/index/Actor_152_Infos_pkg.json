@@ -1,0 +1,87 @@
+{
+  "pkgFile": "pkg/Actor_152_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/152_WangZhaoJun/152_WangZhaoJun_actorinfo.bytes",
+  "label": "wangzhaojun",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1522",
+      "label": "1522_wangzhaojun"
+    },
+    {
+      "index": 1,
+      "id": "1523",
+      "label": "1523_wangzhaojun"
+    },
+    {
+      "index": 2,
+      "id": "1524",
+      "label": "1524_wangzhaojun"
+    },
+    {
+      "index": 3,
+      "id": "1525",
+      "label": "1525_wangzhaojun"
+    },
+    {
+      "index": 4,
+      "id": "1526",
+      "label": "1526_wangzhaojun"
+    },
+    {
+      "index": 5,
+      "id": "1527",
+      "label": "1527_wangzhaojun"
+    },
+    {
+      "index": 6,
+      "id": "1528",
+      "label": "1528_wangzhaojun"
+    },
+    {
+      "index": 7,
+      "id": "1529",
+      "label": "1529_wangzhaojun"
+    },
+    {
+      "index": 8,
+      "id": "15210",
+      "label": "15210_wangzhaojun"
+    },
+    {
+      "index": 9,
+      "id": "15211",
+      "label": "15211_wangzhaojun"
+    },
+    {
+      "index": 10,
+      "id": "15212",
+      "label": "15212_wangzhaojun"
+    },
+    {
+      "index": 11,
+      "id": "15213",
+      "label": "15213_wangzhaojun"
+    },
+    {
+      "index": 12,
+      "id": "15214",
+      "label": "15214_wangzhaojun"
+    },
+    {
+      "index": 13,
+      "id": "15217",
+      "label": "15217_wangzhaojun"
+    },
+    {
+      "index": 14,
+      "id": "15218",
+      "label": "15218_wangzhaojun"
+    }
+  ]
+}

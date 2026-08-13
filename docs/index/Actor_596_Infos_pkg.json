@@ -1,0 +1,17 @@
+{
+  "pkgFile": "pkg/Actor_596_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/596_MiLaiDi/596_MiLaiDi_actorinfo.bytes",
+  "label": "milaidi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5962",
+      "label": "5962_milaidi"
+    }
+  ]
+}

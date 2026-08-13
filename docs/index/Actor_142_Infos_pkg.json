@@ -1,0 +1,87 @@
+{
+  "pkgFile": "pkg/Actor_142_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/142_CaiWenJi/142_CaiWenJi_actorinfo.bytes",
+  "label": "caiwenji",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1422",
+      "label": "1422_caiwenji"
+    },
+    {
+      "index": 1,
+      "id": "1423",
+      "label": "1423_caiwenji"
+    },
+    {
+      "index": 2,
+      "id": "1424",
+      "label": "1424_caiwenji"
+    },
+    {
+      "index": 3,
+      "id": "1425",
+      "label": "1425_caiwenji"
+    },
+    {
+      "index": 4,
+      "id": "1426",
+      "label": "1426_caiwenji"
+    },
+    {
+      "index": 5,
+      "id": "1427",
+      "label": "1427_caiwenji"
+    },
+    {
+      "index": 6,
+      "id": "1428",
+      "label": "1428_caiwenji"
+    },
+    {
+      "index": 7,
+      "id": "1429",
+      "label": "1429_caiwenji"
+    },
+    {
+      "index": 8,
+      "id": "14210",
+      "label": "14210_caiwenji"
+    },
+    {
+      "index": 9,
+      "id": "1421",
+      "label": "1421_caiwenji"
+    },
+    {
+      "index": 10,
+      "id": "14211",
+      "label": "14211_caiwenji"
+    },
+    {
+      "index": 11,
+      "id": "14213",
+      "label": "14213_caiwenji"
+    },
+    {
+      "index": 12,
+      "id": "14214",
+      "label": "14214_caiwenji"
+    },
+    {
+      "index": 13,
+      "id": "14215",
+      "label": "14215_caiwenji"
+    },
+    {
+      "index": 14,
+      "id": "14216",
+      "label": "14216_caiwenji"
+    }
+  ]
+}

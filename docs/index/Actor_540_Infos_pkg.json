@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_540_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/540_Bright/540_Bright_actorinfo.bytes",
+  "label": "bright",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5402",
+      "label": "5402_bright"
+    },
+    {
+      "index": 1,
+      "id": "5403",
+      "label": "5403_bright"
+    },
+    {
+      "index": 2,
+      "id": "5404",
+      "label": "5404_bright"
+    },
+    {
+      "index": 3,
+      "id": "5405",
+      "label": "5405_bright"
+    },
+    {
+      "index": 4,
+      "id": "5406",
+      "label": "5406_bright"
+    },
+    {
+      "index": 5,
+      "id": "5407",
+      "label": "5407_bright"
+    },
+    {
+      "index": 6,
+      "id": "5408",
+      "label": "5408_bright"
+    }
+  ]
+}

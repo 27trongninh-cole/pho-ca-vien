@@ -1,0 +1,32 @@
+{
+  "pkgFile": "pkg/Actor_567_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/567_AiLin/567_AiLin_actorinfo.bytes",
+  "label": "ailin",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5672",
+      "label": "5672_ailin"
+    },
+    {
+      "index": 1,
+      "id": "5674",
+      "label": "5674_ailin"
+    },
+    {
+      "index": 2,
+      "id": "5675",
+      "label": "5675_ailin"
+    },
+    {
+      "index": 3,
+      "id": "5676",
+      "label": "5676_ailin"
+    }
+  ]
+}

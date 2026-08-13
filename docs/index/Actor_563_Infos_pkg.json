@@ -1,0 +1,22 @@
+{
+  "pkgFile": "pkg/Actor_563_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/563_HaiNuo/563_HaiNuo_actorinfo.bytes",
+  "label": "hainuo",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5632",
+      "label": "5632_hainuo"
+    },
+    {
+      "index": 1,
+      "id": "5633",
+      "label": "5633_hainuo"
+    }
+  ]
+}

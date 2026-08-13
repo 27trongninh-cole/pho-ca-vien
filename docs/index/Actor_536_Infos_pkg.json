@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/Actor_536_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/536_Ninja/536_Ninja_actorinfo.bytes",
+  "label": "ninja",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5362",
+      "label": "5362_ninja"
+    },
+    {
+      "index": 1,
+      "id": "5363",
+      "label": "5363_ninja"
+    },
+    {
+      "index": 2,
+      "id": "5364",
+      "label": "5364_ninja"
+    },
+    {
+      "index": 3,
+      "id": "5365",
+      "label": "5365_ninja"
+    },
+    {
+      "index": 4,
+      "id": "5366",
+      "label": "5366_ninja"
+    },
+    {
+      "index": 5,
+      "id": "5367",
+      "label": "5367_ninja"
+    },
+    {
+      "index": 6,
+      "id": "5369",
+      "label": "5369_ninja"
+    },
+    {
+      "index": 7,
+      "id": "53610",
+      "label": "53610_ninja"
+    },
+    {
+      "index": 8,
+      "id": "53612",
+      "label": "53612_ninja"
+    },
+    {
+      "index": 9,
+      "id": "53613",
+      "label": "53613_ninja"
+    }
+  ]
+}

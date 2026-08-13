@@ -1,0 +1,72 @@
+{
+  "pkgFile": "pkg/Actor_123_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/123_LvBu/123_LvBu_actorinfo.bytes",
+  "label": "lvbu",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1232",
+      "label": "1232_lvbu"
+    },
+    {
+      "index": 1,
+      "id": "1233",
+      "label": "1233_lvbu"
+    },
+    {
+      "index": 2,
+      "id": "1234",
+      "label": "1234_lvbu"
+    },
+    {
+      "index": 3,
+      "id": "1235",
+      "label": "1235_lvbu"
+    },
+    {
+      "index": 4,
+      "id": "1236",
+      "label": "1236_lvbu"
+    },
+    {
+      "index": 5,
+      "id": "1237",
+      "label": "1237_lvbu"
+    },
+    {
+      "index": 6,
+      "id": "1238",
+      "label": "1238_lvbu"
+    },
+    {
+      "index": 7,
+      "id": "1239",
+      "label": "1239_lvbu"
+    },
+    {
+      "index": 8,
+      "id": "12310",
+      "label": "12310_lvbu"
+    },
+    {
+      "index": 9,
+      "id": "12311",
+      "label": "12311_lvbu"
+    },
+    {
+      "index": 10,
+      "id": "12312",
+      "label": "12312_lvbu"
+    },
+    {
+      "index": 11,
+      "id": "12313",
+      "label": "12313_lvbu"
+    }
+  ]
+}

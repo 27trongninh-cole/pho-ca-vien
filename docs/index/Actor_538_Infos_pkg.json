@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_538_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/538_Iggy/538_Iggy_actorinfo.bytes",
+  "label": "iggy",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5382",
+      "label": "5382_iggy"
+    },
+    {
+      "index": 1,
+      "id": "5383",
+      "label": "5383_iggy"
+    },
+    {
+      "index": 2,
+      "id": "5384",
+      "label": "5384_iggy"
+    },
+    {
+      "index": 3,
+      "id": "5385",
+      "label": "5385_iggy"
+    },
+    {
+      "index": 4,
+      "id": "5386",
+      "label": "5386_iggy"
+    },
+    {
+      "index": 5,
+      "id": "5387",
+      "label": "5387_iggy"
+    },
+    {
+      "index": 6,
+      "id": "5388",
+      "label": "5388_iggy"
+    }
+  ]
+}

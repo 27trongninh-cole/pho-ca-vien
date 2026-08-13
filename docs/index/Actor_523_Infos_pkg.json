@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_523_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/523_Darcy/523_Darcy_actorinfo.bytes",
+  "label": "darcy",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5232",
+      "label": "5232_darcy"
+    },
+    {
+      "index": 1,
+      "id": "5233",
+      "label": "5233_darcy"
+    },
+    {
+      "index": 2,
+      "id": "5234",
+      "label": "5234_darcy"
+    },
+    {
+      "index": 3,
+      "id": "5235",
+      "label": "5235_darcy"
+    },
+    {
+      "index": 4,
+      "id": "5236",
+      "label": "5236_darcy"
+    },
+    {
+      "index": 5,
+      "id": "5237",
+      "label": "5237_darcy"
+    },
+    {
+      "index": 6,
+      "id": "5238",
+      "label": "5238_darcy"
+    }
+  ]
+}

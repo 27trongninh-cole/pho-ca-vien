@@ -1,0 +1,87 @@
+{
+  "pkgFile": "pkg/Actor_150_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/150_HanXin/150_HanXin_actorinfo.bytes",
+  "label": "hanxin",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1502",
+      "label": "1502_hanxin"
+    },
+    {
+      "index": 1,
+      "id": "1503",
+      "label": "1503_hanxin"
+    },
+    {
+      "index": 2,
+      "id": "1504",
+      "label": "1504_hanxin"
+    },
+    {
+      "index": 3,
+      "id": "1505",
+      "label": "1505_hanxin"
+    },
+    {
+      "index": 4,
+      "id": "1506",
+      "label": "1506_hanxin"
+    },
+    {
+      "index": 5,
+      "id": "15033",
+      "label": "15033_hanxin"
+    },
+    {
+      "index": 6,
+      "id": "1507",
+      "label": "1507_hanxin"
+    },
+    {
+      "index": 7,
+      "id": "1508",
+      "label": "1508_hanxin"
+    },
+    {
+      "index": 8,
+      "id": "1509",
+      "label": "1509_hanxin"
+    },
+    {
+      "index": 9,
+      "id": "15010",
+      "label": "15010_hanxin"
+    },
+    {
+      "index": 10,
+      "id": "15013",
+      "label": "15013_hanxin"
+    },
+    {
+      "index": 11,
+      "id": "15014",
+      "label": "15014_hanxin"
+    },
+    {
+      "index": 12,
+      "id": "15015",
+      "label": "15015_hanxin"
+    },
+    {
+      "index": 13,
+      "id": "15016",
+      "label": "15016_hanxin"
+    },
+    {
+      "index": 14,
+      "id": "15017",
+      "label": "15017_hanxin"
+    }
+  ]
+}

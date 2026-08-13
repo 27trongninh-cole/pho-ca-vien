@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/Actor_508_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/508_Zhadanren/508_Zhadanren_actorinfo.bytes",
+  "label": "zhadanren",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5082",
+      "label": "5082_zhadanren"
+    },
+    {
+      "index": 1,
+      "id": "5083",
+      "label": "5083_zhadanren"
+    },
+    {
+      "index": 2,
+      "id": "5084",
+      "label": "5084_zhadanren"
+    },
+    {
+      "index": 3,
+      "id": "5085",
+      "label": "5085_zhadanren"
+    },
+    {
+      "index": 4,
+      "id": "5086",
+      "label": "5086_zhadanren"
+    },
+    {
+      "index": 5,
+      "id": "5087",
+      "label": "5087_zhadanren"
+    },
+    {
+      "index": 6,
+      "id": "5088",
+      "label": "5088_zhadanren"
+    },
+    {
+      "index": 7,
+      "id": "5089",
+      "label": "5089_zhadanren"
+    },
+    {
+      "index": 8,
+      "id": "50810",
+      "label": "50810_zhadanren"
+    },
+    {
+      "index": 9,
+      "id": "50811",
+      "label": "50811_zhadanren"
+    }
+  ]
+}

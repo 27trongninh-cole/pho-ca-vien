@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/Actor_513_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/513_ShuSheng/513_ShuSheng_actorinfo.bytes",
+  "label": "shusheng",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5132",
+      "label": "5132_shusheng"
+    },
+    {
+      "index": 1,
+      "id": "5133",
+      "label": "5133_shusheng"
+    },
+    {
+      "index": 2,
+      "id": "5134",
+      "label": "5134_shusheng"
+    },
+    {
+      "index": 3,
+      "id": "5135",
+      "label": "5135_shusheng"
+    },
+    {
+      "index": 4,
+      "id": "5136",
+      "label": "5136_shusheng"
+    },
+    {
+      "index": 5,
+      "id": "5137",
+      "label": "5137_shusheng"
+    },
+    {
+      "index": 6,
+      "id": "5138",
+      "label": "5138_shusheng"
+    },
+    {
+      "index": 7,
+      "id": "5139",
+      "label": "5139_shusheng"
+    }
+  ]
+}

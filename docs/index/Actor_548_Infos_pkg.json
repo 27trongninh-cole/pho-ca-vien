@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_548_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/548_SunCe/548_SunCe_actorinfo.bytes",
+  "label": "sunce",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5482",
+      "label": "5482_sunce"
+    },
+    {
+      "index": 1,
+      "id": "5483",
+      "label": "5483_sunce"
+    },
+    {
+      "index": 2,
+      "id": "5484",
+      "label": "5484_sunce"
+    },
+    {
+      "index": 3,
+      "id": "5485",
+      "label": "5485_sunce"
+    },
+    {
+      "index": 4,
+      "id": "5486",
+      "label": "5486_sunce"
+    },
+    {
+      "index": 5,
+      "id": "5487",
+      "label": "5487_sunce"
+    },
+    {
+      "index": 6,
+      "id": "5488",
+      "label": "5488_sunce"
+    }
+  ]
+}

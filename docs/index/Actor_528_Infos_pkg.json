@@ -1,0 +1,57 @@
+{
+  "pkgFile": "pkg/Actor_528_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/528_DaMo/528_DaMo_actorinfo.bytes",
+  "label": "damo",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5282",
+      "label": "5282_damo"
+    },
+    {
+      "index": 1,
+      "id": "5283",
+      "label": "5283_damo"
+    },
+    {
+      "index": 2,
+      "id": "5284",
+      "label": "5284_damo"
+    },
+    {
+      "index": 3,
+      "id": "5285",
+      "label": "5285_damo"
+    },
+    {
+      "index": 4,
+      "id": "5286",
+      "label": "5286_damo"
+    },
+    {
+      "index": 5,
+      "id": "5287",
+      "label": "5287_damo"
+    },
+    {
+      "index": 6,
+      "id": "5289",
+      "label": "5289_damo"
+    },
+    {
+      "index": 7,
+      "id": "52810",
+      "label": "52810_damo"
+    },
+    {
+      "index": 8,
+      "id": "52811",
+      "label": "52811_damo"
+    }
+  ]
+}

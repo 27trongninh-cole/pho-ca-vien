@@ -1,0 +1,32 @@
+{
+  "pkgFile": "pkg/Actor_170_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/170_LiuBei/170_LiuBei_actorinfo.bytes",
+  "label": "liubei",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1702",
+      "label": "1702_liubei"
+    },
+    {
+      "index": 1,
+      "id": "1703",
+      "label": "1703_liubei"
+    },
+    {
+      "index": 2,
+      "id": "1704",
+      "label": "1704_liubei"
+    },
+    {
+      "index": 3,
+      "id": "1706",
+      "label": "1706_liubei"
+    }
+  ]
+}

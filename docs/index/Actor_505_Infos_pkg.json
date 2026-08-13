@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_505_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/505_Baldum/505_Baldum_actorinfo.bytes",
+  "label": "baldum",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5052",
+      "label": "5052_baldum"
+    },
+    {
+      "index": 1,
+      "id": "5053",
+      "label": "5053_baldum"
+    },
+    {
+      "index": 2,
+      "id": "5054",
+      "label": "5054_baldum"
+    },
+    {
+      "index": 3,
+      "id": "5055",
+      "label": "5055_baldum"
+    },
+    {
+      "index": 4,
+      "id": "5056",
+      "label": "5056_baldum"
+    },
+    {
+      "index": 5,
+      "id": "5057",
+      "label": "5057_baldum"
+    },
+    {
+      "index": 6,
+      "id": "5058",
+      "label": "5058_baldum"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/Actor_189_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/189_GuiGuZi/189_GuiGuZi_actorinfo.bytes",
+  "label": "guiguzi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1892",
+      "label": "1892_guiguzi"
+    },
+    {
+      "index": 1,
+      "id": "1893",
+      "label": "1893_guiguzi"
+    },
+    {
+      "index": 2,
+      "id": "1894",
+      "label": "1894_guiguzi"
+    },
+    {
+      "index": 3,
+      "id": "1896",
+      "label": "1896_guiguzi"
+    },
+    {
+      "index": 4,
+      "id": "1897",
+      "label": "1897_guiguzi"
+    },
+    {
+      "index": 5,
+      "id": "1898",
+      "label": "1898_guiguzi"
+    },
+    {
+      "index": 6,
+      "id": "1899",
+      "label": "1899_guiguzi"
+    }
+  ]
+}

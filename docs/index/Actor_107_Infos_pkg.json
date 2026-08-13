@@ -1,0 +1,72 @@
+{
+  "pkgFile": "pkg/Actor_107_Infos_pkg.bytes",
+  "entryPath": "Prefab_Hero/107_ZhaoYun/107_zhaoyun_actorinfo.bytes",
+  "label": "zhaoyun",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1072",
+      "label": "1072_zhaoyun"
+    },
+    {
+      "index": 1,
+      "id": "1074",
+      "label": "1074_zhaoyun"
+    },
+    {
+      "index": 2,
+      "id": "1075",
+      "label": "1075_zhaoyun"
+    },
+    {
+      "index": 3,
+      "id": "1076",
+      "label": "1076_zhaoyun"
+    },
+    {
+      "index": 4,
+      "id": "1077",
+      "label": "1077_zhaoyun"
+    },
+    {
+      "index": 5,
+      "id": "1078",
+      "label": "1078_zhaoyun"
+    },
+    {
+      "index": 6,
+      "id": "1079",
+      "label": "1079_zhaoyun"
+    },
+    {
+      "index": 7,
+      "id": "10710",
+      "label": "10710_zhaoyun"
+    },
+    {
+      "index": 8,
+      "id": "10712",
+      "label": "10712_zhaoyun"
+    },
+    {
+      "index": 9,
+      "id": "10713",
+      "label": "10713_zhaoyun"
+    },
+    {
+      "index": 10,
+      "id": "10715",
+      "label": "10715_zhaoyun"
+    },
+    {
+      "index": 11,
+      "id": "10716",
+      "label": "10716_zhaoyun"
+    }
+  ]
+}
