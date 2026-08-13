@@ -22,8 +22,15 @@
   .toggle button.active.blue{background:var(--blue);color:#fff;}
   .toggle button.active.red{background:var(--red);color:#fff;}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-  .targetcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 10px;text-align:center;cursor:pointer;font-size:13px;font-weight:600;}
+  .targetcard{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 10px;text-align:center;cursor:pointer;font-size:13px;font-weight:600;}
   .targetcard:active{background:var(--card2);}
+  .targetcard.pending{border-color:var(--ok);background:#123522;}
+  .targetcard .badge-check{display:none;position:absolute;top:6px;right:6px;width:18px;height:18px;border-radius:50%;background:var(--ok);color:#0f1115;font-size:12px;line-height:18px;font-weight:900;}
+  .targetcard.pending .badge-check{display:block;}
+  .targetcard .pendingtag{display:none;color:var(--ok);font-size:10px;margin-top:4px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .targetcard.pending .pendingtag{display:block;}
+  .bottombar{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 14px;max-width:640px;margin:0 auto;}
+  .bottombar .count{color:var(--sub);font-size:12px;margin-bottom:8px;text-align:center;}
   .searchbox{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--text);font-size:14px;margin-bottom:10px;}
   .chiprow{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;margin-bottom:6px;-webkit-overflow-scrolling:touch;}
   .chiprow::-webkit-scrollbar{display:none;}
@@ -70,6 +77,10 @@
   </div>
   <div class="grid" id="targetGrid"></div>
 </div>
+<div class="bottombar" id="bottomBar" style="display:none;">
+  <div class="count" id="pendingCount"></div>
+  <button class="btn" id="generateBtn">Tạo &amp; tải file</button>
+</div>
 
 <!-- Screen 2: chọn nguồn -->
 <div class="screen" id="screen-sources">
@@ -84,12 +95,11 @@
   <div class="skinlist" id="skinList"></div>
 </div>
 
-<!-- Screen 4: xác nhận & áp dụng -->
-<div class="screen" id="screen-apply">
+<!-- Screen 4: tạo & tải file (tổng hợp tất cả pending) -->
+<div class="screen" id="screen-generate">
   <div class="card">
-    <h2>Xác nhận ghép skin</h2>
-    <div class="subhead" id="applySummary"></div>
-    <button class="btn" id="applyBtn">Ghép &amp; tạo file pkg mới</button>
+    <h2>Danh sách thay đổi</h2>
+    <div class="subhead" id="pendingSummary"></div>
   </div>
   <div class="card" id="logCard" style="display:none;">
     <h2>Kết quả</h2>
@@ -111,12 +121,12 @@ const ROLES = ['Đấu sĩ','Đỡ đòn','Pháp sư','Sát thủ','Trợ thủ'
 const state = {
   team: 'blue',
   targetIndex: null,      // dữ liệu index/Prefab_Soldier.pkg.json
-  selectedTarget: null,   // {team,folder,entryPath,label}
+  selectedTarget: null,   // target đang được chọn nguồn cho (tạm thời, trong lúc điều hướng screen 2→3)
   sources: [],            // danh sách index nguồn đã fetch { baseName, pkgFile, entryPath, label, role, skins }
   roleFilter: 'All',
   searchText: '',
-  selectedSource: null,
-  selectedSkin: null,     // {type:'default'} | {type:'skin', index}
+  selectedSource: null,   // nguồn đang chọn (tạm thời)
+  pending: new Map(),     // key = target.entryPath -> {target, source, skin, skinLabel}
   resultBlob: null,
 };
 
@@ -133,15 +143,22 @@ function toast(msg, isErr){
 }
 
 /* ---------------- điều hướng màn hình ---------------- */
-const SCREENS = ['targets','sources','skins','apply'];
+const SCREENS = ['targets','sources','skins','generate'];
 const nav = []; // stack lịch sử để nút back hoạt động
 function showScreen(name, title){
   SCREENS.forEach(s => $('#screen-'+s).classList.toggle('active', s===name));
   $('#topTitle').textContent = title || 'ArumPrefab';
   $('#backBtn').style.visibility = nav.length ? 'visible' : 'hidden';
+  $('#bottomBar').style.display = (name==='targets' && state.pending.size>0) ? 'block' : 'none';
 }
 function goTo(name, title){
   nav.push({name: currentScreen, title: currentTitle});
+  currentScreen = name; currentTitle = title;
+  showScreen(name, title);
+}
+function goToRoot(name, title){
+  // về thẳng 1 screen, XOÁ lịch sử back (dùng khi hoàn tất 1 luồng con, quay lại trang chính)
+  nav.length = 0;
   currentScreen = name; currentTitle = title;
   showScreen(name, title);
 }
@@ -163,16 +180,27 @@ async function loadTargetIndex(){
 }
 function renderTargetGrid(){
   const list = state.targetIndex.targets.filter(t=>t.team===state.team);
-  $('#targetGrid').innerHTML = list.map((t,i)=>
-    `<div class="targetcard" data-i="${i}">${escapeHtml(t.label)}</div>`).join('');
+  $('#targetGrid').innerHTML = list.map((t,i)=>{
+    const pend = state.pending.get(t.entryPath);
+    return `<div class="targetcard${pend?' pending':''}" data-i="${i}">
+      <span class="badge-check">✓</span>
+      ${escapeHtml(t.label)}
+      ${pend?`<div class="pendingtag">${escapeHtml(pend.skinLabel)}</div>`:''}
+    </div>`;
+  }).join('');
   $$('.targetcard', $('#targetGrid')).forEach((el,i)=>{
     el.addEventListener('click', ()=>{
       state.selectedTarget = list[i];
-      nav.length = 0; // bắt đầu luồng mới từ đây
       goTo('sources', 'Chọn tướng nguồn');
       renderSourceList();
     });
   });
+  updateBottomBar();
+}
+function updateBottomBar(){
+  const n = state.pending.size;
+  $('#bottomBar').style.display = (currentScreen==='targets' && n>0) ? 'block' : 'none';
+  $('#pendingCount').textContent = n>0 ? `${n} file sẽ được ghép` : '';
 }
 $('#toggleBlue').addEventListener('click', ()=>{ state.team='blue'; $('#toggleBlue').classList.add('active'); $('#toggleRed').classList.remove('active'); renderTargetGrid(); });
 $('#toggleRed').addEventListener('click', ()=>{ state.team='red'; $('#toggleRed').classList.add('active'); $('#toggleBlue').classList.remove('active'); renderTargetGrid(); });
@@ -255,87 +283,110 @@ function renderSkinList(){
   $$('.skinbtn', $('#skinList')).forEach((btn,i)=>{
     btn.addEventListener('click', ()=>{
       const sk = src.skins[i];
-      state.selectedSkin = sk.type==='default' ? {type:'default'} : {type:'skin', index:sk.index};
-      state.resultBlob = null;
-      $('#logCard').style.display = 'none';
-      $('#downloadBtn').style.display = 'none';
-      $('#applySummary').innerHTML =
-        `Nguồn: <b>${escapeHtml(src.label)}</b> — ${escapeHtml(sk.label)}<br>Đích: <b>${escapeHtml(state.selectedTarget.label)}</b>`;
-      goTo('apply', 'Xác nhận');
+      const target = state.selectedTarget;
+      const skinChoice = sk.type==='default' ? {type:'default'} : {type:'skin', index:sk.index};
+      state.pending.set(target.entryPath, {
+        target,
+        source: src,
+        skin: skinChoice,
+        skinLabel: src.label + ' — ' + sk.label,
+      });
+      toast(`Đã chọn "${sk.label}" (${src.label}) cho ${target.label}`);
+      goToRoot('targets', 'ArumPrefab');
+      renderTargetGrid();
     });
   });
 }
 
-/* ---------------- Screen 4: áp dụng ---------------- */
-async function applyTransplant(){
-  const btn = $('#applyBtn');
-  btn.disabled = true;
-  btn.innerHTML = '<span class="spinner"></span>Đang xử lý...';
+/* ---------------- Screen 4: tạo & tải file (gộp toàn bộ pending) ---------------- */
+function renderPendingSummary(){
+  const items = Array.from(state.pending.values());
+  if(items.length===0){
+    $('#pendingSummary').innerHTML = '<div class="empty">Chưa có thay đổi nào.</div>';
+    return;
+  }
+  $('#pendingSummary').innerHTML = items.map(p=>
+    `• <b>${escapeHtml(p.target.label)}</b> ← ${escapeHtml(p.skinLabel)}`).join('<br>');
+}
+
+async function generateAll(){
+  const btn = $('#generateBtn');
+  goTo('generate', 'Tạo file');
+  renderPendingSummary();
   $('#logCard').style.display = 'block';
-  $('#logBox').innerHTML = '<div class="log">Đang tải &amp; giải nén dữ liệu...</div>';
   $('#downloadBtn').style.display = 'none';
+  state.resultBlob = null;
+
+  const items = Array.from(state.pending.values());
+  const logLines = [];
+  function setLog(extra){
+    $('#logBox').innerHTML = `<div class="log">${logLines.join('\n')}${extra?'\n\n'+extra:''}</div>`;
+  }
+  setLog('Đang tải dữ liệu...');
 
   try{
-    const target = state.selectedTarget;
-    const source = state.selectedSource;
-
     const dictBytes = await PkgIO.fetchDict(state.targetIndex.dictFile);
-    const [targetZip, sourceZip] = await Promise.all([
-      PkgIO.loadPkgZip(state.targetIndex.pkgFile),
-      PkgIO.loadPkgZip(source.pkgFile),
-    ]);
+    const targetZip = await PkgIO.loadPkgZip(state.targetIndex.pkgFile);
 
-    // đọc entry đích hiện tại từ zip đã load
-    const targetFileObj = targetZip.file(target.entryPath);
-    if(!targetFileObj) throw new Error('Không tìm thấy entry đích "'+target.entryPath+'" trong pkg');
-    const targetEntryBytes = new Uint8Array(await targetFileObj.async('uint8array'));
-    const targetPlain = await PkgIO.decodeEntry(targetEntryBytes, dictBytes);
+    // cache zip nguồn theo pkgFile để không load lại nhiều lần nếu dùng chung 1 nguồn cho nhiều đích
+    const sourceZipCache = new Map();
+    async function getSourceZip(pkgFile){
+      if(!sourceZipCache.has(pkgFile)) sourceZipCache.set(pkgFile, await PkgIO.loadPkgZip(pkgFile));
+      return sourceZipCache.get(pkgFile);
+    }
 
-    // đọc entry nguồn
-    const sourceFileObj = sourceZip.file(source.entryPath);
-    if(!sourceFileObj) throw new Error('Không tìm thấy entry nguồn "'+source.entryPath+'" trong '+source.pkgFile);
-    const sourceEntryBytes = new Uint8Array(await sourceFileObj.async('uint8array'));
-    const sourcePlain = await PkgIO.decodeEntry(sourceEntryBytes, dictBytes);
+    for(const item of items){
+      const {target, source, skin, skinLabel} = item;
+      logLines.push(`— ${target.label} ← ${skinLabel}`);
+      setLog('Đang xử lý...');
 
-    AOV.parseTopLevel(targetPlain);
-    AOV.parseTopLevel(sourcePlain);
+      const targetFileObj = targetZip.file(target.entryPath);
+      if(!targetFileObj) throw new Error('Không tìm thấy entry đích "'+target.entryPath+'" trong pkg');
+      const targetEntryBytes = new Uint8Array(await targetFileObj.async('uint8array'));
+      const targetPlain = await PkgIO.decodeEntry(targetEntryBytes, dictBytes);
 
-    $('#logBox').innerHTML = '<div class="log">Đang ghép field...</div>';
-    const {bytes: newPlain, ops} = Transplant.applySkinToTarget(targetPlain, sourcePlain, state.selectedSkin);
+      const sourceZip = await getSourceZip(source.pkgFile);
+      const sourceFileObj = sourceZip.file(source.entryPath);
+      if(!sourceFileObj) throw new Error('Không tìm thấy entry nguồn "'+source.entryPath+'" trong '+source.pkgFile);
+      const sourceEntryBytes = new Uint8Array(await sourceFileObj.async('uint8array'));
+      const sourcePlain = await PkgIO.decodeEntry(sourceEntryBytes, dictBytes);
 
-    // validate lại trước khi cho tải
-    AOV.parseTopLevel(newPlain);
-    (function deepValidate(b, start, end){
-      const recs = AOV.walkRecords(b, start, end);
-      for(const r of recs){
-        const inner = AOV.getContainerRecords(b, r.contentStart, r.contentEnd);
-        if(inner) deepValidate(b, inner.outerLenPos+8, r.contentEnd);
-      }
-    })(newPlain, AOV.getRootContainer(newPlain).outerLenPos+8, newPlain.length);
+      AOV.parseTopLevel(targetPlain);
+      AOV.parseTopLevel(sourcePlain);
 
-    $('#logBox').innerHTML = '<div class="log">Đang nén lại &amp; đóng gói pkg...</div>';
-    await PkgIO.writeEntryPlain(targetZip, target.entryPath, newPlain, dictBytes, 19);
+      const {bytes: newPlain, ops} = Transplant.applySkinToTarget(targetPlain, sourcePlain, skin);
+
+      AOV.parseTopLevel(newPlain);
+      (function deepValidate(b, start, end){
+        const recs = AOV.walkRecords(b, start, end);
+        for(const r of recs){
+          const inner = AOV.getContainerRecords(b, r.contentStart, r.contentEnd);
+          if(inner) deepValidate(b, inner.outerLenPos+8, r.contentEnd);
+        }
+      })(newPlain, AOV.getRootContainer(newPlain).outerLenPos+8, newPlain.length);
+
+      await PkgIO.writeEntryPlain(targetZip, target.entryPath, newPlain, dictBytes, 19);
+
+      const ovr = ops.filter(o=>o.action==='overwrite').length;
+      const ins = ops.filter(o=>o.action==='insert').length;
+      logLines[logLines.length-1] += `  ✓ (${ovr} ghi đè, ${ins} chèn mới)`;
+      setLog('Đang xử lý mục tiếp theo...');
+    }
+
+    setLog('Đang nén &amp; đóng gói pkg cuối cùng...');
     const blob = await PkgIO.exportPkgBlob(targetZip);
     state.resultBlob = blob;
-
-    const lines = ops.map(o=>{
-      const cls = o.action==='overwrite'?'ok':o.action==='insert'?'ins':'skip';
-      const tag = o.action==='overwrite'?'GHI ĐÈ':o.action==='insert'?'CHÈN MỚI':'BỎ QUA';
-      return `<span class="${cls}">[${tag}]</span> ${escapeHtml(o.name)}`;
-    });
-    $('#logBox').innerHTML = `<div class="log">${lines.join('\n')}\n\n<b>Kích thước actorinfo: ${targetPlain.length} → ${newPlain.length} byte</b>\nĐã validate lại toàn bộ cấu trúc — OK.\nĐã nén lại &amp; đóng gói vào pkg — sẵn sàng tải.</div>`;
+    setLog('<b>Hoàn tất! Đã ghép '+items.length+' file, sẵn sàng tải.</b>');
     $('#downloadBtn').style.display = 'block';
-    toast('Ghép thành công!');
+    toast('Tạo file thành công!');
   }catch(err){
-    $('#logBox').innerHTML = `<div class="log"><span class="err">LỖI: ${escapeHtml(err.message)}</span></div>`;
+    logLines.push(`<span class="err">LỖI: ${escapeHtml(err.message)}</span>`);
+    setLog('');
     toast('Lỗi: '+err.message, true);
     console.error(err);
-  }finally{
-    btn.disabled = false;
-    btn.textContent = 'Ghép & tạo file pkg mới';
   }
 }
-$('#applyBtn').addEventListener('click', applyTransplant);
+$('#generateBtn').addEventListener('click', generateAll);
 $('#downloadBtn').addEventListener('click', ()=>{
   if(!state.resultBlob) return;
   const url = URL.createObjectURL(state.resultBlob);
