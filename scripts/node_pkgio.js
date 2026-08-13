@@ -5,7 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_DIR = path.join(__dirname, '..', 'site');
+const SITE_DIR = path.join(__dirname, '..', 'docs');
 
 // Mock tối thiểu để 2 bundle browser chạy được trong Node (không có DOM thật)
 global.window = global;
