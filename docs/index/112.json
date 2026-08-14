@@ -2,7 +2,7 @@
   "pkgFile": "pkg/112_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/112_GongShuBan/112_GongShuBan_actorinfo.bytes",
   "label": "Yorn",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -44,6 +44,11 @@
       "label": "Thần thoại Hy Lạp"
     },
     {
+      "index": 8,
+      "id": "11210",
+      "label": "Lục nguyệt cung"
+    },
+    {
       "index": 9,
       "id": "11211",
       "label": "[ex][DNT]"
@@ -59,17 +64,17 @@
       "label": "Vệ Binh ngân hà"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "11215",
       "label": "Ký giả diệu kỳ"
     },
     {
-      "index": 13,
+      "index": 14,
       "id": "11216",
       "label": "Conan Edogawa"
     },
     {
-      "index": 14,
+      "index": 15,
       "id": "11217",
       "label": "Thương nhân sa mạc"
     }

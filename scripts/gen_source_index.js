@@ -77,7 +77,9 @@ function pickMainEntries(allEntries){
     pkgFile: 'pkg/' + fileName,
     entryPath: main.entryPath,
     label: main.name,
-    role: null, // TODO: điền thủ công 1 trong 6 giá trị: "Đấu sĩ","Đỡ đòn","Pháp sư","Sát thủ","Trợ thủ","Xạ thủ"
+    role: [], // TODO: điền thủ công 1 hoặc nhiều giá trị trong mảng, mỗi giá trị là 1 trong 6:
+              // "Đấu sĩ","Đỡ đòn","Pháp sư","Sát thủ","Trợ thủ","Xạ thủ"
+              // Tướng đa vai trò: liệt kê nhiều phần tử, vd role: ["Sát thủ","Đấu sĩ"]
     skins,
   };
 

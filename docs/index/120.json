@@ -2,7 +2,7 @@
   "pkgFile": "pkg/120_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/120_BaiQi/120_BaiQi_actorinfo.bytes",
   "label": "Mina",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,17 +49,17 @@
       "label": "Linh xà Yêu vũ"
     },
     {
-      "index": 9,
+      "index": 10,
       "id": "12012",
       "label": "Xích Huyết Diễm Quỷ"
     },
     {
-      "index": 10,
+      "index": 11,
       "id": "12013",
       "label": "Cẩm y vệ - Kim Ô"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "12014",
       "label": "Tiệc bãi biển"
     }

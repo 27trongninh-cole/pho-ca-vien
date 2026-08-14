@@ -2,7 +2,7 @@
   "pkgFile": "pkg/505_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/505_Baldum/505_Baldum_actorinfo.bytes",
   "label": "Baldum",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

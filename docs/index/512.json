@@ -2,7 +2,7 @@
   "pkgFile": "pkg/512_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/512_Rourke/512_Rourke_actorinfo.bytes",
   "label": "Rourke",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -34,14 +34,19 @@
       "label": "[ex][DNT]"
     },
     {
-      "index": 5,
+      "index": 6,
       "id": "5128",
       "label": "Cảnh sát trưởng"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "5129",
       "label": "Bách tướng Lão đại"
+    },
+    {
+      "index": 8,
+      "id": "51210",
+      "label": "Thánh Vệ"
     }
   ]
 }

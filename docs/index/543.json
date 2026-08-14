@@ -1,8 +1,8 @@
 {
   "pkgFile": "pkg/543_Infos.pkg.byte",
-  "entryPath": "Prefab_Hero/543_yao/543_Yao_actorinfo.bytes",
+  "entryPath": "Prefab_Hero/543_Yao/543_Yao_actorinfo.bytes",
   "label": "Aya",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -29,14 +29,19 @@
       "label": "Thủy thủ"
     },
     {
-      "index": 4,
+      "index": 6,
       "id": "5438",
       "label": "Công chúa Cầu Vồng"
     },
     {
-      "index": 5,
+      "index": 7,
       "id": "5439",
       "label": "Hỏa Hồ Tiên Ngư"
+    },
+    {
+      "index": 8,
+      "id": "54310",
+      "label": "Cinnamoroll's Dream"
     }
   ]
 }

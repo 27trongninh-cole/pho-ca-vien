@@ -2,7 +2,7 @@
   "pkgFile": "pkg/139_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/139_KongFuZi/139_KongFuZi_actorinfo.bytes",
   "label": "Kil'Groth",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

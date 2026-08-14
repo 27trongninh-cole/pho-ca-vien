@@ -2,7 +2,7 @@
   "pkgFile": "pkg/129_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/129_DianWei/129_DianWei_actorinfo.bytes",
   "label": "Triệu Vân",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,22 +49,22 @@
       "label": "Cẩm y vệ: Hỏa long"
     },
     {
-      "index": 8,
+      "index": 9,
       "id": "12911",
       "label": "Thần tài"
     },
     {
-      "index": 9,
+      "index": 11,
       "id": "12913",
       "label": "Minh Chung Long Đế"
     },
     {
-      "index": 10,
+      "index": 12,
       "id": "12914",
       "label": "Chiến Thần Vô Song"
     },
     {
-      "index": 11,
+      "index": 13,
       "id": "12915",
       "label": "Đấu Sĩ Võ Đài"
     }

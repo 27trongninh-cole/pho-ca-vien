@@ -2,7 +2,7 @@
   "pkgFile": "pkg/157_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/157_BuZhiHuoWu/157_BuZhiHuoWu_actorinfo.bytes",
   "label": "Raz",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -44,6 +44,11 @@
       "label": "Mãnh lôi thần quyền"
     },
     {
+      "index": 8,
+      "id": "15710",
+      "label": "MC võ đài"
+    },
+    {
       "index": 9,
       "id": "15711",
       "label": "Bão vũ Cuồng lôi"
@@ -59,7 +64,7 @@
       "label": "Lễ hội té nước"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "15715",
       "label": "Đại chiến bùng nổ"
     }

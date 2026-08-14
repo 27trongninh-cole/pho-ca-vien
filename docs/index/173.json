@@ -2,7 +2,7 @@
   "pkgFile": "pkg/173_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/173_LiYuanFang/173_LiYuanFang_actorinfo.bytes",
   "label": "Fennik",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1739",
       "label": "Phi hồ ẩn sĩ"
+    },
+    {
+      "index": 8,
+      "id": "17310",
+      "label": "Phong tranh thám xuân"
     },
     {
       "index": 9,

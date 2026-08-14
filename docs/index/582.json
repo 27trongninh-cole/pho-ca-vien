@@ -2,7 +2,7 @@
   "pkgFile": "pkg/582_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/582_Ciyuanfashi/582_Ciyuanfashi_actorinfo.bytes",
   "label": "ciyuanfashi",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

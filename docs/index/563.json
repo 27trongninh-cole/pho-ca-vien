@@ -2,7 +2,7 @@
   "pkgFile": "pkg/563_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/563_HaiNuo/563_HaiNuo_actorinfo.bytes",
   "label": "Heino",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/521_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/521_Florentino/521_Florentino_actorinfo.bytes",
   "label": "Florentino",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,27 +49,27 @@
       "label": "Bá vương Âm nhạc"
     },
     {
-      "index": 8,
+      "index": 9,
       "id": "52111",
       "label": "Hisoka"
     },
     {
-      "index": 9,
+      "index": 10,
       "id": "52112",
       "label": "Hỏa diệm Thần long"
     },
     {
-      "index": 10,
+      "index": 11,
       "id": "52113",
       "label": "S - Quang vinh"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "52114",
       "label": "Kỷ Nguyên Hổ Phách"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "52115",
       "label": "[UNKNOWN CODE:1A51C64811077D1B]"
     }

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/135_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/135_XiangYu/135_XiangYu_actorinfo.bytes",
   "label": "Thane",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

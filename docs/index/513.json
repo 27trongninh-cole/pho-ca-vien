@@ -2,7 +2,7 @@
   "pkgFile": "pkg/513_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/513_ShuSheng/513_ShuSheng_actorinfo.bytes",
   "label": "Zata",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

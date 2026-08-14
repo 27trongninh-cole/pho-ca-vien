@@ -2,7 +2,7 @@
   "pkgFile": "pkg/577_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/577_ShaoSiYuan/577_ShaoSiYuan_actorinfo.bytes",
   "label": "Dyadia",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/116_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/116_JingKe/116_JingKe_actorinfo.bytes",
   "label": "Butterfly",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -19,77 +19,67 @@
       "label": "Nữ quái nổi loạn"
     },
     {
-      "index": 5,
+      "index": 10,
       "id": "1166",
       "label": "Quận chúa đế chế"
     },
     {
-      "index": 6,
+      "index": 11,
       "id": "1167",
       "label": "Đông êm đềm"
     },
     {
-      "index": 7,
+      "index": 12,
       "id": "1168",
       "label": "Phượng cửu thiên"
     },
     {
-      "index": 8,
+      "index": 13,
       "id": "1169",
       "label": "Cẩm y vệ: Chu tước"
     },
     {
-      "index": 9,
+      "index": 15,
       "id": "11611",
       "label": "Asuna Tia Chớp"
     },
     {
-      "index": 10,
+      "index": 16,
       "id": "11612",
       "label": "Stacia"
     },
     {
-      "index": 11,
+      "index": 18,
       "id": "11614",
       "label": "Gánh anh đến cùng"
     },
     {
-      "index": 12,
+      "index": 19,
       "id": "11615",
       "label": "Kim Ngư thần nữ"
     },
     {
-      "index": 13,
-      "id": "11616",
-      "label": "[ex]未命名"
-    },
-    {
-      "index": 14,
+      "index": 21,
       "id": "11617",
       "label": "Nữ thần Khởi nguyên"
     },
     {
-      "index": 15,
+      "index": 23,
       "id": "11619",
       "label": "Tình yêu nổi loạn"
     },
     {
-      "index": 16,
+      "index": 24,
       "id": "11620",
       "label": "Rockgirl Siêu Đẳng"
     },
     {
-      "index": 17,
-      "id": "11621",
-      "label": "Bình Minh Tận Thế"
-    },
-    {
-      "index": 18,
+      "index": 26,
       "id": "11622",
       "label": "Ninh Tần"
     },
     {
-      "index": 19,
+      "index": 27,
       "id": "11623",
       "label": "Thỏ may mắn"
     }

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/159_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/159_Dolia/159_Dolia_actorinfo.bytes",
   "label": "EX",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

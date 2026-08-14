@@ -2,7 +2,7 @@
   "pkgFile": "pkg/522_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/522_Errol/522_Errol_actorinfo.bytes",
   "label": "Errol",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -34,11 +34,6 @@
       "label": "Huyết thủ Tu La"
     },
     {
-      "index": 5,
-      "id": "5227",
-      "label": "[ex][DNT]"
-    },
-    {
       "index": 6,
       "id": "5228",
       "label": "Stream đến bao giờ"
@@ -47,6 +42,11 @@
       "index": 7,
       "id": "5229",
       "label": "Sát thủ Mafia"
+    },
+    {
+      "index": 8,
+      "id": "52210",
+      "label": "Dị nhân tinh hệ"
     },
     {
       "index": 9,

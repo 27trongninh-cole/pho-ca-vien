@@ -2,7 +2,7 @@
   "pkgFile": "pkg/511_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/511_ZhuBaJie/511_ZhuBaJie_actorinfo.bytes",
   "label": "Ata",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -29,17 +29,22 @@
       "label": "Chiến binh hải tộc"
     },
     {
-      "index": 5,
+      "index": 6,
       "id": "5118",
       "label": "[ex][DNT]"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "5119",
       "label": "Gà mờ"
     },
     {
       "index": 8,
+      "id": "51110",
+      "label": "Giao long"
+    },
+    {
+      "index": 9,
       "id": "51111",
       "label": "Sushi Master"
     }

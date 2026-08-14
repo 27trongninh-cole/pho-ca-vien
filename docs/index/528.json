@@ -2,7 +2,7 @@
   "pkgFile": "pkg/528_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/528_DaMo/528_DaMo_actorinfo.bytes",
   "label": "Qi",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,12 +39,17 @@
       "label": "Búp bê Daruma"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "5289",
       "label": "Thần phong Hiệp nữ"
     },
     {
       "index": 8,
+      "id": "52810",
+      "label": "Milim Nava"
+    },
+    {
+      "index": 9,
       "id": "52811",
       "label": "Annie Leonhart"
     }

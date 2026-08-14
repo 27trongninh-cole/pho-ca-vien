@@ -2,7 +2,7 @@
   "pkgFile": "pkg/136_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/136_WuZeTian/136_WuZeTian_actorinfo.bytes",
   "label": "Ilumia",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1369",
       "label": "Quý cô nhà hát"
+    },
+    {
+      "index": 8,
+      "id": "13610",
+      "label": "Khải Huyền Thiên Hậu"
     },
     {
       "index": 9,

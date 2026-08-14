@@ -2,7 +2,7 @@
   "pkgFile": "pkg/149_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/149_LiuBang/149_LiuBang_actorinfo.bytes",
   "label": "Xeniel",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,14 +39,14 @@
       "label": "Thần thoại Hy Lạp"
     },
     {
-      "index": 6,
-      "id": "1498",
-      "label": "[ex][DNT]"
-    },
-    {
       "index": 7,
       "id": "1499",
       "label": "Shipper bánh mỳ"
+    },
+    {
+      "index": 8,
+      "id": "14910",
+      "label": "Hóa thân Tengu"
     },
     {
       "index": 9,

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/199_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/199_Li/199_Li_actorinfo.bytes",
   "label": "Eland'orr",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1999",
       "label": "Mộng Giới Thần Chủ"
+    },
+    {
+      "index": 8,
+      "id": "19910",
+      "label": "S - Quang vinh"
     }
   ]
 }

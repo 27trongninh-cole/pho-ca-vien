@@ -2,7 +2,7 @@
   "pkgFile": "pkg/121_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/121_MiYue/121_MiYue_actorinfo.bytes",
   "label": "Marja",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

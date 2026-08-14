@@ -2,7 +2,7 @@
   "pkgFile": "pkg/507_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/507_Flash/507_Flash_actorinfo.bytes",
   "label": "The Flash",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

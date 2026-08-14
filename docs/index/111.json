@@ -2,7 +2,7 @@
   "pkgFile": "pkg/111_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/111_SunShangXiang/111_SunShangXiang_actorinfo.bytes",
   "label": "Violet",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,6 +49,11 @@
       "label": "Pháo hoa Neon"
     },
     {
+      "index": 8,
+      "id": "11110",
+      "label": "Đặc dị"
+    },
+    {
       "index": 9,
       "id": "11111",
       "label": "Vợ người ta"
@@ -84,17 +89,17 @@
       "label": "Hoa thủy tiên"
     },
     {
-      "index": 17,
+      "index": 18,
       "id": "11120",
       "label": "Vọng nguyệt Long Cơ"
     },
     {
-      "index": 18,
+      "index": 19,
       "id": "11121",
       "label": "Nobara Kugisaki"
     },
     {
-      "index": 19,
+      "index": 20,
       "id": "11122",
       "label": "Nữ quản thú"
     }

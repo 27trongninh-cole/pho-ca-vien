@@ -2,7 +2,7 @@
   "pkgFile": "pkg/152_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/152_WangZhaoJun/152_WangZhaoJun_actorinfo.bytes",
   "label": "Điêu Thuyền",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -44,6 +44,11 @@
       "label": "Vũ điệu Nghê Thường"
     },
     {
+      "index": 8,
+      "id": "15210",
+      "label": "Mèo công nghệ"
+    },
+    {
       "index": 9,
       "id": "15211",
       "label": "Thần ngọc"
@@ -64,12 +69,12 @@
       "label": "Mối tình đầu"
     },
     {
-      "index": 13,
+      "index": 15,
       "id": "15217",
       "label": "Tuế Hàn Đỗ Quyên"
     },
     {
-      "index": 14,
+      "index": 16,
       "id": "15218",
       "label": "Nhật Nguyệt Thánh Linh"
     }

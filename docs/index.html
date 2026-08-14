@@ -248,8 +248,9 @@ function renderSourceList(){
   const q = state.searchText.trim().toLowerCase();
   let list = state.sources.filter(s=>{
     if(state.roleFilter!=='All'){
-      const role = s.role || 'Chưa phân loại';
-      if(role !== state.roleFilter) return false;
+      // role giờ là mảng (tướng có thể có nhiều vai trò), null/rỗng = "Chưa phân loại".
+      const roles = (Array.isArray(s.role) && s.role.length) ? s.role : ['Chưa phân loại'];
+      if(!roles.includes(state.roleFilter)) return false;
     }
     if(q && !s.label.toLowerCase().includes(q)) return false;
     return true;
@@ -265,7 +266,7 @@ function renderSourceList(){
       <div class="av">🎭</div>
       <div class="info">
         <div class="name">${escapeHtml(s.label)}</div>
-        <div class="role">${escapeHtml(s.role || 'Chưa phân loại')} · ${s.skins.length-1} skin</div>
+        <div class="role">${escapeHtml((Array.isArray(s.role) && s.role.length) ? s.role.join(' / ') : 'Chưa phân loại')} · ${s.skins.length-1} skin</div>
       </div>
     </div>`).join('');
   $$('.sourceitem', $('#sourceList')).forEach((el,i)=>{

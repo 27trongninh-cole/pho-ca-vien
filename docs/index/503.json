@@ -2,7 +2,7 @@
   "pkgFile": "pkg/503_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/503_Zuka/503_Zuka_ActorInfo.bytes",
   "label": "Zuka",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -21,7 +21,7 @@
     {
       "index": 2,
       "id": "5034",
-      "label": "Giám thị sấm sét"
+      "label": "Giáo sư sừng sỏ"
     },
     {
       "index": 3,
@@ -49,6 +49,11 @@
       "label": "Mãnh hổ"
     },
     {
+      "index": 8,
+      "id": "50310",
+      "label": "Rapper Big Panda"
+    },
+    {
       "index": 9,
       "id": "50311",
       "label": "Ngư ông đắc lợi"
@@ -59,7 +64,7 @@
       "label": "Xích Hùng Chiến Giáp"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "50314",
       "label": "[ex]"
     }

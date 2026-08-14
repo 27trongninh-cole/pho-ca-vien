@@ -2,7 +2,7 @@
   "pkgFile": "pkg/533_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/533_HouYi/533_HouYi_actorinfo.bytes",
   "label": "Laville",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -17,11 +17,6 @@
       "index": 1,
       "id": "5333",
       "label": "Tay súng diệt thần"
-    },
-    {
-      "index": 2,
-      "id": "5334",
-      "label": "Tay súng vô địch"
     },
     {
       "index": 3,
@@ -47,6 +42,11 @@
       "index": 7,
       "id": "5339",
       "label": "Chiến thần MOBA"
+    },
+    {
+      "index": 8,
+      "id": "53310",
+      "label": "Vệ binh Giáng sinh"
     },
     {
       "index": 9,

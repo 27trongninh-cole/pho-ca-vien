@@ -2,7 +2,7 @@
   "pkgFile": "pkg/502_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/502_Astrid/502_Astrid_actorinfo.bytes",
   "label": "Astrid",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "5029",
       "label": "Hoa anh đào"
+    },
+    {
+      "index": 8,
+      "id": "50210",
+      "label": "Nữ thuyền trưởng"
     },
     {
       "index": 9,

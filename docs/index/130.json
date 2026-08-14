@@ -2,7 +2,7 @@
   "pkgFile": "pkg/130_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/130_GongBenWuZang/130_GongBenWuZang_actorinfo.bytes",
   "label": "Airi",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -44,6 +44,11 @@
       "label": "Phó kiếm đạo"
     },
     {
+      "index": 8,
+      "id": "13010",
+      "label": "Mỵ hồ"
+    },
+    {
       "index": 9,
       "id": "13011",
       "label": "Đặc công tử điệp"
@@ -69,17 +74,17 @@
       "label": "Thứ nguyên Vệ thần"
     },
     {
-      "index": 15,
+      "index": 16,
       "id": "13018",
       "label": "Ninja ẩm thực"
     },
     {
-      "index": 16,
+      "index": 17,
       "id": "13019",
       "label": "Búp bê Mộng mị"
     },
     {
-      "index": 17,
+      "index": 18,
       "id": "13020",
       "label": "Quản lý tài năng"
     }

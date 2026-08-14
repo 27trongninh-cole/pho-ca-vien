@@ -2,7 +2,7 @@
   "pkgFile": "pkg/508_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/508_Zhadanren/508_Zhadanren_actorinfo.bytes",
   "label": "Wisp",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "5089",
       "label": "Bé hề"
+    },
+    {
+      "index": 8,
+      "id": "50810",
+      "label": "Tiểu Ronin"
     },
     {
       "index": 9,

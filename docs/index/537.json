@@ -2,7 +2,7 @@
   "pkgFile": "pkg/537_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/537_Trip/537_Trip_actorinfo.bytes",
   "label": "Allain",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "5379",
       "label": "Lân sư Vũ thần"
+    },
+    {
+      "index": 8,
+      "id": "53710",
+      "label": "Cẩm y vệ - Xích Hổ"
     }
   ]
 }

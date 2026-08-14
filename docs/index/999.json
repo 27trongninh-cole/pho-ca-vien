@@ -2,7 +2,7 @@
   "pkgFile": "pkg/999_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/999_ChessPlayer/999_ChessPlayer_actorinfo.bytes",
   "label": "Tiểu Cara",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "9999",
       "label": "Thỏ - Sao đỏ học đường II"
+    },
+    {
+      "index": 8,
+      "id": "99910",
+      "label": "Thỏ - Sao đỏ học đường III"
     },
     {
       "index": 9,

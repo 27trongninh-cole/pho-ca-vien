@@ -2,7 +2,7 @@
   "pkgFile": "pkg/105_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/105_LianPo/105_lianpo_actorinfo.bytes",
   "label": "Toro",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

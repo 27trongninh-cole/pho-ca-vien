@@ -2,7 +2,7 @@
   "pkgFile": "pkg/131_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/131_LiBai/131_LiBai_actorinfo.bytes",
   "label": "Murad",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1319",
       "label": "Siêu việt 2.0"
+    },
+    {
+      "index": 8,
+      "id": "13110",
+      "label": "Chí tôn thần kiếm"
     },
     {
       "index": 9,

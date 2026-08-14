@@ -2,7 +2,7 @@
   "pkgFile": "pkg/177_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/177_ChengJiSiHan/177_ChengJiSiHan_actorinfo.bytes",
   "label": "Lindis",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -34,9 +34,14 @@
       "label": "Đồng phục Shihakusho"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "1779",
       "label": "Đặc vụ thần thám"
+    },
+    {
+      "index": 8,
+      "id": "17710",
+      "label": "Linh Hoa tiễn"
     }
   ]
 }

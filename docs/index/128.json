@@ -2,7 +2,7 @@
   "pkgFile": "pkg/128_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/128_CaoCao/128_CaoCao_actorinfo.bytes",
   "label": "Lữ Bố",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,12 +49,17 @@
       "label": "Ichigo Kurosaki"
     },
     {
+      "index": 8,
+      "id": "12810",
+      "label": "Thần ngọc"
+    },
+    {
       "index": 9,
       "id": "12811",
       "label": "Vũ điệu samba"
     },
     {
-      "index": 10,
+      "index": 11,
       "id": "12813",
       "label": "Cửu Thiên Lôi Thần"
     }

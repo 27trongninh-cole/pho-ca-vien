@@ -2,7 +2,7 @@
   "pkgFile": "pkg/124_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/124_ZhouYu/124_ZhouYu_actorinfo.bytes",
   "label": "Ignis",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

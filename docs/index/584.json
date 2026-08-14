@@ -2,7 +2,7 @@
   "pkgFile": "pkg/584_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/584_CiYuansheshou/584_CiYuansheshou_actorinfo.bytes",
   "label": "ciyuansheshou",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

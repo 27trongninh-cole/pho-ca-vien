@@ -2,7 +2,7 @@
   "pkgFile": "pkg/126_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/126_XiaHouDun/126_XiaHouDun_actorinfo.bytes",
   "label": "Arduin",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1269",
       "label": "Ngạo Hổ Hàn Đao"
+    },
+    {
+      "index": 8,
+      "id": "12610",
+      "label": "Nhà vô địch"
     },
     {
       "index": 9,

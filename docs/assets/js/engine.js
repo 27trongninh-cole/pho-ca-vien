@@ -32,7 +32,12 @@ const AOV = (() => {
   function parseTopLevel(bytes){
     const totalLen=ru32(bytes,0);
     if(totalLen!==bytes.length) throw new Error('Sai định dạng: total_len='+totalLen+' nhưng file dài '+bytes.length+'. File có thể còn bị nén zstd, cần giải nén trước.');
-    return walkRecords(bytes, findTopLevelStart(bytes), bytes.length);
+    // Định vị root container theo cấu trúc nhị phân cố định (giống hệt getRootContainer bên dưới,
+    // hàm mà toàn bộ logic ghép skin thực tế đang dùng) — KHÔNG dò tìm chuỗi "ActorName" nữa,
+    // vì một số actorinfo hợp lệ (vd 511_ZhuBaJie) không có field này, gây báo lỗi oan.
+    const root = getRootContainer(bytes);
+    if(!root) throw new Error('Không xác định được vùng root container — file có thể không đúng định dạng ActorInfo đã giải nén');
+    return root.records;
   }
   function getContainerRecords(bytes, trioStart, trioEnd){
     for(let p=trioStart+4;p<trioEnd-4;p++){

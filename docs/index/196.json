@@ -2,7 +2,7 @@
   "pkgFile": "pkg/196_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/196_Elsu/196_Elsu_actorinfo.bytes",
   "label": "Elsu",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,22 +49,27 @@
       "label": "Đôi cánh tự do"
     },
     {
-      "index": 9,
+      "index": 8,
+      "id": "19610",
+      "label": "Trấn Thiên phi hồ"
+    },
+    {
+      "index": 10,
       "id": "19612",
       "label": "Hỏa diệm Chu Tước"
     },
     {
-      "index": 10,
+      "index": 11,
       "id": "19613",
       "label": "Tuyệt ảnh"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "19614",
       "label": "DJ <Siêu Đẳng>"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "19615",
       "label": "Xạ Thần Mộng Giới"
     }

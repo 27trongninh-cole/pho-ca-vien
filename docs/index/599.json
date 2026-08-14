@@ -2,7 +2,7 @@
   "pkgFile": "pkg/599_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/599_LvMeng/599_LvMeng_actorinfo.bytes",
   "label": "Billow",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

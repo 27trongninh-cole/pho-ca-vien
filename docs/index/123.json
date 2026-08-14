@@ -2,7 +2,7 @@
   "pkgFile": "pkg/123_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/123_LvBu/123_LvBu_actorinfo.bytes",
   "label": "Maloch",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1239",
       "label": "Đại ca Mukbang"
+    },
+    {
+      "index": 8,
+      "id": "12310",
+      "label": "Quỷ nhãn ma thể"
     },
     {
       "index": 9,

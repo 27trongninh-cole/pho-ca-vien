@@ -2,7 +2,7 @@
   "pkgFile": "pkg/168_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/168_Niu/168_Niu_actorinfo.bytes",
   "label": "Lumburr",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/190_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/190_ZhuGeLiang/190_ZhuGeLiang_actorinfo.bytes",
   "label": "Tulen",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

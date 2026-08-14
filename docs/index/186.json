@@ -2,7 +2,7 @@
   "pkgFile": "pkg/186_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/186_TaiYiZhenRen/186_TaiYiZhenRen_actorinfo.bytes",
   "label": "TeeMee",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -34,12 +34,17 @@
       "label": "Tanuki chiêu tài"
     },
     {
-      "index": 7,
+      "index": 8,
+      "id": "18610",
+      "label": "Lẩu nấm"
+    },
+    {
+      "index": 9,
       "id": "18611",
       "label": "Giấc mơ ngọt ngào"
     },
     {
-      "index": 8,
+      "index": 10,
       "id": "18612",
       "label": "Fan cuồng Esports"
     }

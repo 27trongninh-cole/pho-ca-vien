@@ -2,7 +2,7 @@
   "pkgFile": "pkg/501_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/501_TelAnnas/501_TelAnnas_actorinfo.bytes",
   "label": "Tel'Annas",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "5019",
       "label": "Thứ nguyên vệ thần"
+    },
+    {
+      "index": 8,
+      "id": "50110",
+      "label": "[UNKNOWN CODE:FD6E6E91A94325FE]"
     },
     {
       "index": 9,

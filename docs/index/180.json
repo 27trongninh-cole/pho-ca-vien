@@ -2,7 +2,7 @@
   "pkgFile": "pkg/180_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/180_NeZha/180_NeZha_actorinfo.bytes",
   "label": "Max",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -46,7 +46,12 @@
     {
       "index": 7,
       "id": "1809",
-      "label": "Không trêu bạn"
+      "label": "\"Không trêu bạn\""
+    },
+    {
+      "index": 8,
+      "id": "18010",
+      "label": "Trà chanh"
     }
   ]
 }

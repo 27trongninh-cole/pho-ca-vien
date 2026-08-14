@@ -2,7 +2,7 @@
   "pkgFile": "pkg/568_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/568_MingShiYin/568_MingShiYin_actorinfo.bytes",
   "label": "Ming",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

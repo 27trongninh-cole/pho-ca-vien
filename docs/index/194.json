@@ -2,7 +2,7 @@
   "pkgFile": "pkg/194_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/194_SuLie/194_SuLie_actorinfo.bytes",
   "label": "Wiro",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

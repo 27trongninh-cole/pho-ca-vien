@@ -2,7 +2,7 @@
   "pkgFile": "pkg/154_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/154_HuaMuLan/154_HuaMuLan_actorinfo.bytes",
   "label": "Yena",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -12,11 +12,6 @@
       "index": 0,
       "id": "1542",
       "label": "Khuyên bạc"
-    },
-    {
-      "index": 1,
-      "id": "1543",
-      "label": "Thỏ may mắn"
     },
     {
       "index": 2,
@@ -49,27 +44,32 @@
       "label": "Nữ cướp biển"
     },
     {
+      "index": 8,
+      "id": "15410",
+      "label": "WaVe"
+    },
+    {
       "index": 9,
       "id": "15411",
       "label": "Vũ điệu Giáng Sinh"
     },
     {
-      "index": 10,
+      "index": 11,
       "id": "15413",
       "label": "Huyền Cửu Thiên"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "15414",
       "label": "Trấn Yêu Thần Lộc"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "15415",
       "label": "Thần Sứ kiều diễm"
     },
     {
-      "index": 13,
+      "index": 14,
       "id": "15416",
       "label": "Hoa tiêu Mộng giới"
     }

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/514_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/514_Roxi/514_Roxi_actorinfo.bytes",
   "label": "Roxie",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,9 +39,14 @@
       "label": "Cháy phố"
     },
     {
-      "index": 6,
+      "index": 8,
       "id": "5149",
       "label": "Hỏa thuật sư"
+    },
+    {
+      "index": 9,
+      "id": "51410",
+      "label": "\"Bạch Tuyết\" Kỳ Lạ"
     }
   ]
 }

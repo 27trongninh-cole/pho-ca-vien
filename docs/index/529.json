@@ -2,7 +2,7 @@
   "pkgFile": "pkg/529_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/529_Volkath/529_Volkath_actorinfo.bytes",
   "label": "Volkath",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/541_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/541_Bonnie/541_Bonnie_actorinfo.bytes",
   "label": "Bonnie",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

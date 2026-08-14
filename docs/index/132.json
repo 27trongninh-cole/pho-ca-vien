@@ -1,8 +1,8 @@
 {
   "pkgFile": "pkg/132_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/132_MaKeBoLuo/132_MaKeBoLuo_actorinfo.bytes",
-  "label": "Hiệu ứng trầm hùng bá khí",
-  "role": null,
+  "label": "Hayate",
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1329",
       "label": "Bạch vô thường"
+    },
+    {
+      "index": 8,
+      "id": "13210",
+      "label": "Bóng người dưới trăng"
     },
     {
       "index": 9,

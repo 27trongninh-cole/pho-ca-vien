@@ -2,7 +2,7 @@
   "pkgFile": "pkg/206_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/206_XiaLuoTe/206_XiaLuoTe_actorinfo.bytes",
   "label": "Charlotte",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

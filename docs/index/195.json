@@ -2,7 +2,7 @@
   "pkgFile": "pkg/195_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/195_BaiLiXuanCe/195_BaiLiXuanCe_actorinfo.bytes",
   "label": "Enzo",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,17 +39,22 @@
       "label": "Sát quỷ đoàn"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "1959",
       "label": "Kurapika"
     },
     {
       "index": 8,
+      "id": "19510",
+      "label": "Sát thần Bạch Hổ"
+    },
+    {
+      "index": 9,
       "id": "19511",
       "label": "Cá heo bảnh chọe"
     },
     {
-      "index": 9,
+      "index": 10,
       "id": "19512",
       "label": "Shinobi Đoạt mệnh"
     }

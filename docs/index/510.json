@@ -2,7 +2,7 @@
   "pkgFile": "pkg/510_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/510_Liliana/510_Liliana_actorinfo.bytes",
   "label": "Liliana",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,17 +49,22 @@
       "label": "Thủy thủ hồ ly"
     },
     {
-      "index": 9,
+      "index": 8,
+      "id": "51010",
+      "label": "WaVe"
+    },
+    {
+      "index": 12,
       "id": "51014",
       "label": "Lưu thủy Thần long"
     },
     {
-      "index": 10,
+      "index": 13,
       "id": "51015",
       "label": "Thần hổ Xiêm La"
     },
     {
-      "index": 11,
+      "index": 14,
       "id": "51016",
       "label": "Ma Pháp Tối Thượng"
     }

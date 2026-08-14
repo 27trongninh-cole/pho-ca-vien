@@ -2,7 +2,7 @@
   "pkgFile": "pkg/567_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/567_AiLin/567_AiLin_actorinfo.bytes",
   "label": "Erin",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -14,17 +14,17 @@
       "label": "Mộc tinh linh"
     },
     {
-      "index": 1,
+      "index": 2,
       "id": "5674",
       "label": "Tình yêu cổ tích"
     },
     {
-      "index": 2,
+      "index": 3,
       "id": "5675",
       "label": "Huyễn Ảnh Mị Điệp"
     },
     {
-      "index": 3,
+      "index": 4,
       "id": "5676",
       "label": "Nhạc Công Phiêu Du"
     }

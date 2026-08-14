@@ -2,7 +2,7 @@
   "pkgFile": "pkg/548_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/548_SunCe/548_SunCe_actorinfo.bytes",
   "label": "Bijan",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

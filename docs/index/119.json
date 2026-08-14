@@ -2,7 +2,7 @@
   "pkgFile": "pkg/119_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/119_BianQue/119_BianQue_actorinfo.bytes",
   "label": "Mganga",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

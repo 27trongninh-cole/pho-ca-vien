@@ -2,7 +2,7 @@
   "pkgFile": "pkg/106_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/106_XiaoQiao/106_xiaoqiao_actorinfo.bytes",
   "label": "Krixi",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -44,6 +44,11 @@
       "label": "Thần thoại Hy Lạp"
     },
     {
+      "index": 8,
+      "id": "10610",
+      "label": "Thủy thủ"
+    },
+    {
       "index": 9,
       "id": "10611",
       "label": "[UNKNOWN CODE:D0B4E5E09F2AAF88]"
@@ -64,37 +69,37 @@
       "label": "Mặc định"
     },
     {
-      "index": 13,
+      "index": 14,
       "id": "10614",
       "label": "Nàng tiên nổi loạn"
     },
     {
-      "index": 14,
+      "index": 15,
       "id": "10615",
       "label": "[ex][DNT]"
     },
     {
-      "index": 15,
+      "index": 16,
       "id": "10616",
       "label": "Tiểu hồng mai"
     },
     {
-      "index": 16,
+      "index": 18,
       "id": "10618",
       "label": "Quán quân"
     },
     {
-      "index": 17,
+      "index": 19,
       "id": "10619",
       "label": "Kimono"
     },
     {
-      "index": 18,
+      "index": 21,
       "id": "10621",
       "label": "Phù thủy thời không"
     },
     {
-      "index": 19,
+      "index": 22,
       "id": "10622",
       "label": "Uyên Ương mộng điệp"
     }

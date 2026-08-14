@@ -2,7 +2,7 @@
   "pkgFile": "pkg/166_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/166_YaSeWang/166_YaSeWang_actorinfo.bytes",
   "label": "Arthur",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -52,6 +52,11 @@
       "index": 8,
       "id": "1661",
       "label": "Mặc định"
+    },
+    {
+      "index": 9,
+      "id": "16610",
+      "label": "Tôn Hổ vô song"
     },
     {
       "index": 10,

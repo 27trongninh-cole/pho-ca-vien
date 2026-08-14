@@ -2,7 +2,7 @@
   "pkgFile": "pkg/520_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/520_Veres/520_Veres_actorinfo.bytes",
   "label": "Veres",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "5209",
       "label": "Phù thủy trang điểm"
+    },
+    {
+      "index": 8,
+      "id": "52010",
+      "label": "Tiệc bãi biển"
     },
     {
       "index": 9,

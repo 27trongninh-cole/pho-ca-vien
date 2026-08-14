@@ -41,19 +41,27 @@ async function decodeEntryBuf(entryBuf, dictBytes){
   const zstd = await getZstd();
   const simple = new zstd.Simple();
   const ddict = new zstd.Dict.Decompression(dictBytes);
-  const compressed = new Uint8Array(entryBuf.subarray(8));
-  const out = simple.decompressUsingDict(compressed, ddict);
-  if(!out) throw new Error('Giải nén zstd thất bại');
-  return Buffer.from(out);
+  try {
+    const compressed = new Uint8Array(entryBuf.subarray(8));
+    const out = simple.decompressUsingDict(compressed, ddict);
+    if(!out) throw new Error('Giải nén zstd thất bại');
+    return Buffer.from(out);
+  } finally {
+    ddict.delete();
+  }
 }
 
 async function encodeEntryBuf(plainBuf, dictBytes, level){
   const zstd = await getZstd();
   const simple = new zstd.Simple();
   const cdict = new zstd.Dict.Compression(dictBytes, level || 19);
-  const compressed = simple.compressUsingDict(new Uint8Array(plainBuf), cdict);
-  const header = buildHeader(plainBuf.length);
-  return Buffer.concat([header, Buffer.from(compressed)]);
+  try {
+    const compressed = simple.compressUsingDict(new Uint8Array(plainBuf), cdict);
+    const header = buildHeader(plainBuf.length);
+    return Buffer.concat([header, Buffer.from(compressed)]);
+  } finally {
+    cdict.delete();
+  }
 }
 
 async function loadZip(pkgPath){

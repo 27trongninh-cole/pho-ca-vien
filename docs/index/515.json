@@ -2,7 +2,7 @@
   "pkgFile": "pkg/515_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/515_Richter/515_Richter_actorinfo.bytes",
   "label": "Richter",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -12,11 +12,6 @@
       "index": 0,
       "id": "5152",
       "label": "Bá tước"
-    },
-    {
-      "index": 1,
-      "id": "5153",
-      "label": "Thống soái kháng chiến"
     },
     {
       "index": 2,
@@ -39,9 +34,14 @@
       "label": "Nguyệt loan đao"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "5159",
       "label": "Cứu hộ"
+    },
+    {
+      "index": 8,
+      "id": "51510",
+      "label": "Tổng Lãnh thiên thần"
     }
   ]
 }

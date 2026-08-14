@@ -2,7 +2,7 @@
   "pkgFile": "pkg/127_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/127_ZhenJi/127_ZhenJi_actorinfo.bytes",
   "label": "Azzen'Ka",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -36,7 +36,7 @@
     {
       "index": 5,
       "id": "1277",
-      "label": "Giáng sinh An lành"
+      "label": "Giáng sinh \"An lành\""
     },
     {
       "index": 6,

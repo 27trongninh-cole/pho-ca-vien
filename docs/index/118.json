@@ -2,7 +2,7 @@
   "pkgFile": "pkg/118_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/118_SunBin/118_SunBin_actorinfo.bytes",
   "label": "Alice",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,6 +49,11 @@
       "label": "Quân nhạc Athanor"
     },
     {
+      "index": 8,
+      "id": "11810",
+      "label": "Tiểu tiên tử"
+    },
+    {
       "index": 9,
       "id": "11811",
       "label": "The Butterfly Mansion Girl"
@@ -64,22 +69,17 @@
       "label": "Eternal Sailor Chibi Moon"
     },
     {
-      "index": 12,
-      "id": "11814",
-      "label": "[ex]未命名"
-    },
-    {
-      "index": 13,
+      "index": 15,
       "id": "11817",
       "label": "Xứ sở diệu kỳ"
     },
     {
-      "index": 14,
+      "index": 16,
       "id": "11818",
       "label": "Ốc quế tinh nghịch"
     },
     {
-      "index": 15,
+      "index": 17,
       "id": "11819",
       "label": "Tiên Nữ Mộng Giới"
     }

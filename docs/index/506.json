@@ -2,7 +2,7 @@
   "pkgFile": "pkg/506_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/506_DarkKnight/506_DarkKnight_actorinfo.bytes",
   "label": "Omen",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -44,22 +44,22 @@
       "label": "Quái Kiệt Guitar"
     },
     {
-      "index": 8,
+      "index": 9,
       "id": "50611",
       "label": "Huyết ảnh Tà thần"
     },
     {
-      "index": 9,
+      "index": 10,
       "id": "50612",
       "label": "Chiến xa hắc ám"
     },
     {
-      "index": 10,
+      "index": 11,
       "id": "50613",
       "label": "Chiến xa quang minh"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "50614",
       "label": "Liệt Hỏa Thiên Cang"
     }

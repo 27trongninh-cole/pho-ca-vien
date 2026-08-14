@@ -2,7 +2,7 @@
   "pkgFile": "pkg/142_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/142_CaiWenJi/142_CaiWenJi_actorinfo.bytes",
   "label": "Natalya",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,6 +49,11 @@
       "label": "Nữ quái công nghệ"
     },
     {
+      "index": 8,
+      "id": "14210",
+      "label": "Nghệ sĩ ma mị"
+    },
+    {
       "index": 9,
       "id": "1421",
       "label": "Mặc định"
@@ -59,22 +64,22 @@
       "label": "Thần phú quý"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "14213",
       "label": "Băng lam nữ soái"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "14214",
       "label": "Nguyệt Ảnh Kiếm Tiên"
     },
     {
-      "index": 13,
+      "index": 14,
       "id": "14215",
       "label": "Kuromi's Heart"
     },
     {
-      "index": 14,
+      "index": 15,
       "id": "14216",
       "label": "Thánh Ca Huyết Tế"
     }

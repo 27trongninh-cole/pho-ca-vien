@@ -2,7 +2,7 @@
   "pkgFile": "pkg/148_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/148_JiangZiYa/148_JiangZiYa_actorinfo.bytes",
   "label": "Preyta",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/597_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/597_KuangTie/597_KuangTie_actorinfo.bytes",
   "label": "Biron",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

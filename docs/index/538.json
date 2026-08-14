@@ -2,7 +2,7 @@
   "pkgFile": "pkg/538_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/538_Iggy/538_Iggy_actorinfo.bytes",
   "label": "Iggy",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

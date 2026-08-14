@@ -1,8 +1,8 @@
 {
   "pkgFile": "pkg/170_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/170_LiuBei/170_LiuBei_actorinfo.bytes",
-  "label": "Slimz",
-  "role": null,
+  "label": "Moren",
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -24,9 +24,9 @@
       "label": "Binh nhì"
     },
     {
-      "index": 3,
+      "index": 4,
       "id": "1706",
-      "label": "Siêu việt"
+      "label": "Thợ cắt cáp"
     }
   ]
 }

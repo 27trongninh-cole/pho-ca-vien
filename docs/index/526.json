@@ -2,7 +2,7 @@
   "pkgFile": "pkg/526_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/526_Summoner/526_Summoner_actorinfo.bytes",
   "label": "Ishar",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "5269",
       "label": "Rồng bé bự"
+    },
+    {
+      "index": 8,
+      "id": "52610",
+      "label": "Quận chúa sông Nile"
     }
   ]
 }

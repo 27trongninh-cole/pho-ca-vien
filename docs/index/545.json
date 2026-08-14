@@ -2,7 +2,7 @@
   "pkgFile": "pkg/545_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/545_Aim/545_Aim_actorinfo.bytes",
   "label": "Yue",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

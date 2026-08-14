@@ -2,7 +2,7 @@
   "pkgFile": "pkg/187_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/187_DongHuangTaiYi/187_DongHuangTaiYi_actorinfo.bytes",
   "label": "Arum",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,27 +39,32 @@
       "label": "Nữ hoàng gấu xám"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "1879",
       "label": "Quản lý tài năng"
     },
     {
       "index": 8,
+      "id": "18710",
+      "label": "Bạn muốn hẹn hò?"
+    },
+    {
+      "index": 11,
       "id": "18713",
       "label": "Thần phong Thống lĩnh"
     },
     {
-      "index": 9,
+      "index": 12,
       "id": "18714",
       "label": "Thần tượng nhạc rock"
     },
     {
-      "index": 10,
+      "index": 13,
       "id": "18715",
       "label": "Ký Ức Đại Dương"
     },
     {
-      "index": 11,
+      "index": 14,
       "id": "18716",
       "label": "Chị đại Gangster"
     }

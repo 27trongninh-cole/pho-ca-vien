@@ -2,7 +2,7 @@
   "pkgFile": "pkg/523_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/523_Darcy/523_Darcy_actorinfo.bytes",
   "label": "D'Arcy",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

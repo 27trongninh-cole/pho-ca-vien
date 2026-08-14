@@ -2,7 +2,7 @@
   "pkgFile": "pkg/593_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/593_MaChao/593_MaChao_actorinfo.bytes",
   "label": "Tamyn",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

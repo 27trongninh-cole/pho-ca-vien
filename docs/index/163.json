@@ -2,7 +2,7 @@
   "pkgFile": "pkg/163_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/163_JuYouJing/163_JuYouJing_actorinfo.bytes",
   "label": "Ryoma",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,6 +49,11 @@
       "label": "Đặc nhiệm Giáng sinh"
     },
     {
+      "index": 8,
+      "id": "16310",
+      "label": "Khiêu chiến"
+    },
+    {
       "index": 9,
       "id": "16311",
       "label": "Ailing Samurai"
@@ -59,12 +64,12 @@
       "label": "Maple Frost"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "16314",
       "label": "Thống lãnh quỷ binh"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "16315",
       "label": "[ex]"
     }

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/544_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/544_Painter/544_Painter_actorinfo.bytes",
   "label": "Yan",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/527_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/527_Sephera/527_Sephera_actorinfo.bytes",
   "label": "Ishar",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "5279",
       "label": "Cô thủ thư"
+    },
+    {
+      "index": 8,
+      "id": "52710",
+      "label": "Bách nhạn Ngân linh"
     },
     {
       "index": 9,

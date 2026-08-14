@@ -1,8 +1,8 @@
 {
   "pkgFile": "pkg/531_Infos.pkg.byte",
-  "entryPath": "Prefab_Hero/531_keera/531_Keera_actorinfo.bytes",
+  "entryPath": "Prefab_Hero/531_Keera/531_Keera_actorinfo.bytes",
   "label": "Keera",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -45,21 +45,26 @@
     },
     {
       "index": 8,
+      "id": "53110",
+      "label": "Nghệ sĩ Graffiti"
+    },
+    {
+      "index": 9,
       "id": "53111",
       "label": "Hồ điệp"
     },
     {
-      "index": 9,
+      "index": 10,
       "id": "53112",
       "label": "Môn đồ Xảo quyệt"
     },
     {
-      "index": 10,
+      "index": 11,
       "id": "53113",
       "label": "Quán quân"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "53114",
       "label": "Yêu Thần Nekomata"
     }

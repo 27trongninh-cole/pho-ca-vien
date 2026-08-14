@@ -2,7 +2,7 @@
   "pkgFile": "pkg/598_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/598_DaSiKong/598_DaSiKong_actorinfo.bytes",
   "label": "Bolt Baron",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

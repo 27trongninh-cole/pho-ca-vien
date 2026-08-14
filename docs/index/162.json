@@ -2,7 +2,7 @@
   "pkgFile": "pkg/162_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/162_Nakoruru/162_Nakoruru_actorinfo.bytes",
   "label": "Kriknak",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

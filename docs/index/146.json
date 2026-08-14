@@ -2,7 +2,7 @@
   "pkgFile": "pkg/146_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/146_HongFu/146_HongFu_actorinfo.bytes",
   "label": "Zill",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,22 +39,22 @@
       "label": "Phong thần Tu La"
     },
     {
-      "index": 6,
+      "index": 9,
       "id": "14611",
       "label": "Quái xế"
     },
     {
-      "index": 7,
+      "index": 10,
       "id": "14612",
       "label": "Con quay gió"
     },
     {
-      "index": 8,
+      "index": 11,
       "id": "14613",
       "label": "Siêu việt"
     },
     {
-      "index": 9,
+      "index": 12,
       "id": "14614",
       "label": "Bậc Thầy Sushi"
     }

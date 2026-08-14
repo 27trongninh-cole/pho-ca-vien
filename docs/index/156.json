@@ -2,7 +2,7 @@
   "pkgFile": "pkg/156_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/156_ZhangLiang/156_ZhangLiang_actorinfo.bytes",
   "label": "Aleister",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -47,6 +47,11 @@
       "index": 7,
       "id": "1569",
       "label": "Ảo thuật gia"
+    },
+    {
+      "index": 8,
+      "id": "15610",
+      "label": "Thống lĩnh hỗn mang"
     },
     {
       "index": 9,

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/192_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/192_HuangZhong/192_HuangZhong_actorinfo.bytes",
   "label": "Celica",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

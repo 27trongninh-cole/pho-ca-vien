@@ -2,7 +2,7 @@
   "pkgFile": "pkg/137_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/137_SiMaYi/137_SiMaYi_actorinfo.bytes",
   "label": "Paine",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

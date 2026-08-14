@@ -2,7 +2,7 @@
   "pkgFile": "pkg/542_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/542_Tachi/542_Tachi_actorinfo.bytes",
   "label": "Tachi",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,9 +39,14 @@
       "label": "Hỗn mang đao"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "5429",
       "label": "Thần thoại Hy Lạp"
+    },
+    {
+      "index": 8,
+      "id": "54210",
+      "label": "Cần Thủ Cyborg"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/546_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/546_Hecate/546_Hecate_actorinfo.bytes",
   "label": "Teeri",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -24,22 +24,22 @@
       "label": "Thuyền trưởng song luân"
     },
     {
-      "index": 3,
+      "index": 4,
       "id": "5466",
       "label": "Ốc quế ngọt ngào"
     },
     {
-      "index": 4,
+      "index": 5,
       "id": "5467",
       "label": "Lễ hội té nước"
     },
     {
-      "index": 5,
+      "index": 6,
       "id": "5468",
       "label": "Vân Y Cẩm Tú"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "5469",
       "label": "Kỳ ngộ sắc màu"
     }

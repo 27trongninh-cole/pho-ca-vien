@@ -2,7 +2,7 @@
   "pkgFile": "pkg/133_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/133_DiRenJie/133_DiRenJie_actorinfo.bytes",
   "label": "Valhein",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -46,7 +46,12 @@
     {
       "index": 7,
       "id": "1339",
-      "label": "Cá mập nghiêm túc"
+      "label": "Cá mập \"nghiêm túc\""
+    },
+    {
+      "index": 8,
+      "id": "13310",
+      "label": "Hoàng tử Băng"
     },
     {
       "index": 9,
@@ -57,11 +62,6 @@
       "index": 10,
       "id": "1331",
       "label": "Mặc định"
-    },
-    {
-      "index": 11,
-      "id": "13312",
-      "label": "Xạ thần Kagutsuchi"
     },
     {
       "index": 12,
@@ -79,7 +79,7 @@
       "label": "Thứ nguyên vệ thần"
     },
     {
-      "index": 15,
+      "index": 16,
       "id": "13317",
       "label": "Mã Hành Vạn Lý"
     }

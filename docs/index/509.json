@@ -2,7 +2,7 @@
   "pkgFile": "pkg/509_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/509_Ybneth/509_Ybneth_actorinfo.bytes",
   "label": "Y'bneth",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/193_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/193_LaFeiEr/193_LaFeiEr_actorinfo.bytes",
   "label": "Amily",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,12 +39,12 @@
       "label": "Nữ đội trưởng"
     },
     {
-      "index": 7,
+      "index": 9,
       "id": "19311",
       "label": "Khủng long xanh"
     },
     {
-      "index": 8,
+      "index": 11,
       "id": "19313",
       "label": "Thám tử trung học"
     }

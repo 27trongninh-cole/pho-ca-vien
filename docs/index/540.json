@@ -2,7 +2,7 @@
   "pkgFile": "pkg/540_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/540_Bright/540_Bright_actorinfo.bytes",
   "label": "Bright",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/525_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/525_Driver/525_Driver_actorinfo.bytes",
   "label": "Zip",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

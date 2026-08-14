@@ -1,8 +1,8 @@
 {
   "pkgFile": "pkg/141_Infos.pkg.byte",
-  "entryPath": "Prefab_Hero/141_DiaoChan/141_DiaoChan_actorinfo.bytes",
+  "entryPath": "Prefab_Hero/141_Diaochan/141_DiaoChan_actorinfo.bytes",
   "label": "Lauriel",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -49,6 +49,11 @@
       "label": "Tiệc bãi biển"
     },
     {
+      "index": 8,
+      "id": "14110",
+      "label": "Thiên sứ công nghệ"
+    },
+    {
       "index": 9,
       "id": "14111",
       "label": "Phi Thiên"
@@ -59,37 +64,37 @@
       "label": "Thứ nguyên vệ thần"
     },
     {
-      "index": 11,
+      "index": 12,
       "id": "14114",
       "label": "Vũ khúc hân hoan"
     },
     {
-      "index": 12,
+      "index": 13,
       "id": "14115",
       "label": "Nữ vương học đường"
     },
     {
-      "index": 13,
+      "index": 14,
       "id": "14116",
       "label": "Đôi cánh Nguyệt thực"
     },
     {
-      "index": 14,
+      "index": 15,
       "id": "14117",
       "label": "Nữ vương học đường"
     },
     {
-      "index": 15,
+      "index": 16,
       "id": "14118",
       "label": "Vũ khúc miêu ảnh"
     },
     {
-      "index": 16,
+      "index": 17,
       "id": "14119",
       "label": "Thiên nữ Dạ Ưng"
     },
     {
-      "index": 17,
+      "index": 19,
       "id": "14121",
       "label": "Mã Đằng Cửu Thế"
     }

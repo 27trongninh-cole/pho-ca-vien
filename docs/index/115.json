@@ -2,7 +2,7 @@
   "pkgFile": "pkg/115_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/115_GaoJianLi/115_GaoJianLi_actorinfo.bytes",
   "label": "Jinna",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -29,17 +29,17 @@
       "label": "Kim quang thánh đồ"
     },
     {
-      "index": 4,
+      "index": 5,
       "id": "1157",
       "label": "Kim giác"
     },
     {
-      "index": 5,
+      "index": 6,
       "id": "1158",
       "label": "Ma thuật sĩ"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "1159",
       "label": "Mafia"
     }

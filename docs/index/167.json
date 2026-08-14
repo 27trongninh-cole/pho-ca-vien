@@ -2,7 +2,7 @@
   "pkgFile": "pkg/167_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/167_WuKong/167_WuKong_actorinfo.bytes",
   "label": "Ngộ Không",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -39,14 +39,14 @@
       "label": "Đặc vụ băng hầu"
     },
     {
-      "index": 6,
-      "id": "1678",
-      "label": "Nhóc tì bá đạo"
-    },
-    {
       "index": 7,
       "id": "1679",
       "label": "Tề Thiên ma hầu"
+    },
+    {
+      "index": 8,
+      "id": "16710",
+      "label": "Cổ thần Ai Cập"
     },
     {
       "index": 9,

@@ -2,7 +2,7 @@
   "pkgFile": "pkg/117_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/117_ZhongWuYan/117_ZhongWuYan_actorinfo.bytes",
   "label": "Ormarr",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -14,32 +14,32 @@
       "label": "Cựu chiến binh"
     },
     {
-      "index": 1,
+      "index": 2,
       "id": "1174",
       "label": "Thông thỏa thích"
     },
     {
-      "index": 2,
+      "index": 3,
       "id": "1175",
       "label": "Giáo viên thể hình"
     },
     {
-      "index": 3,
+      "index": 4,
       "id": "1176",
       "label": "Ông chủ KFC"
     },
     {
-      "index": 4,
+      "index": 5,
       "id": "1177",
       "label": "CĐV Cuồng nhiệt"
     },
     {
-      "index": 5,
+      "index": 6,
       "id": "1178",
       "label": "Quỷ vệ"
     },
     {
-      "index": 6,
+      "index": 7,
       "id": "1179",
       "label": "Chuyện của nhà nông"
     }

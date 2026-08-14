@@ -2,7 +2,7 @@
   "pkgFile": "pkg/596_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/596_MiLaiDi/596_MiLaiDi_actorinfo.bytes",
   "label": "Goverra",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",

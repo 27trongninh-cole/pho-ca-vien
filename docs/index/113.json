@@ -2,7 +2,7 @@
   "pkgFile": "pkg/113_Infos.pkg.byte",
   "entryPath": "Prefab_Hero/113_ZhuangZhou/113_ZhuangZhou_actorinfo.bytes",
   "label": "Chaugnar",
-  "role": null,
+  "role": [],
   "skins": [
     {
       "type": "default",
@@ -14,27 +14,27 @@
       "label": "Ác mộng sinh hóa"
     },
     {
-      "index": 1,
+      "index": 2,
       "id": "1134",
       "label": "Quang vinh"
     },
     {
-      "index": 2,
+      "index": 3,
       "id": "1135",
       "label": "Quân cảnh"
     },
     {
-      "index": 3,
+      "index": 4,
       "id": "1136",
       "label": "[ex][DNT]"
     },
     {
-      "index": 4,
+      "index": 5,
       "id": "1137",
       "label": "[UNKNOWN CODE:05F032D76A6615B4]"
     },
     {
-      "index": 5,
+      "index": 6,
       "id": "1138",
       "label": "Ác mộng Arcade"
     }
