@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/114_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/114_Omega/114_Omega_actorinfo.bytes",
+  "label": "Omega",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1143",
+      "label": "Người máy xanh"
+    },
+    {
+      "index": 1,
+      "id": "1144",
+      "label": "Cỗ máy siêu tốc"
+    },
+    {
+      "index": 2,
+      "id": "1145",
+      "label": "Hộ vệ ba bích"
+    },
+    {
+      "index": 3,
+      "id": "1146",
+      "label": "Hộ vệ Carano"
+    },
+    {
+      "index": 4,
+      "id": "1147",
+      "label": "Sứ Thanh Hoa"
+    },
+    {
+      "index": 5,
+      "id": "1148",
+      "label": "Samurai Cơ Hóa"
+    },
+    {
+      "index": 6,
+      "id": "1149",
+      "label": "[ex][DNT]"
+    }
+  ]
+}

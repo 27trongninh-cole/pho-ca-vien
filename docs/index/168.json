@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/168_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/168_Niu/168_Niu_actorinfo.bytes",
+  "label": "Lumburr",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1682",
+      "label": "Dung nham"
+    },
+    {
+      "index": 1,
+      "id": "1683",
+      "label": "Dung nham"
+    },
+    {
+      "index": 2,
+      "id": "1684",
+      "label": "Cự thần viễn cổ"
+    },
+    {
+      "index": 3,
+      "id": "1685",
+      "label": "Máy đào khoáng"
+    },
+    {
+      "index": 4,
+      "id": "1686",
+      "label": "Vệ binh hỏa diệm"
+    },
+    {
+      "index": 5,
+      "id": "1687",
+      "label": "Golem thảo nguyên"
+    },
+    {
+      "index": 6,
+      "id": "1688",
+      "label": "Tóm được ngươi rồi"
+    }
+  ]
+}

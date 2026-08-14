@@ -1,0 +1,42 @@
+{
+  "pkgFile": "pkg/177_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/177_ChengJiSiHan/177_ChengJiSiHan_actorinfo.bytes",
+  "label": "Lindis",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1772",
+      "label": "Thám tử tư"
+    },
+    {
+      "index": 1,
+      "id": "1773",
+      "label": "Quang thánh tiễn"
+    },
+    {
+      "index": 2,
+      "id": "1774",
+      "label": "Quang vinh"
+    },
+    {
+      "index": 4,
+      "id": "1776",
+      "label": "Dạ tiệc"
+    },
+    {
+      "index": 5,
+      "id": "1777",
+      "label": "Đồng phục Shihakusho"
+    },
+    {
+      "index": 6,
+      "id": "1779",
+      "label": "Đặc vụ thần thám"
+    }
+  ]
+}

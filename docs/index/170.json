@@ -1,0 +1,32 @@
+{
+  "pkgFile": "pkg/170_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/170_LiuBei/170_LiuBei_actorinfo.bytes",
+  "label": "Slimz",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1702",
+      "label": "Anh thợ điện"
+    },
+    {
+      "index": 1,
+      "id": "1703",
+      "label": "Lính cứu hỏa"
+    },
+    {
+      "index": 2,
+      "id": "1704",
+      "label": "Binh nhì"
+    },
+    {
+      "index": 3,
+      "id": "1706",
+      "label": "Siêu việt"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "pkgFile": "pkg/544_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/544_Painter/544_Painter_actorinfo.bytes",
+  "label": "Yan",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5442",
+      "label": "Nhà chế tác"
+    },
+    {
+      "index": 1,
+      "id": "5443",
+      "label": "Tanjiro Kamado"
+    },
+    {
+      "index": 2,
+      "id": "5444",
+      "label": "Công tước Norman"
+    },
+    {
+      "index": 3,
+      "id": "5445",
+      "label": "Giấc mơ sao"
+    },
+    {
+      "index": 4,
+      "id": "5446",
+      "label": "Bích Hạc Phiên Vân"
+    },
+    {
+      "index": 5,
+      "id": "5447",
+      "label": "Nghệ nhân Trung Thu"
+    }
+  ]
+}

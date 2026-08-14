@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/540_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/540_Bright/540_Bright_actorinfo.bytes",
+  "label": "Bright",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5402",
+      "label": "Soái ca thánh điện"
+    },
+    {
+      "index": 1,
+      "id": "5403",
+      "label": "Toshiro Hitsugaya"
+    },
+    {
+      "index": 2,
+      "id": "5404",
+      "label": "Khiêu chiến"
+    },
+    {
+      "index": 3,
+      "id": "5405",
+      "label": "Mật vụ hacker"
+    },
+    {
+      "index": 4,
+      "id": "5406",
+      "label": "Nhà thám hiểm"
+    },
+    {
+      "index": 5,
+      "id": "5407",
+      "label": "Kỳ Lân soái"
+    },
+    {
+      "index": 6,
+      "id": "5408",
+      "label": "Vua về nhì"
+    }
+  ]
+}

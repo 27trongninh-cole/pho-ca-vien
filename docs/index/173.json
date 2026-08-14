@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/173_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/173_LiYuanFang/173_LiYuanFang_actorinfo.bytes",
+  "label": "Fennik",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1732",
+      "label": "Nhà thám hiểm"
+    },
+    {
+      "index": 1,
+      "id": "1733",
+      "label": "Đội đặc nhiệm"
+    },
+    {
+      "index": 2,
+      "id": "1734",
+      "label": "Tiệc bánh kẹo"
+    },
+    {
+      "index": 3,
+      "id": "1735",
+      "label": "Tuần lộc láu lỉnh"
+    },
+    {
+      "index": 4,
+      "id": "1736",
+      "label": "Phi hành gia"
+    },
+    {
+      "index": 5,
+      "id": "1737",
+      "label": "Tay đua F1"
+    },
+    {
+      "index": 6,
+      "id": "1738",
+      "label": "Shipper Siêu thanh"
+    },
+    {
+      "index": 7,
+      "id": "1739",
+      "label": "Phi hồ ẩn sĩ"
+    },
+    {
+      "index": 9,
+      "id": "17311",
+      "label": "Rối Gỗ Tinh Quái"
+    },
+    {
+      "index": 10,
+      "id": "17312",
+      "label": "Cáo chiêu tài"
+    }
+  ]
+}

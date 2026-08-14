@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/519_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/519_Annette/519_Annette_actorinfo.bytes",
+  "label": "Annette",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5192",
+      "label": "Nữ quản ga"
+    },
+    {
+      "index": 1,
+      "id": "5193",
+      "label": "Xứ sở thần tiên"
+    },
+    {
+      "index": 2,
+      "id": "5194",
+      "label": "Thần tượng âm nhạc"
+    },
+    {
+      "index": 3,
+      "id": "5195",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 4,
+      "id": "5196",
+      "label": "Phi hành gia"
+    },
+    {
+      "index": 5,
+      "id": "5197",
+      "label": "Vân Mộng tiên tử"
+    },
+    {
+      "index": 6,
+      "id": "5198",
+      "label": "Nữ sinh Trung học"
+    },
+    {
+      "index": 7,
+      "id": "5199",
+      "label": "Chị ong bay thấp"
+    },
+    {
+      "index": 9,
+      "id": "51912",
+      "label": "Băng kỳ lâm"
+    },
+    {
+      "index": 10,
+      "id": "51913",
+      "label": "Doombot Thơ ngây"
+    }
+  ]
+}

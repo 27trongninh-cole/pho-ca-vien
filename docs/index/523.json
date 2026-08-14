@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/523_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/523_Darcy/523_Darcy_actorinfo.bytes",
+  "label": "D'Arcy",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5232",
+      "label": "Nam tước"
+    },
+    {
+      "index": 1,
+      "id": "5233",
+      "label": "Đô đốc tinh Hệ"
+    },
+    {
+      "index": 2,
+      "id": "5234",
+      "label": "Pháp sư hỏa long"
+    },
+    {
+      "index": 3,
+      "id": "5235",
+      "label": "Tiến sĩ thiên tài"
+    },
+    {
+      "index": 4,
+      "id": "5236",
+      "label": "Chân nhân"
+    },
+    {
+      "index": 5,
+      "id": "5237",
+      "label": "Tông đồ Chân lý"
+    },
+    {
+      "index": 6,
+      "id": "5238",
+      "label": "Bác sĩ thú y"
+    }
+  ]
+}

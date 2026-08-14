@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/137_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/137_SiMaYi/137_SiMaYi_actorinfo.bytes",
+  "label": "Paine",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1372",
+      "label": "Khúc nhạc tử vong"
+    },
+    {
+      "index": 1,
+      "id": "1373",
+      "label": "Phi vụ thế kỷ"
+    },
+    {
+      "index": 2,
+      "id": "1374",
+      "label": "Công tước máu"
+    },
+    {
+      "index": 3,
+      "id": "1375",
+      "label": "Ô Thước đại hiệp"
+    },
+    {
+      "index": 4,
+      "id": "1376",
+      "label": "Tử xà bá tước"
+    },
+    {
+      "index": 5,
+      "id": "1377",
+      "label": "Megumi Fushiguro"
+    },
+    {
+      "index": 6,
+      "id": "1378",
+      "label": "Cửu Đầu Tương Liễu"
+    }
+  ]
+}

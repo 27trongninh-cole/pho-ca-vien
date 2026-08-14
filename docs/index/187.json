@@ -1,0 +1,67 @@
+{
+  "pkgFile": "pkg/187_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/187_DongHuangTaiYi/187_DongHuangTaiYi_actorinfo.bytes",
+  "label": "Arum",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1872",
+      "label": "Thú vệ cổ mộ"
+    },
+    {
+      "index": 1,
+      "id": "1873",
+      "label": "Vũ khúc long hổ"
+    },
+    {
+      "index": 2,
+      "id": "1874",
+      "label": "Linh tượng vu nữ"
+    },
+    {
+      "index": 3,
+      "id": "1875",
+      "label": "Vũ khúc thần sứ"
+    },
+    {
+      "index": 4,
+      "id": "1876",
+      "label": "Thỏ may mắn"
+    },
+    {
+      "index": 5,
+      "id": "1877",
+      "label": "Nữ hoàng gấu xám"
+    },
+    {
+      "index": 6,
+      "id": "1879",
+      "label": "Quản lý tài năng"
+    },
+    {
+      "index": 8,
+      "id": "18713",
+      "label": "Thần phong Thống lĩnh"
+    },
+    {
+      "index": 9,
+      "id": "18714",
+      "label": "Thần tượng nhạc rock"
+    },
+    {
+      "index": 10,
+      "id": "18715",
+      "label": "Ký Ức Đại Dương"
+    },
+    {
+      "index": 11,
+      "id": "18716",
+      "label": "Chị đại Gangster"
+    }
+  ]
+}

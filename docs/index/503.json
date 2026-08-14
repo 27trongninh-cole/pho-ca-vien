@@ -1,0 +1,67 @@
+{
+  "pkgFile": "pkg/503_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/503_Zuka/503_Zuka_ActorInfo.bytes",
+  "label": "Zuka",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5032",
+      "label": "Zuka"
+    },
+    {
+      "index": 1,
+      "id": "5033",
+      "label": "Đại phú ông"
+    },
+    {
+      "index": 2,
+      "id": "5034",
+      "label": "Giám thị sấm sét"
+    },
+    {
+      "index": 3,
+      "id": "5035",
+      "label": "Phát tài"
+    },
+    {
+      "index": 4,
+      "id": "5036",
+      "label": "[UNKNOWN CODE:1B0E4948ACB3A33F]"
+    },
+    {
+      "index": 5,
+      "id": "5037",
+      "label": "Diệt nguyệt nguyên soái"
+    },
+    {
+      "index": 6,
+      "id": "5038",
+      "label": "Đầu bếp hoàng cung"
+    },
+    {
+      "index": 7,
+      "id": "5039",
+      "label": "Mãnh hổ"
+    },
+    {
+      "index": 9,
+      "id": "50311",
+      "label": "Ngư ông đắc lợi"
+    },
+    {
+      "index": 10,
+      "id": "50312",
+      "label": "Xích Hùng Chiến Giáp"
+    },
+    {
+      "index": 11,
+      "id": "50314",
+      "label": "[ex]"
+    }
+  ]
+}

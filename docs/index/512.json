@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/512_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/512_Rourke/512_Rourke_actorinfo.bytes",
+  "label": "Rourke",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5122",
+      "label": "Pháo thủ tuộc neo"
+    },
+    {
+      "index": 1,
+      "id": "5123",
+      "label": "Biệt đội siêu hùng"
+    },
+    {
+      "index": 2,
+      "id": "5124",
+      "label": "Cuồng tặc"
+    },
+    {
+      "index": 3,
+      "id": "5125",
+      "label": "Thợ cơ khí"
+    },
+    {
+      "index": 4,
+      "id": "5126",
+      "label": "[ex][DNT]"
+    },
+    {
+      "index": 5,
+      "id": "5128",
+      "label": "Cảnh sát trưởng"
+    },
+    {
+      "index": 6,
+      "id": "5129",
+      "label": "Bách tướng Lão đại"
+    }
+  ]
+}

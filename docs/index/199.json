@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/199_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/199_Li/199_Li_actorinfo.bytes",
+  "label": "Eland'orr",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1992",
+      "label": "Soái tặc"
+    },
+    {
+      "index": 1,
+      "id": "1993",
+      "label": "Phi vụ thế kỷ"
+    },
+    {
+      "index": 2,
+      "id": "1994",
+      "label": "Học viện Carano"
+    },
+    {
+      "index": 3,
+      "id": "1995",
+      "label": "Siêu thám tử"
+    },
+    {
+      "index": 4,
+      "id": "1996",
+      "label": "Chú ong bay cao"
+    },
+    {
+      "index": 5,
+      "id": "1997",
+      "label": "Tuxedo Mask"
+    },
+    {
+      "index": 6,
+      "id": "1998",
+      "label": "Uyên Ương mộng điệp"
+    },
+    {
+      "index": 7,
+      "id": "1999",
+      "label": "Mộng Giới Thần Chủ"
+    }
+  ]
+}

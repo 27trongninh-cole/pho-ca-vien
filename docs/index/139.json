@@ -1,0 +1,37 @@
+{
+  "pkgFile": "pkg/139_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/139_KongFuZi/139_KongFuZi_actorinfo.bytes",
+  "label": "Kil'Groth",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1392",
+      "label": "Cảnh vệ biển"
+    },
+    {
+      "index": 1,
+      "id": "1393",
+      "label": "Quang vinh"
+    },
+    {
+      "index": 2,
+      "id": "1394",
+      "label": "Chú lính chì"
+    },
+    {
+      "index": 3,
+      "id": "1395",
+      "label": "Càn Nguyên thủ vệ"
+    },
+    {
+      "index": 4,
+      "id": "1396",
+      "label": "Hung thần biển sâu"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/146_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/146_HongFu/146_HongFu_actorinfo.bytes",
+  "label": "Zill",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1462",
+      "label": "Lốc địa ngục"
+    },
+    {
+      "index": 1,
+      "id": "1463",
+      "label": "Dung nham"
+    },
+    {
+      "index": 2,
+      "id": "1464",
+      "label": "Cựu thần thiên hà"
+    },
+    {
+      "index": 3,
+      "id": "1465",
+      "label": "Diệt nguyệt tử sĩ"
+    },
+    {
+      "index": 4,
+      "id": "1466",
+      "label": "Thần Mộng Mị"
+    },
+    {
+      "index": 5,
+      "id": "1467",
+      "label": "Phong thần Tu La"
+    },
+    {
+      "index": 6,
+      "id": "14611",
+      "label": "Quái xế"
+    },
+    {
+      "index": 7,
+      "id": "14612",
+      "label": "Con quay gió"
+    },
+    {
+      "index": 8,
+      "id": "14613",
+      "label": "Siêu việt"
+    },
+    {
+      "index": 9,
+      "id": "14614",
+      "label": "Bậc Thầy Sushi"
+    }
+  ]
+}

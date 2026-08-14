@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/526_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/526_Summoner/526_Summoner_actorinfo.bytes",
+  "label": "Ishar",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5262",
+      "label": "Giấc mơ ngọt ngào"
+    },
+    {
+      "index": 1,
+      "id": "5263",
+      "label": "Tiểu thư kẹo ngọt"
+    },
+    {
+      "index": 2,
+      "id": "5264",
+      "label": "Tiểu thư gấu trúc"
+    },
+    {
+      "index": 3,
+      "id": "5265",
+      "label": "Lễ hội ma quái"
+    },
+    {
+      "index": 4,
+      "id": "5266",
+      "label": "Gián điệp hacker"
+    },
+    {
+      "index": 5,
+      "id": "5267",
+      "label": "Lễ hội ma quái"
+    },
+    {
+      "index": 6,
+      "id": "5268",
+      "label": "Tiểu thư"
+    },
+    {
+      "index": 7,
+      "id": "5269",
+      "label": "Rồng bé bự"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "pkgFile": "pkg/153_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/153_LanLingWang/153_LanLingWang_actorinfo.bytes",
+  "label": "Kaine",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1532",
+      "label": "Đôi cánh đại dương"
+    },
+    {
+      "index": 1,
+      "id": "1533",
+      "label": "Dơi địa ngục"
+    },
+    {
+      "index": 2,
+      "id": "1534",
+      "label": "Người dơi"
+    },
+    {
+      "index": 3,
+      "id": "1535",
+      "label": "Chiến binh kim quang"
+    },
+    {
+      "index": 4,
+      "id": "1536",
+      "label": "Thiếu chủ bóng đêm"
+    },
+    {
+      "index": 5,
+      "id": "1537",
+      "label": "Thợ săn chính nghĩa"
+    }
+  ]
+}

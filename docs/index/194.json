@@ -1,0 +1,17 @@
+{
+  "pkgFile": "pkg/194_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/194_SuLie/194_SuLie_actorinfo.bytes",
+  "label": "Wiro",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1942",
+      "label": "[ex][DNT]"
+    }
+  ]
+}

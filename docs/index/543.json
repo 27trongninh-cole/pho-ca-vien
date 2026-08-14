@@ -1,0 +1,42 @@
+{
+  "pkgFile": "pkg/543_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/543_yao/543_Yao_actorinfo.bytes",
+  "label": "Aya",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5432",
+      "label": "Hoạt náo viên"
+    },
+    {
+      "index": 1,
+      "id": "5433",
+      "label": "Điệp viên ký ức"
+    },
+    {
+      "index": 2,
+      "id": "5434",
+      "label": "MC Sóc nhỏ"
+    },
+    {
+      "index": 3,
+      "id": "5435",
+      "label": "Thủy thủ"
+    },
+    {
+      "index": 4,
+      "id": "5438",
+      "label": "Công chúa Cầu Vồng"
+    },
+    {
+      "index": 5,
+      "id": "5439",
+      "label": "Hỏa Hồ Tiên Ngư"
+    }
+  ]
+}

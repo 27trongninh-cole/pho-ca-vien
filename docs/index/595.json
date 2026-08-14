@@ -1,0 +1,12 @@
+{
+  "pkgFile": "pkg/595_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/595_LiXin/595_LiXin_actorinfo.bytes",
+  "label": "Edras",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    }
+  ]
+}

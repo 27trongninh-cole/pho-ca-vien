@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/180_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/180_NeZha/180_NeZha_actorinfo.bytes",
+  "label": "Max",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1802",
+      "label": "Hiệp sĩ nhí"
+    },
+    {
+      "index": 1,
+      "id": "1803",
+      "label": "Găng tay vàng"
+    },
+    {
+      "index": 2,
+      "id": "1804",
+      "label": "Quang vinh"
+    },
+    {
+      "index": 3,
+      "id": "1805",
+      "label": "Thần đồng sinh hóa"
+    },
+    {
+      "index": 4,
+      "id": "1806",
+      "label": "Thần thoại Hy Lạp"
+    },
+    {
+      "index": 5,
+      "id": "1807",
+      "label": "Tiểu King Kong"
+    },
+    {
+      "index": 6,
+      "id": "1808",
+      "label": "Chuyên gia đập hộp"
+    },
+    {
+      "index": 7,
+      "id": "1809",
+      "label": "Không trêu bạn"
+    }
+  ]
+}

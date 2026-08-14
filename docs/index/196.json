@@ -1,0 +1,72 @@
+{
+  "pkgFile": "pkg/196_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/196_Elsu/196_Elsu_actorinfo.bytes",
+  "label": "Elsu",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1962",
+      "label": "Cảnh vệ thảo nguyên"
+    },
+    {
+      "index": 1,
+      "id": "1963",
+      "label": "Mafia"
+    },
+    {
+      "index": 2,
+      "id": "1964",
+      "label": "Guitar tình ái"
+    },
+    {
+      "index": 3,
+      "id": "1965",
+      "label": "Chiến binh bóng tối"
+    },
+    {
+      "index": 4,
+      "id": "1966",
+      "label": "Sứ giả tận thế"
+    },
+    {
+      "index": 5,
+      "id": "1967",
+      "label": "Tuyết ưng"
+    },
+    {
+      "index": 6,
+      "id": "1968",
+      "label": "Xạ thủ tinh linh"
+    },
+    {
+      "index": 7,
+      "id": "1961",
+      "label": "Đôi cánh tự do"
+    },
+    {
+      "index": 9,
+      "id": "19612",
+      "label": "Hỏa diệm Chu Tước"
+    },
+    {
+      "index": 10,
+      "id": "19613",
+      "label": "Tuyệt ảnh"
+    },
+    {
+      "index": 11,
+      "id": "19614",
+      "label": "DJ <Siêu Đẳng>"
+    },
+    {
+      "index": 12,
+      "id": "19615",
+      "label": "Xạ Thần Mộng Giới"
+    }
+  ]
+}

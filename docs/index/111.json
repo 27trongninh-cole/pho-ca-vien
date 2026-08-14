@@ -1,0 +1,102 @@
+{
+  "pkgFile": "pkg/111_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/111_SunShangXiang/111_SunShangXiang_actorinfo.bytes",
+  "label": "Violet",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1112",
+      "label": "Nữ hoàng pháo hoa"
+    },
+    {
+      "index": 1,
+      "id": "1113",
+      "label": "Nữ đặc cảnh"
+    },
+    {
+      "index": 2,
+      "id": "1114",
+      "label": "Phi công trẻ"
+    },
+    {
+      "index": 3,
+      "id": "1115",
+      "label": "Mèo siêu quậy"
+    },
+    {
+      "index": 4,
+      "id": "1116",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 5,
+      "id": "1117",
+      "label": "Phó học tập"
+    },
+    {
+      "index": 6,
+      "id": "1118",
+      "label": "Thứ nguyên vệ thần"
+    },
+    {
+      "index": 7,
+      "id": "1119",
+      "label": "Pháo hoa Neon"
+    },
+    {
+      "index": 9,
+      "id": "11111",
+      "label": "Vợ người ta"
+    },
+    {
+      "index": 10,
+      "id": "11112",
+      "label": "Tay súng siêu phàm"
+    },
+    {
+      "index": 12,
+      "id": "11114",
+      "label": "Huyết ma thần"
+    },
+    {
+      "index": 13,
+      "id": "11115",
+      "label": "Lam tước"
+    },
+    {
+      "index": 14,
+      "id": "11116",
+      "label": "Thần Long tỷ tỷ"
+    },
+    {
+      "index": 15,
+      "id": "11117",
+      "label": "DJ Câu hồn"
+    },
+    {
+      "index": 16,
+      "id": "11118",
+      "label": "Hoa thủy tiên"
+    },
+    {
+      "index": 17,
+      "id": "11120",
+      "label": "Vọng nguyệt Long Cơ"
+    },
+    {
+      "index": 18,
+      "id": "11121",
+      "label": "Nobara Kugisaki"
+    },
+    {
+      "index": 19,
+      "id": "11122",
+      "label": "Nữ quản thú"
+    }
+  ]
+}

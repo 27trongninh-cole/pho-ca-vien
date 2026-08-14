@@ -1,0 +1,67 @@
+{
+  "pkgFile": "pkg/107_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/107_ZhaoYun/107_zhaoyun_actorinfo.bytes",
+  "label": "Zephys",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1072",
+      "label": "Oán linh"
+    },
+    {
+      "index": 1,
+      "id": "1074",
+      "label": "Hiệp sĩ bí ngô"
+    },
+    {
+      "index": 2,
+      "id": "1075",
+      "label": "Dung nham"
+    },
+    {
+      "index": 3,
+      "id": "1076",
+      "label": "Siêu việt"
+    },
+    {
+      "index": 4,
+      "id": "1077",
+      "label": "Phi thương"
+    },
+    {
+      "index": 5,
+      "id": "1078",
+      "label": "Tư lệnh viễn chinh"
+    },
+    {
+      "index": 6,
+      "id": "1079",
+      "label": "Hắc vô thường"
+    },
+    {
+      "index": 8,
+      "id": "10712",
+      "label": "Đầu bếp Sashimi"
+    },
+    {
+      "index": 9,
+      "id": "10713",
+      "label": "Nghệ nhân đồ chơi"
+    },
+    {
+      "index": 10,
+      "id": "10715",
+      "label": "Kỷ Nguyên Hổ Phách"
+    },
+    {
+      "index": 11,
+      "id": "10716",
+      "label": "Chị đại Gangster"
+    }
+  ]
+}

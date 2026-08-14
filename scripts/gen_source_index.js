@@ -1,6 +1,6 @@
 'use strict';
-// gen_source_index.js — sinh index/<TenPkg>.json cho 1 file nguồn (Actor_XXX_Infos_pkg.bytes).
-// Chạy: node scripts/gen_source_index.js Actor_105_Infos_pkg.bytes
+// gen_source_index.js — sinh index/<ID>.json cho 1 file nguồn (<ID>_Infos.pkg.byte).
+// Chạy: node scripts/gen_source_index.js 105_Infos.pkg.byte
 // (tên file, không cần đường dẫn đầy đủ — script tự tìm trong site/pkg/)
 const fs = require('fs');
 const path = require('path');
@@ -8,14 +8,21 @@ const P = require('./node_pkgio.js');
 
 const fileName = process.argv[2];
 if(!fileName){
-  console.error('Cách dùng: node scripts/gen_source_index.js <TenFile.pkg.bytes>');
+  console.error('Cách dùng: node scripts/gen_source_index.js <ID>_Infos.pkg.byte');
   process.exit(1);
 }
 
+const FILE_RE = /^(\d+)_Infos\.pkg\.byte$/i;
+const m = fileName.match(FILE_RE);
+if(!m){
+  console.error('LỖI: tên file phải đúng dạng "<ID>_Infos.pkg.byte", vd "105_Infos.pkg.byte" — nhận được:', fileName);
+  process.exit(1);
+}
+const id = m[1];
+
 const PKG_PATH = path.join(P.SITE_DIR, 'pkg', fileName);
 const DICT_PATH = path.join(P.SITE_DIR, 'pkg/zstd_dict.bin');
-const baseName = fileName.replace(/\.bytes$/i, ''); // vd "Actor_105_Infos_pkg"
-const OUT_PATH = path.join(P.SITE_DIR, 'index', baseName + '.json');
+const OUT_PATH = path.join(P.SITE_DIR, 'index', id + '.json');
 
 // Nhận diện "entry chính": tên dạng ID_TenTuong_actorinfo.bytes (không hoa/thường bắt buộc),
 // nếu 1 thư mục có NHIỀU entry cùng ID (vd biến thể XinShou/phụ), chọn entry có TÊN NGẮN NHẤT

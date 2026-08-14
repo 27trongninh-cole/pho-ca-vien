@@ -1,0 +1,72 @@
+{
+  "pkgFile": "pkg/167_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/167_WuKong/167_WuKong_actorinfo.bytes",
+  "label": "Ngộ Không",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1672",
+      "label": "Đạo tặc"
+    },
+    {
+      "index": 1,
+      "id": "1673",
+      "label": "Hỏa nhãn kim tinh"
+    },
+    {
+      "index": 2,
+      "id": "1674",
+      "label": "Siêu việt"
+    },
+    {
+      "index": 3,
+      "id": "1675",
+      "label": "Ngộ khá trẩu"
+    },
+    {
+      "index": 4,
+      "id": "1676",
+      "label": "Siêu việt 2.0"
+    },
+    {
+      "index": 5,
+      "id": "1677",
+      "label": "Đặc vụ băng hầu"
+    },
+    {
+      "index": 6,
+      "id": "1678",
+      "label": "Nhóc tì bá đạo"
+    },
+    {
+      "index": 7,
+      "id": "1679",
+      "label": "Tề Thiên ma hầu"
+    },
+    {
+      "index": 9,
+      "id": "16711",
+      "label": "Tân niên Võ thần"
+    },
+    {
+      "index": 10,
+      "id": "16712",
+      "label": "Thần Giáp Xích Diễm"
+    },
+    {
+      "index": 11,
+      "id": "16713",
+      "label": "Tề Thiên Võ Thánh"
+    },
+    {
+      "index": 12,
+      "id": "16714",
+      "label": "Đại náo văn phòng"
+    }
+  ]
+}

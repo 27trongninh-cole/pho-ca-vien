@@ -1,0 +1,82 @@
+{
+  "pkgFile": "pkg/142_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/142_CaiWenJi/142_CaiWenJi_actorinfo.bytes",
+  "label": "Natalya",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1422",
+      "label": "Mị muốn đi chơi"
+    },
+    {
+      "index": 1,
+      "id": "1423",
+      "label": "Nghệ nhân lân"
+    },
+    {
+      "index": 2,
+      "id": "1424",
+      "label": "Quý cô thủy tề"
+    },
+    {
+      "index": 3,
+      "id": "1425",
+      "label": "Phó nháy nhí nhảnh"
+    },
+    {
+      "index": 4,
+      "id": "1426",
+      "label": "Quà quái quỷ"
+    },
+    {
+      "index": 5,
+      "id": "1427",
+      "label": "Nghiệp hỏa yêu hậu"
+    },
+    {
+      "index": 6,
+      "id": "1428",
+      "label": "Băng tâm thần nữ"
+    },
+    {
+      "index": 7,
+      "id": "1429",
+      "label": "Nữ quái công nghệ"
+    },
+    {
+      "index": 9,
+      "id": "1421",
+      "label": "Mặc định"
+    },
+    {
+      "index": 10,
+      "id": "14211",
+      "label": "Thần phú quý"
+    },
+    {
+      "index": 11,
+      "id": "14213",
+      "label": "Băng lam nữ soái"
+    },
+    {
+      "index": 12,
+      "id": "14214",
+      "label": "Nguyệt Ảnh Kiếm Tiên"
+    },
+    {
+      "index": 13,
+      "id": "14215",
+      "label": "Kuromi's Heart"
+    },
+    {
+      "index": 14,
+      "id": "14216",
+      "label": "Thánh Ca Huyết Tế"
+    }
+  ]
+}

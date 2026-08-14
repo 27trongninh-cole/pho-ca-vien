@@ -1,0 +1,22 @@
+{
+  "pkgFile": "pkg/597_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/597_KuangTie/597_KuangTie_actorinfo.bytes",
+  "label": "Biron",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5972",
+      "label": "Võ sĩ Giác đấu"
+    },
+    {
+      "index": 1,
+      "id": "5973",
+      "label": "Yuji Itadori"
+    }
+  ]
+}

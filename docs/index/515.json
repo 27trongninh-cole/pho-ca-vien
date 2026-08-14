@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/515_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/515_Richter/515_Richter_actorinfo.bytes",
+  "label": "Richter",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5152",
+      "label": "Bá tước"
+    },
+    {
+      "index": 1,
+      "id": "5153",
+      "label": "Thống soái kháng chiến"
+    },
+    {
+      "index": 2,
+      "id": "5154",
+      "label": "Dạ hội"
+    },
+    {
+      "index": 3,
+      "id": "5155",
+      "label": "Thần kiếm Susanoo"
+    },
+    {
+      "index": 4,
+      "id": "5156",
+      "label": "Quang vinh 2.0"
+    },
+    {
+      "index": 5,
+      "id": "5157",
+      "label": "Nguyệt loan đao"
+    },
+    {
+      "index": 6,
+      "id": "5159",
+      "label": "Cứu hộ"
+    }
+  ]
+}

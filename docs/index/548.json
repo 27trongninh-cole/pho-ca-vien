@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/548_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/548_SunCe/548_SunCe_actorinfo.bytes",
+  "label": "Bijan",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5482",
+      "label": "Chiến binh sa mạc"
+    },
+    {
+      "index": 1,
+      "id": "5483",
+      "label": "Hoàng Kim cơ giáp"
+    },
+    {
+      "index": 2,
+      "id": "5484",
+      "label": "Đập vỡ Cây đàn"
+    },
+    {
+      "index": 3,
+      "id": "5485",
+      "label": "Kình thiên Long Kỵ"
+    },
+    {
+      "index": 4,
+      "id": "5486",
+      "label": "Lữ Hành Thời Không"
+    },
+    {
+      "index": 5,
+      "id": "5487",
+      "label": "Giai điệu Giáng Sinh"
+    },
+    {
+      "index": 6,
+      "id": "5488",
+      "label": "[ex]"
+    }
+  ]
+}

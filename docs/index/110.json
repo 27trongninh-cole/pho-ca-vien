@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/110_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/110_YingZheng/110_YingZheng_actorinfo.bytes",
+  "label": "Kahlii",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1102",
+      "label": "Cô dâu hắc ám"
+    },
+    {
+      "index": 1,
+      "id": "1104",
+      "label": "Quàng khăn đỏ"
+    },
+    {
+      "index": 2,
+      "id": "1105",
+      "label": "Kim cô giáo chủ"
+    },
+    {
+      "index": 3,
+      "id": "1106",
+      "label": "Siêu đầu bếp"
+    },
+    {
+      "index": 4,
+      "id": "1107",
+      "label": "Vũ hội bóng đêm"
+    },
+    {
+      "index": 5,
+      "id": "1108",
+      "label": "Tử Điệp"
+    },
+    {
+      "index": 6,
+      "id": "1109",
+      "label": "Robot hộ lý"
+    },
+    {
+      "index": 8,
+      "id": "11011",
+      "label": "Linh Hoa thần nữ"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "pkgFile": "pkg/154_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/154_HuaMuLan/154_HuaMuLan_actorinfo.bytes",
+  "label": "Yena",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1542",
+      "label": "Khuyên bạc"
+    },
+    {
+      "index": 1,
+      "id": "1543",
+      "label": "Thỏ may mắn"
+    },
+    {
+      "index": 2,
+      "id": "1544",
+      "label": "Chiến binh nguyệt tộc"
+    },
+    {
+      "index": 3,
+      "id": "1545",
+      "label": "Hoạt náo viên"
+    },
+    {
+      "index": 4,
+      "id": "1546",
+      "label": "Nữ hoàng thể thao"
+    },
+    {
+      "index": 5,
+      "id": "1547",
+      "label": "Dạ nguyệt thánh nữ"
+    },
+    {
+      "index": 6,
+      "id": "1548",
+      "label": "Giảng viên tình ái"
+    },
+    {
+      "index": 7,
+      "id": "1549",
+      "label": "Nữ cướp biển"
+    },
+    {
+      "index": 9,
+      "id": "15411",
+      "label": "Vũ điệu Giáng Sinh"
+    },
+    {
+      "index": 10,
+      "id": "15413",
+      "label": "Huyền Cửu Thiên"
+    },
+    {
+      "index": 11,
+      "id": "15414",
+      "label": "Trấn Yêu Thần Lộc"
+    },
+    {
+      "index": 12,
+      "id": "15415",
+      "label": "Thần Sứ kiều diễm"
+    },
+    {
+      "index": 13,
+      "id": "15416",
+      "label": "Hoa tiêu Mộng giới"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "pkgFile": "pkg/175_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/175_ZhongKui/175_ZhongKui_actorinfo.bytes",
+  "label": "Grakk",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1752",
+      "label": "Thuyền trưởng râu đỏ"
+    },
+    {
+      "index": 1,
+      "id": "1753",
+      "label": "Khô lâu đại tướng"
+    },
+    {
+      "index": 2,
+      "id": "1754",
+      "label": "Chàng gấu tuyết"
+    },
+    {
+      "index": 3,
+      "id": "1755",
+      "label": "Đi vào lòng đất"
+    },
+    {
+      "index": 4,
+      "id": "1756",
+      "label": "Mèo Thần tài"
+    },
+    {
+      "index": 5,
+      "id": "1757",
+      "label": "Sumo"
+    },
+    {
+      "index": 6,
+      "id": "1758",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 7,
+      "id": "1759",
+      "label": "Màu cờ sắc áo"
+    },
+    {
+      "index": 9,
+      "id": "17511",
+      "label": "Cỗ xe tăng"
+    },
+    {
+      "index": 10,
+      "id": "17513",
+      "label": "Cận vệ Mafia"
+    },
+    {
+      "index": 11,
+      "id": "17518",
+      "label": "Thần ẩm thực"
+    },
+    {
+      "index": 12,
+      "id": "17519",
+      "label": "Thủ vệ Dạ Ưng"
+    },
+    {
+      "index": 13,
+      "id": "17520",
+      "label": "Ngũ Cốc Phong Đăng"
+    }
+  ]
+}

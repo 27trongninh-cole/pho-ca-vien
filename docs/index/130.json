@@ -1,0 +1,87 @@
+{
+  "pkgFile": "pkg/130_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/130_GongBenWuZang/130_GongBenWuZang_actorinfo.bytes",
+  "label": "Airi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1302",
+      "label": "Thích khách"
+    },
+    {
+      "index": 1,
+      "id": "1303",
+      "label": "Ninja xanh lá"
+    },
+    {
+      "index": 2,
+      "id": "1304",
+      "label": "Quái xế công nghệ"
+    },
+    {
+      "index": 3,
+      "id": "1305",
+      "label": "Cấm vệ nguyệt tộc"
+    },
+    {
+      "index": 4,
+      "id": "1306",
+      "label": "Kiemono"
+    },
+    {
+      "index": 5,
+      "id": "1307",
+      "label": "Bạch Kiemono"
+    },
+    {
+      "index": 6,
+      "id": "1308",
+      "label": "Phó kiếm đạo"
+    },
+    {
+      "index": 9,
+      "id": "13011",
+      "label": "Đặc công tử điệp"
+    },
+    {
+      "index": 10,
+      "id": "13012",
+      "label": "Bích Hải thánh nữ"
+    },
+    {
+      "index": 12,
+      "id": "13014",
+      "label": "Thánh nữ Xiêm La"
+    },
+    {
+      "index": 13,
+      "id": "13015",
+      "label": "[ex][DNT]"
+    },
+    {
+      "index": 14,
+      "id": "13016",
+      "label": "Thứ nguyên Vệ thần"
+    },
+    {
+      "index": 15,
+      "id": "13018",
+      "label": "Ninja ẩm thực"
+    },
+    {
+      "index": 16,
+      "id": "13019",
+      "label": "Búp bê Mộng mị"
+    },
+    {
+      "index": 17,
+      "id": "13020",
+      "label": "Quản lý tài năng"
+    }
+  ]
+}

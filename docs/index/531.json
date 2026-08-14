@@ -1,0 +1,67 @@
+{
+  "pkgFile": "pkg/531_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/531_keera/531_Keera_actorinfo.bytes",
+  "label": "Keera",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5312",
+      "label": "Y tá lạ"
+    },
+    {
+      "index": 1,
+      "id": "5313",
+      "label": "Học viện Carano"
+    },
+    {
+      "index": 2,
+      "id": "5314",
+      "label": "Sát thủ bí ngô"
+    },
+    {
+      "index": 3,
+      "id": "5315",
+      "label": "Thủy thủ"
+    },
+    {
+      "index": 4,
+      "id": "5316",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 5,
+      "id": "5317",
+      "label": "[ex][DNT]"
+    },
+    {
+      "index": 6,
+      "id": "5318",
+      "label": "Nezuko Kamado"
+    },
+    {
+      "index": 8,
+      "id": "53111",
+      "label": "Hồ điệp"
+    },
+    {
+      "index": 9,
+      "id": "53112",
+      "label": "Môn đồ Xảo quyệt"
+    },
+    {
+      "index": 10,
+      "id": "53113",
+      "label": "Quán quân"
+    },
+    {
+      "index": 11,
+      "id": "53114",
+      "label": "Yêu Thần Nekomata"
+    }
+  ]
+}

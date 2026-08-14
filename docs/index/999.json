@@ -1,0 +1,202 @@
+{
+  "pkgFile": "pkg/999_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/999_ChessPlayer/999_ChessPlayer_actorinfo.bytes",
+  "label": "Tiểu Cara",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "9992",
+      "label": "Thỏ - Tiểu nữ quái"
+    },
+    {
+      "index": 1,
+      "id": "9993",
+      "label": "Thỏ - Nữ quái xì teen"
+    },
+    {
+      "index": 2,
+      "id": "9994",
+      "label": "Thỏ - Nữ quái Công nghệ"
+    },
+    {
+      "index": 3,
+      "id": "9995",
+      "label": "Thỏ - Thần tượng học đường I"
+    },
+    {
+      "index": 4,
+      "id": "9996",
+      "label": "Thỏ - Thần tượng học đường II"
+    },
+    {
+      "index": 5,
+      "id": "9997",
+      "label": "Thỏ - Thần tượng học đường III"
+    },
+    {
+      "index": 6,
+      "id": "9998",
+      "label": "Thỏ - Sao đỏ học đường I"
+    },
+    {
+      "index": 7,
+      "id": "9999",
+      "label": "Thỏ - Sao đỏ học đường II"
+    },
+    {
+      "index": 9,
+      "id": "99911",
+      "label": "Thỏ - Phù thủy nhỏ I"
+    },
+    {
+      "index": 10,
+      "id": "99912",
+      "label": "Thỏ - Phù thủy nhỏ II"
+    },
+    {
+      "index": 11,
+      "id": "99913",
+      "label": "Thỏ - Phù thủy nhỏ III"
+    },
+    {
+      "index": 12,
+      "id": "99914",
+      "label": "Thỏ - Siêu cấp sát thủ I"
+    },
+    {
+      "index": 13,
+      "id": "99915",
+      "label": "Thỏ - Siêu cấp sát thủ II"
+    },
+    {
+      "index": 14,
+      "id": "99916",
+      "label": "Thỏ - Siêu cấp sát thủ III"
+    },
+    {
+      "index": 15,
+      "id": "99917",
+      "label": "Thỏ - Quỷ kiếm I"
+    },
+    {
+      "index": 16,
+      "id": "99918",
+      "label": "Thỏ - Quỷ kiếm II"
+    },
+    {
+      "index": 17,
+      "id": "99919",
+      "label": "Thỏ - Quỷ kiếm III"
+    },
+    {
+      "index": 18,
+      "id": "99920",
+      "label": "Cún- Đại tướng nguyệt tộc I"
+    },
+    {
+      "index": 19,
+      "id": "99921",
+      "label": "Cún- Đại tướng nguyệt tộc II"
+    },
+    {
+      "index": 20,
+      "id": "99922",
+      "label": "Cún- Đại tướng nguyệt tộc III"
+    },
+    {
+      "index": 21,
+      "id": "99923",
+      "label": "Cún- Gián điệp tinh hệ I"
+    },
+    {
+      "index": 22,
+      "id": "99924",
+      "label": "Cún- Gián điệp tinh hệ II"
+    },
+    {
+      "index": 23,
+      "id": "99925",
+      "label": "Cún- Gián điệp tinh hệ III"
+    },
+    {
+      "index": 24,
+      "id": "99926",
+      "label": "Cún- Siêu sao bóng chày I"
+    },
+    {
+      "index": 25,
+      "id": "99927",
+      "label": "Cún- Siêu sao bóng chày II"
+    },
+    {
+      "index": 26,
+      "id": "99928",
+      "label": "Cún- Siêu sao bóng chày III"
+    },
+    {
+      "index": 27,
+      "id": "99929",
+      "label": "Cún- Tiệc bãi biển I"
+    },
+    {
+      "index": 28,
+      "id": "99930",
+      "label": "Cún- Tiệc bãi biển II"
+    },
+    {
+      "index": 29,
+      "id": "99931",
+      "label": "Cún- Tiệc bãi biển III"
+    },
+    {
+      "index": 30,
+      "id": "99932",
+      "label": "Cún - Quyền Vương I"
+    },
+    {
+      "index": 31,
+      "id": "99933",
+      "label": "Cún - Quyền Vương II"
+    },
+    {
+      "index": 32,
+      "id": "99934",
+      "label": "Cún - Quyền Vương III"
+    },
+    {
+      "index": 33,
+      "id": "99935",
+      "label": "Cún - Thanh gươm chính nghĩa I"
+    },
+    {
+      "index": 34,
+      "id": "99936",
+      "label": "Cún - Thanh gươm chính nghĩa II"
+    },
+    {
+      "index": 35,
+      "id": "99937",
+      "label": "Cún - Thanh gươm chính nghĩa III"
+    },
+    {
+      "index": 36,
+      "id": "99938",
+      "label": "Thỏ Hội ám hoàng I"
+    },
+    {
+      "index": 37,
+      "id": "99939",
+      "label": "Thỏ Hội ám hoàng II"
+    },
+    {
+      "index": 38,
+      "id": "99940",
+      "label": "Thỏ Hội ám hoàng III"
+    }
+  ]
+}

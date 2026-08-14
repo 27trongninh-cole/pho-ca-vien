@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/514_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/514_Roxi/514_Roxi_actorinfo.bytes",
+  "label": "Roxie",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5142",
+      "label": "Thám tử tập sự"
+    },
+    {
+      "index": 1,
+      "id": "5143",
+      "label": "Kèn ái tình"
+    },
+    {
+      "index": 2,
+      "id": "5144",
+      "label": "Hầu gái"
+    },
+    {
+      "index": 3,
+      "id": "5145",
+      "label": "Tiệc bánh kẹo"
+    },
+    {
+      "index": 4,
+      "id": "5147",
+      "label": "Lễ hội hoa"
+    },
+    {
+      "index": 5,
+      "id": "5146",
+      "label": "Cháy phố"
+    },
+    {
+      "index": 6,
+      "id": "5149",
+      "label": "Hỏa thuật sư"
+    }
+  ]
+}

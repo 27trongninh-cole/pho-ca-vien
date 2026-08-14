@@ -1,0 +1,27 @@
+{
+  "pkgFile": "pkg/140_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/140_GuanYu/140_GuanYu_actorinfo.bytes",
+  "label": "Superman",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1402",
+      "label": "Chúa tể công lý"
+    },
+    {
+      "index": 1,
+      "id": "1403",
+      "label": "Bất công lý"
+    },
+    {
+      "index": 2,
+      "id": "1405",
+      "label": "[ex][DNT]"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/538_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/538_Iggy/538_Iggy_actorinfo.bytes",
+  "label": "Iggy",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5382",
+      "label": "Tiểu hoàng đế"
+    },
+    {
+      "index": 1,
+      "id": "5383",
+      "label": "Thần Miêu thiếu chủ"
+    },
+    {
+      "index": 2,
+      "id": "5384",
+      "label": "Bạch hồ ly"
+    },
+    {
+      "index": 3,
+      "id": "5385",
+      "label": "Yêu nhân học viện"
+    },
+    {
+      "index": 4,
+      "id": "5386",
+      "label": "Tiếng thét Hỗn mang"
+    },
+    {
+      "index": 5,
+      "id": "5387",
+      "label": "Rimuru Tempest"
+    },
+    {
+      "index": 6,
+      "id": "5388",
+      "label": "Đại chiến bùng nổ"
+    }
+  ]
+}

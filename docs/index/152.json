@@ -1,0 +1,77 @@
+{
+  "pkgFile": "pkg/152_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/152_WangZhaoJun/152_WangZhaoJun_actorinfo.bytes",
+  "label": "Điêu Thuyền",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1522",
+      "label": "Nữ vương anh đào"
+    },
+    {
+      "index": 1,
+      "id": "1523",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 2,
+      "id": "1524",
+      "label": "Nữ y tá"
+    },
+    {
+      "index": 3,
+      "id": "1525",
+      "label": "WaVe"
+    },
+    {
+      "index": 4,
+      "id": "1526",
+      "label": "Hoa hậu"
+    },
+    {
+      "index": 5,
+      "id": "1527",
+      "label": "Phù thủy bí ngô"
+    },
+    {
+      "index": 6,
+      "id": "1528",
+      "label": "Vũ điệu Nghê Thường"
+    },
+    {
+      "index": 9,
+      "id": "15211",
+      "label": "Thần ngọc"
+    },
+    {
+      "index": 10,
+      "id": "15212",
+      "label": "Thất Tịch tiên tử"
+    },
+    {
+      "index": 11,
+      "id": "15213",
+      "label": "Eternal Sailor Moon"
+    },
+    {
+      "index": 12,
+      "id": "15214",
+      "label": "Mối tình đầu"
+    },
+    {
+      "index": 13,
+      "id": "15217",
+      "label": "Tuế Hàn Đỗ Quyên"
+    },
+    {
+      "index": 14,
+      "id": "15218",
+      "label": "Nhật Nguyệt Thánh Linh"
+    }
+  ]
+}

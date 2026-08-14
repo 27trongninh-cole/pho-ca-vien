@@ -1,0 +1,52 @@
+{
+  "pkgFile": "pkg/105_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/105_LianPo/105_lianpo_actorinfo.bytes",
+  "label": "Toro",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1052",
+      "label": "Đặc cảnh NYPD"
+    },
+    {
+      "index": 1,
+      "id": "1053",
+      "label": "Trung phong cắm"
+    },
+    {
+      "index": 2,
+      "id": "1054",
+      "label": "Thần thoại Hy Lạp"
+    },
+    {
+      "index": 3,
+      "id": "1055",
+      "label": "Ngưu hải vương"
+    },
+    {
+      "index": 4,
+      "id": "1056",
+      "label": "Bạch mao ngưu"
+    },
+    {
+      "index": 5,
+      "id": "1057",
+      "label": "Tử Lôi Thần Ngưu"
+    },
+    {
+      "index": 6,
+      "id": "1058",
+      "label": "Hiểm họa hỗn mang"
+    },
+    {
+      "index": 7,
+      "id": "1059",
+      "label": "Trâu siêu tốc"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "pkgFile": "pkg/128_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/128_CaoCao/128_CaoCao_actorinfo.bytes",
+  "label": "Lữ Bố",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1282",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 1,
+      "id": "1283",
+      "label": "Nam vương"
+    },
+    {
+      "index": 2,
+      "id": "1284",
+      "label": "Long kỵ sĩ"
+    },
+    {
+      "index": 3,
+      "id": "1285",
+      "label": "Kỵ sĩ âm phủ"
+    },
+    {
+      "index": 4,
+      "id": "1286",
+      "label": "Đặc nhiệm SWAT"
+    },
+    {
+      "index": 5,
+      "id": "1287",
+      "label": "Tư lệnh Robot"
+    },
+    {
+      "index": 6,
+      "id": "1288",
+      "label": "Hỏa long chiến thần"
+    },
+    {
+      "index": 7,
+      "id": "1289",
+      "label": "Ichigo Kurosaki"
+    },
+    {
+      "index": 9,
+      "id": "12811",
+      "label": "Vũ điệu samba"
+    },
+    {
+      "index": 10,
+      "id": "12813",
+      "label": "Cửu Thiên Lôi Thần"
+    }
+  ]
+}

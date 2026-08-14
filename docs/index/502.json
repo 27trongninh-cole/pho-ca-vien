@@ -1,0 +1,57 @@
+{
+  "pkgFile": "pkg/502_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/502_Astrid/502_Astrid_actorinfo.bytes",
+  "label": "Astrid",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5022",
+      "label": "Bạch kiếm tiểu thư"
+    },
+    {
+      "index": 1,
+      "id": "5023",
+      "label": "Siêu sao bóng chày"
+    },
+    {
+      "index": 2,
+      "id": "5024",
+      "label": "Tổ trưởng học đường"
+    },
+    {
+      "index": 3,
+      "id": "5025",
+      "label": "Thần thoại Hy Lạp"
+    },
+    {
+      "index": 4,
+      "id": "5026",
+      "label": "Nữ tổng tài"
+    },
+    {
+      "index": 5,
+      "id": "5027",
+      "label": "Thần trí tuệ"
+    },
+    {
+      "index": 6,
+      "id": "5028",
+      "label": "Xứ sở diệu kỳ"
+    },
+    {
+      "index": 7,
+      "id": "5029",
+      "label": "Hoa anh đào"
+    },
+    {
+      "index": 9,
+      "id": "50211",
+      "label": "Tiệc bãi biển"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "pkgFile": "pkg/159_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/159_Dolia/159_Dolia_actorinfo.bytes",
+  "label": "EX",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1592",
+      "label": "Hoa tiêu đại dương"
+    },
+    {
+      "index": 1,
+      "id": "1593",
+      "label": "Môn đồ tập sự"
+    },
+    {
+      "index": 2,
+      "id": "1594",
+      "label": "Nhật Ký Tình Yêu"
+    },
+    {
+      "index": 3,
+      "id": "1595",
+      "label": "Huyễn Ngọc Nhân Ngư"
+    },
+    {
+      "index": 4,
+      "id": "1596",
+      "label": "Mã Khởi Thiên Ca"
+    }
+  ]
+}

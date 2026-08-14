@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/115_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/115_GaoJianLi/115_GaoJianLi_actorinfo.bytes",
+  "label": "Jinna",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1152",
+      "label": "Đại tư tế"
+    },
+    {
+      "index": 1,
+      "id": "1153",
+      "label": "Dạ xoa vương"
+    },
+    {
+      "index": 2,
+      "id": "1154",
+      "label": "Hỏa nhãn ma vương"
+    },
+    {
+      "index": 3,
+      "id": "1155",
+      "label": "Kim quang thánh đồ"
+    },
+    {
+      "index": 4,
+      "id": "1157",
+      "label": "Kim giác"
+    },
+    {
+      "index": 5,
+      "id": "1158",
+      "label": "Ma thuật sĩ"
+    },
+    {
+      "index": 6,
+      "id": "1159",
+      "label": "Mafia"
+    }
+  ]
+}

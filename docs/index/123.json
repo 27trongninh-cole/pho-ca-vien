@@ -1,0 +1,67 @@
+{
+  "pkgFile": "pkg/123_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/123_LvBu/123_LvBu_actorinfo.bytes",
+  "label": "Maloch",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1232",
+      "label": "Ác ma địa ngục"
+    },
+    {
+      "index": 1,
+      "id": "1233",
+      "label": "Tiệc hóa trang"
+    },
+    {
+      "index": 2,
+      "id": "1234",
+      "label": "Samurai tử sĩ"
+    },
+    {
+      "index": 3,
+      "id": "1235",
+      "label": "Đại tướng Rô bốt"
+    },
+    {
+      "index": 4,
+      "id": "1236",
+      "label": "Ông kẹ bí ngô"
+    },
+    {
+      "index": 5,
+      "id": "1237",
+      "label": "Ác nhân vô tuyến"
+    },
+    {
+      "index": 6,
+      "id": "1238",
+      "label": "Vũ hội bóng đêm"
+    },
+    {
+      "index": 7,
+      "id": "1239",
+      "label": "Đại ca Mukbang"
+    },
+    {
+      "index": 9,
+      "id": "12311",
+      "label": "Đao phủ Dạ Ưng"
+    },
+    {
+      "index": 10,
+      "id": "12312",
+      "label": "Đại Thiên Tu La"
+    },
+    {
+      "index": 11,
+      "id": "12313",
+      "label": "Đấu Sĩ Đoạt Thẻ"
+    }
+  ]
+}

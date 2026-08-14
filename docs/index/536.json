@@ -1,0 +1,57 @@
+{
+  "pkgFile": "pkg/536_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/536_Ninja/536_Ninja_actorinfo.bytes",
+  "label": "Aoi",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5362",
+      "label": "Sát thủ đô thị"
+    },
+    {
+      "index": 1,
+      "id": "5363",
+      "label": "Hoàng kim công chúa"
+    },
+    {
+      "index": 2,
+      "id": "5364",
+      "label": "[ex][DNT]"
+    },
+    {
+      "index": 3,
+      "id": "5365",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 4,
+      "id": "5366",
+      "label": "Lam Hải quận chúa"
+    },
+    {
+      "index": 5,
+      "id": "5367",
+      "label": "Tiểu thư Mafia"
+    },
+    {
+      "index": 6,
+      "id": "5369",
+      "label": "Sát thủ Dạ Ưng"
+    },
+    {
+      "index": 8,
+      "id": "53612",
+      "label": "Bách thú triều Long"
+    },
+    {
+      "index": 9,
+      "id": "53613",
+      "label": "Mikasa"
+    }
+  ]
+}

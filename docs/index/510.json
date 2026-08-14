@@ -1,0 +1,67 @@
+{
+  "pkgFile": "pkg/510_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/510_Liliana/510_Liliana_actorinfo.bytes",
+  "label": "Liliana",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5102",
+      "label": "Hồ quý phi"
+    },
+    {
+      "index": 1,
+      "id": "5103",
+      "label": "Thần tượng âm nhạc"
+    },
+    {
+      "index": 2,
+      "id": "5104",
+      "label": "Nguyệt mị ly"
+    },
+    {
+      "index": 3,
+      "id": "5105",
+      "label": "Tiểu thơ anh đào"
+    },
+    {
+      "index": 4,
+      "id": "5106",
+      "label": "Tân nguyệt mị ly"
+    },
+    {
+      "index": 5,
+      "id": "5107",
+      "label": "Nữ thần F1"
+    },
+    {
+      "index": 6,
+      "id": "5108",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 7,
+      "id": "5109",
+      "label": "Thủy thủ hồ ly"
+    },
+    {
+      "index": 9,
+      "id": "51014",
+      "label": "Lưu thủy Thần long"
+    },
+    {
+      "index": 10,
+      "id": "51015",
+      "label": "Thần hổ Xiêm La"
+    },
+    {
+      "index": 11,
+      "id": "51016",
+      "label": "Ma Pháp Tối Thượng"
+    }
+  ]
+}

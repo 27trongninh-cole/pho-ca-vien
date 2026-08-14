@@ -1,0 +1,37 @@
+{
+  "pkgFile": "pkg/530_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/530_Dirak/530_Dirak_actorinfo.bytes",
+  "label": "Dirak",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5302",
+      "label": "Cảnh vệ bầu trời"
+    },
+    {
+      "index": 1,
+      "id": "5303",
+      "label": "Pháp sư trăng khuyết"
+    },
+    {
+      "index": 3,
+      "id": "5306",
+      "label": "Ông bầu Showbiz"
+    },
+    {
+      "index": 4,
+      "id": "5308",
+      "label": "Đường chủ yêu giới"
+    },
+    {
+      "index": 5,
+      "id": "5309",
+      "label": "Snack giòn tan"
+    }
+  ]
+}

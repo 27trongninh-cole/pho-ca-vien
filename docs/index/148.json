@@ -1,0 +1,32 @@
+{
+  "pkgFile": "pkg/148_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/148_JiangZiYa/148_JiangZiYa_actorinfo.bytes",
+  "label": "Preyta",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1482",
+      "label": "Không tặc"
+    },
+    {
+      "index": 1,
+      "id": "1483",
+      "label": "Băng hỏa long sư"
+    },
+    {
+      "index": 3,
+      "id": "1485",
+      "label": "Ma độc huyết long"
+    },
+    {
+      "index": 4,
+      "id": "1486",
+      "label": "Bù nhìn xứ Athanor"
+    }
+  ]
+}

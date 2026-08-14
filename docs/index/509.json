@@ -1,0 +1,47 @@
+{
+  "pkgFile": "pkg/509_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/509_Ybneth/509_Ybneth_actorinfo.bytes",
+  "label": "Y'bneth",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "5092",
+      "label": "Hạt trưởng kiểm lâm"
+    },
+    {
+      "index": 1,
+      "id": "5093",
+      "label": "Chiến binh lục bảo"
+    },
+    {
+      "index": 2,
+      "id": "5094",
+      "label": "Động cơ vĩnh cửu"
+    },
+    {
+      "index": 3,
+      "id": "5095",
+      "label": "Mộc quỷ"
+    },
+    {
+      "index": 4,
+      "id": "5096",
+      "label": "Titan Băng giá"
+    },
+    {
+      "index": 5,
+      "id": "5097",
+      "label": "Candy Bear"
+    },
+    {
+      "index": 6,
+      "id": "5098",
+      "label": "Đại Thụ Âm Nhạc"
+    }
+  ]
+}

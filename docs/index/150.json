@@ -1,0 +1,77 @@
+{
+  "pkgFile": "pkg/150_Infos.pkg.byte",
+  "entryPath": "Prefab_Hero/150_HanXin/150_HanXin_actorinfo.bytes",
+  "label": "Nakroth",
+  "role": null,
+  "skins": [
+    {
+      "type": "default",
+      "label": "Mặc định"
+    },
+    {
+      "index": 0,
+      "id": "1502",
+      "label": "Chiến binh hỏa ngục"
+    },
+    {
+      "index": 1,
+      "id": "1503",
+      "label": "Quân đoàn địa ngục"
+    },
+    {
+      "index": 2,
+      "id": "1504",
+      "label": "Bboy công nghệ"
+    },
+    {
+      "index": 3,
+      "id": "1505",
+      "label": "Siêu việt"
+    },
+    {
+      "index": 4,
+      "id": "1506",
+      "label": "Khiêu chiến"
+    },
+    {
+      "index": 6,
+      "id": "1507",
+      "label": "Quán quân"
+    },
+    {
+      "index": 7,
+      "id": "1508",
+      "label": "Lôi quang sứ"
+    },
+    {
+      "index": 8,
+      "id": "1509",
+      "label": "Tiệc bãi biển"
+    },
+    {
+      "index": 10,
+      "id": "15013",
+      "label": "Killua"
+    },
+    {
+      "index": 11,
+      "id": "15014",
+      "label": "Quỷ thương Liệp đế"
+    },
+    {
+      "index": 12,
+      "id": "15015",
+      "label": "Producer Tia chớp"
+    },
+    {
+      "index": 13,
+      "id": "15016",
+      "label": "Bạch Diện chiến thương"
+    },
+    {
+      "index": 14,
+      "id": "15017",
+      "label": "Levi"
+    }
+  ]
+}
