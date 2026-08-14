@@ -94,6 +94,15 @@ const Transplant = (() => {
   };
   const KEEP_SKIN_EXCEPTIONS = ['ArtSkinLobbyShowMovie','ArtSkinLobbyShowCamera'];
 
+  // Khi ghép 1 skin cụ thể (không phải "Mặc định"), CHỈ mang đúng 2 field:
+  // - ArtSkinPrefabLOD0 -> ArtPrefabLOD0 (bắt buộc ghi đè)
+  // - PreloadAnimatorEffects (bắt buộc chèn mới)
+  // không bulk-copy toàn bộ phần tử skin nữa (bulk-copy từng gây lỗi trong game vì
+  // kéo theo cả field không tương thích với vùng mặc định của lính đích).
+
+  // Giá trị Scale cố định áp cho mọi lần ghép skin (không lấy từ file nguồn nữa).
+  const FIXED_SCALE_VALUE = 0.4;
+
   function targetNameFor(rawName){
     for(const exc of KEEP_SKIN_EXCEPTIONS){ if(rawName.startsWith(exc)) return rawName; }
     for(const src in RENAME_MAP){ if(rawName.startsWith(src)) return RENAME_MAP[src]+rawName.slice(src.length); }
@@ -204,6 +213,24 @@ const Transplant = (() => {
     }
   }
 
+  // Chỉ ghi đè field đã tồn tại sẵn — KHÔNG tự tạo mới nếu thiếu. Dùng cho ArtSkinPrefabLOD0
+  // -> ArtPrefabLOD0: field này bắt buộc phải có sẵn ở vùng mặc định, ghi đè thẳng.
+  function applyLeafOverwriteOnly(bytes, container, ancestors, leafName, leafTrio){
+    const existing = findField(container.records, leafName);
+    if(!existing) throw new Error('Field "'+leafName+'" không tồn tại sẵn ở vùng đích — không tự chèn mới, kiểm tra lại cấu trúc target');
+    const anc = ancestors.concat([existing.recOff]);
+    return AOV.splice(bytes, existing.contentStart, existing.contentEnd, leafTrio, anc, null).bytes;
+  }
+
+  // Luôn chèn mới, KHÔNG kiểm tra đã tồn tại hay chưa. Dùng cho PreloadAnimatorEffects:
+  // bắt buộc chèn, không quan tâm đích đã có field cùng tên hay không.
+  function applyLeafInsertOnly(bytes, container, ancestors, leafName, leafTrio){
+    const newRecord = AOV.buildRecord(leafName, leafTrio);
+    const insertPos = container.records.length ? container.records[container.records.length-1].contentEnd : container.outerLenPos+8;
+    const countBump = {pos: container.outerLenPos+4, delta:1};
+    return AOV.splice(bytes, insertPos, insertPos, newRecord, ancestors, countBump).bytes;
+  }
+
   function applyLeafMaybeEmpty(bytes, parentField, ancestorsToField, leafName, leafTrio){
     const inner = AOV.getContainerRecords(bytes, parentField.contentStart, parentField.contentEnd);
     if(inner){
@@ -231,6 +258,20 @@ const Transplant = (() => {
     const {bytes:b2, field, ancestors} = resolveToField(bytes, parentPath, templates||{});
     const anc2 = ancestors.concat([field.recOff]);
     return applyLeafMaybeEmpty(b2, field, anc2, leafName, leafTrio);
+  }
+
+  // Biến thể chỉ-ghi-đè, dùng cho ArtSkinPrefabLOD0 -> ArtPrefabLOD0 ở root level.
+  function transplantFieldOverwriteOnly(bytes, leafName, leafTrio){
+    const root = AOV.getRootContainer(bytes);
+    const ancestors = [0, root.outerLenPos];
+    return applyLeafOverwriteOnly(bytes, root, ancestors, leafName, leafTrio);
+  }
+
+  // Biến thể chỉ-chèn-mới, dùng cho PreloadAnimatorEffects ở root level.
+  function transplantFieldInsertOnly(bytes, leafName, leafTrio){
+    const root = AOV.getRootContainer(bytes);
+    const ancestors = [0, root.outerLenPos];
+    return applyLeafInsertOnly(bytes, root, ancestors, leafName, leafTrio);
   }
 
   function extractSkinId(bytes, field){
@@ -274,56 +315,96 @@ const Transplant = (() => {
     return bytes.slice(scale.contentStart, scale.contentEnd);
   }
 
+  // Viết số thực 32-bit little-endian (định dạng payload số dùng xuyên suốt format này).
+  function floatBytesLE(val){
+    const buf = new ArrayBuffer(4);
+    new DataView(buf).setFloat32(0, val, true);
+    return new Uint8Array(buf);
+  }
+
+  // Giữ nguyên header/kind-tag của trio Scale mẫu (lấy từ đích nếu đích đã có,
+  // không thì lấy từ nguồn làm khuôn), chỉ ghi đè 4 byte cuối = payload số bằng giá trị cố định.
+  function buildFixedScaleTrio(templateTrio, value){
+    if(!templateTrio || templateTrio.length<4) return null;
+    const out = new Uint8Array(templateTrio);
+    out.set(floatBytesLE(value), out.length-4);
+    return out;
+  }
+
   function applySkinToTarget(targetBytes, sourceBytes, skinChoice){
     let bytes = targetBytes;
     const ops = [];
 
-    let fieldsToApply = [];
     if(skinChoice.type==='skin'){
       const skins = getSkinElements(sourceBytes);
       const chosen = skins.find(s=>s.index===skinChoice.index);
       if(!chosen) throw new Error('Không tìm thấy skin đã chọn trong file nguồn');
-      fieldsToApply = chosen.fields.map(f=>({rawName:f.name, targetName: targetNameFor(f.name), trio: sourceBytes.slice(f.contentStart, f.contentEnd)}));
+
+      // ArtSkinPrefabLOD0 -> ArtPrefabLOD0: BẮT BUỘC ghi đè (field này luôn có sẵn ở vùng mặc định).
+      const artField = chosen.fields.find(r=>r.name.startsWith('ArtSkinPrefabLOD0'));
+      if(!artField){
+        ops.push({action:'skip', name:'ArtSkinPrefabLOD0 — không thấy ở skin nguồn'});
+      } else {
+        const targetName = targetNameFor(artField.name); // ArtSkinPrefabLOD0 -> ArtPrefabLOD0
+        const trio = sourceBytes.slice(artField.contentStart, artField.contentEnd);
+        bytes = transplantFieldOverwriteOnly(bytes, targetName, trio);
+        ops.push({action:'overwrite', name: targetName});
+      }
+
+      // PreloadAnimatorEffects: BẮT BUỘC chèn mới, không kiểm tra đã có hay chưa.
+      const preloadField = chosen.fields.find(r=>r.name.startsWith('PreloadAnimatorEffects'));
+      if(!preloadField){
+        ops.push({action:'skip', name:'PreloadAnimatorEffects — không thấy ở skin nguồn'});
+      } else {
+        const trio = sourceBytes.slice(preloadField.contentStart, preloadField.contentEnd);
+        bytes = transplantFieldInsertOnly(bytes, preloadField.name, trio);
+        ops.push({action:'insert', name: preloadField.name});
+      }
     } else {
       const root = AOV.getRootContainer(sourceBytes);
-      fieldsToApply = root.records
+      const fieldsToApply = root.records
         .filter(r=> !r.name.startsWith('SkinPrefab') && !r.name.startsWith('ActorName'))
         .map(f=>({rawName:f.name, targetName: f.name, trio: sourceBytes.slice(f.contentStart, f.contentEnd)}));
-    }
-
-    for(const op of fieldsToApply){
-      const root = AOV.getRootContainer(bytes);
-      const existed = !!findField(root.records, op.targetName);
-      bytes = transplantField(bytes, [], op.targetName, op.trio, {});
-      ops.push({action: existed?'overwrite':'insert', name: op.targetName});
-    }
-
-    // companion Scale: chỉ khi chọn 1 skin cụ thể (nhánh "default" đã bulk-copy nguyên TransConfigsK rồi, tránh trùng)
-    const scaleTrio = skinChoice.type==='skin' ? getCompanionScaleTrio(sourceBytes) : null;
-    if(scaleTrio){
-      try{
-        const parentPath = [{type:'field', name:'TransConfigsK'}, {type:'index', index:1}];
-        const root0 = AOV.getRootContainer(bytes);
-        const trans0 = root0.records.find(r=>r.name==='TransConfigsK');
-        let existed = false;
-        if(trans0){
-          const inner0 = AOV.getContainerRecords(bytes, trans0.contentStart, trans0.contentEnd);
-          if(inner0 && inner0.records.length>1){
-            const el1inner0 = AOV.getContainerRecords(bytes, inner0.records[1].contentStart, inner0.records[1].contentEnd);
-            existed = !!(el1inner0 && el1inner0.records.find(r=>r.name==='Scale'));
-          }
-        }
-        bytes = transplantField(bytes, parentPath, 'Scale', scaleTrio, {});
-        ops.push({action: existed?'overwrite':'insert', name:'Scale (TransConfigsK/Element[1])'});
-      }catch(err){
-        ops.push({action:'skip', name:'Scale (TransConfigsK/Element[1]) — '+err.message});
+      for(const op of fieldsToApply){
+        const root2 = AOV.getRootContainer(bytes);
+        const existed = !!findField(root2.records, op.targetName);
+        bytes = transplantField(bytes, [], op.targetName, op.trio, {});
+        ops.push({action: existed?'overwrite':'insert', name: op.targetName});
       }
+    }
+
+    // Scale (TransConfigsK/Element[1]): luôn set giá trị CỐ ĐỊNH = FIXED_SCALE_VALUE,
+    // không lấy từ file nguồn nữa. Thêm nếu đích chưa có field Scale, ghi đè nếu đã có.
+    // Nhánh "default" (bulk-copy nguyên TransConfigsK) vẫn cần chạy bước này để đảm bảo
+    // giá trị cuối cùng luôn là FIXED_SCALE_VALUE bất kể TransConfigsK vừa copy từ nguồn mang gì.
+    try{
+      const root0 = AOV.getRootContainer(bytes);
+      const trans0 = root0.records.find(r=>r.name==='TransConfigsK');
+      let existingTrio = null, existed = false;
+      if(trans0){
+        const inner0 = AOV.getContainerRecords(bytes, trans0.contentStart, trans0.contentEnd);
+        if(inner0 && inner0.records.length>1){
+          const el1inner0 = AOV.getContainerRecords(bytes, inner0.records[1].contentStart, inner0.records[1].contentEnd);
+          const existingScale = el1inner0 && el1inner0.records.find(r=>r.name==='Scale');
+          if(existingScale){ existed = true; existingTrio = bytes.slice(existingScale.contentStart, existingScale.contentEnd); }
+        }
+      }
+      // Khuôn header: ưu tiên trio Scale đã có ở đích, không thì lấy khuôn từ nguồn.
+      const templateTrio = existingTrio || getCompanionScaleTrio(sourceBytes);
+      const scaleTrio = buildFixedScaleTrio(templateTrio, FIXED_SCALE_VALUE);
+      if(!scaleTrio) throw new Error('Không tìm được khuôn định dạng cho field Scale (cả đích lẫn nguồn đều không có)');
+
+      const parentPath = [{type:'field', name:'TransConfigsK'}, {type:'index', index:1}];
+      bytes = transplantField(bytes, parentPath, 'Scale', scaleTrio, {});
+      ops.push({action: existed?'overwrite':'insert', name:'Scale (TransConfigsK/Element[1]) = '+FIXED_SCALE_VALUE});
+    }catch(err){
+      ops.push({action:'skip', name:'Scale (TransConfigsK/Element[1]) — '+err.message});
     }
 
     return {bytes, ops};
   }
 
-  return {findField, targetNameFor, transplantField, getSkinElements, getCompanionScaleTrio, applySkinToTarget, RENAME_MAP, KEEP_SKIN_EXCEPTIONS};
+  return {findField, targetNameFor, transplantField, transplantFieldOverwriteOnly, transplantFieldInsertOnly, getSkinElements, getCompanionScaleTrio, buildFixedScaleTrio, applySkinToTarget, RENAME_MAP, KEEP_SKIN_EXCEPTIONS, FIXED_SCALE_VALUE};
 })();
 
 
