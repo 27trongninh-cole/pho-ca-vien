@@ -43,3 +43,8 @@ Gameplay mô tả khả năng và tương tác cần có; Đồ họa thiết k�
 - **Đơn thứ hai chỉ được bấm Giao sau khi đơn thứ nhất đã giao xong**, kể cả khi khay đã đủ món cho đơn thứ hai.
 - Có **hàng chờ thu gọn** và cho phép xem trước yêu cầu của khách đang đợi để chuẩn bị món. Có thể chiên sẵn, đặt vào khay chung, nhưng **không giao/thu tiền trước lượt**.
 - Quy tắc khay thành phẩm chung, khớp đúng công thức và giao trọn đơn giữ nguyên. Chưa chốt giới hạn tổng hàng chờ, thời gian chờ hoặc cách trình bày cụ thể.
+
+## Dữ liệu định danh khách NPC trên đơn hàng — 2026-10-25
+- Mỗi đơn cung cấp `customerId` (định danh khách) và `customerName` (tên hiển thị) để UI dùng **tên khách NPC** làm tiêu đề thẻ đơn.
+- Prototype được phép dùng tên mẫu. Chưa chốt danh sách tên, cách sinh NPC, chân dung hay đặc tính khách; không biến dữ liệu mẫu thành luật cuối.
+- Chi tiết món/công thức vẫn xem trong chi tiết đơn; quy tắc FIFO và hai đơn chính không đổi.
