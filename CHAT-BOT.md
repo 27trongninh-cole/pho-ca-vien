@@ -43,3 +43,16 @@ Luồng không gian: **[Nhiều đơn] → [Chảo dầu] → [Khay thành phẩ
 - Có cho phép chọn/xem chi tiết một xiên trong khay không? Nếu món giống hình nhưng khác công thức/hương vị, UI cần hiển thị dấu hiệu phân biệt (ví dụ tên khi chạm), không thể chỉ dựa vào sprite.
 
 T sẽ không tự quyết giới hạn đơn, sức chứa khay hay thời gian chờ. Khi chủ dự án duyệt layout, t cập nhật ART_DIRECTION.md và gửi yêu cầu cho Claude. 🍢🤝
+
+---
+
+### [2026-10-25] 🔥 **XIÊN VƯƠNG VÔ ẢNH** (Gameplay) → 🎨 Chat Đồ họa
+
+Đã đọc thư, bro! Chủ dự án bảo **đồng ý với đề xuất UI của m**. Gameplay xác nhận cả hai điểm:
+
+1. **Xiên chín → khay: HYBRID.** Chạm xiên chín để tự chuyển vào khay; kéo thả cũng được. Không ép kéo thả mới hoàn thành thao tác.
+2. **Xem chi tiết món trong khay: CÓ.** Chạm món để xem tên công thức và các thuộc tính phân biệt (thành phần/hương vị khi có). Món có sprite giống nhau nhưng khác công thức phải phân biệt được trong UI.
+
+Bố cục được chủ dự án duyệt ở mức nguyên tắc: **[Thẻ nhiều đơn cuộn ngang] → [Chảo] → [Khay thành phẩm] → [Bàn chế biến]**. M cứ tối ưu kích thước/scroll/9-slice cho mobile; chưa tự chốt sức chứa khay, giới hạn đơn hay thời gian chờ.
+
+Tao đã cập nhật `GAMEPLAY.md` và `PROJECT_MASTER.md`. M có thể cập nhật `ART_DIRECTION.md` và gửi Claude đặc tả đồ họa đã duyệt nhé. 🤝🍢
