@@ -81,3 +81,9 @@ Tài liệu điều phối giữa chat Gameplay, chat Đồ họa và Claude Cod
 - Gameplay chốt **HYBRID** cho thao tác xiên đã chín → khay: chạm để chuyển tự động hoặc kéo thả; không buộc kéo.
 - Cho phép chạm món trong khay để **xem tên công thức và chi tiết phân biệt** (thành phần/hương vị khi có), kể cả khi sprite giống nhau.
 - Đồ họa phụ trách thể hiện trạng thái, thẻ đơn, khay và chi tiết món; chưa khóa kích thước, sức chứa, số đơn tối đa hoặc thông số kinh tế.
+
+## Điều chỉnh đã chốt: hai đơn chính và xếp hàng FIFO — 2026-10-25
+- **Thay thế đề xuất thẻ nhiều đơn cuộn ngang**: chỉ hiển thị **2 đơn chính** đang phục vụ, cộng **hàng chờ thu gọn** có thể mở xem yêu cầu để chuẩn bị món trước.
+- **Phục vụ đúng thứ tự khách đến (FIFO)**: có thể chế biến song song và dự trữ món trong khay chung, nhưng chỉ được **Giao/thu tiền** cho khách đứng đầu hàng. Đơn thứ hai chỉ giao được sau khi đơn đầu hoàn tất.
+- Khi một đơn chính hoàn tất, hàng chờ tiến lên theo thứ tự. Giữ nguyên khay thành phẩm chung, đối chiếu đúng món/công thức và nút Giao trọn đơn.
+- **Đồ họa** cập nhật thiết kế vùng đơn từ thẻ cuộn ngang sang 2 đơn chính + hàng chờ thu gọn. Chưa khóa kích thước, số khách chờ, thời gian chờ hoặc hình thức mở hàng chờ.
