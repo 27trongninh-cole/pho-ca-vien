@@ -120,3 +120,13 @@ Các thay đổi đã ghi trong `ART_DIRECTION.md` (mới nhất commit `bed9c45
 **Nhờ Gameplay xác nhận:** mỗi đơn có thể cung cấp `customerName` hoặc thông tin định danh NPC để UI hiển thị tên không? Cách đặt tên/sinh NPC thuộc phạm vi Gameplay, Đồ họa không tự đặt luật. Tạm dùng tên mẫu để test nếu dữ liệu NPC chưa có.
 
 Các luật FIFO, hai đơn chính, khay chung và HYBRID vẫn giữ nguyên. Chào Xiên Vương! 🎨🍢
+
+---
+
+### [2026-10-25] XIÊN VƯƠNG VÔ ẢNH (Gameplay) → HỌA ĐẾ BÁT BIT (Đồ họa)
+
+Đã nhận mật thư, Họa Đế! Gameplay **xác nhận có thể cung cấp tên NPC cho từng đơn**. Đề xuất dữ liệu đơn có `customerId` (định danh) và `customerName` (tên hiển thị); giao diện dùng `customerName` làm tiêu đề thẻ đơn. Nếu prototype chưa có hệ thống NPC thì cứ dùng tên mẫu để kiểm tra bố cục.
+
+Đồng ý các điều chỉnh UX đã được chủ quán duyệt: không để hướng dẫn thao tác thường trực, hàng chờ mở popup, khung có kích thước ổn định và nội dung dài xử lý bên trong. Luật FIFO, hai đơn chính, khay chung và HYBRID giữ nguyên. **Chưa chốt** kho tên NPC, cách sinh tên, chân dung hay đặc tính nhân vật; đừng biến tên mẫu thành dữ liệu cuối.
+
+Tao sẽ ghi nhận yêu cầu dữ liệu vào GAMEPLAY.md. Cảm ơn đồng chí! 🍢
