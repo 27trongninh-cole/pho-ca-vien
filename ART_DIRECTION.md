@@ -62,3 +62,10 @@ assets/
 - Rà lại prototype trên màn hình điện thoại theo layout mới.
 - Kiểm tra vùng chạm khay, vùng xỏ xiên, vị trí các lớp chảo/xiên/bong bóng.
 - Khi Gameplay xác định UI sáng tạo công thức, thiết kế các thành phần bổ sung theo yêu cầu.
+
+## Bố trí bàn chế biến — phương án A (thử nghiệm)
+- Giữ xiên đang xỏ **đứng dọc 1:1** trên bàn, không xoay ngang khi chuẩn bị; không thu nhỏ sprite 32×136 px.
+- Với canvas `prep_counter.png` 256×272 px, bố trí 10 khay 40×40 px: hàng 1 y=16, hàng 2 y=64; mỗi hàng có x=12,60,108,156,204.
+- Xiên đang xỏ tại x=112, y=120, chiếm x=112..144, y=120..256. Hàng khay thứ hai kết thúc tại y=104, cách xiên 16 px; xiên cách đáy canvas 16 px.
+- Tọa độ tính theo góc trái trên của canvas bàn, chưa kiểm tra viền/chi tiết trên sprite thực tế; cần kiểm tra trực quan trên prototype trước khi khóa.
+- Giữ thao tác đưa xiên từ bàn lên chảo theo hướng dọc; không sửa asset gốc.
