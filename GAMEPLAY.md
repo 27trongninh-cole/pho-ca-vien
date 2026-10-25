@@ -23,3 +23,11 @@ Version: 0.1 | 2026-10-25
 
 ## Nguyên tắc phối hợp với Đồ họa
 Gameplay mô tả khả năng và tương tác cần có; Đồ họa thiết kế cách hiển thị mà không tự áp đặt quy tắc kinh tế hay công thức.
+
+## Chốt gameplay: nhiều đơn đồng thời và khay thành phẩm — 2026-10-25
+- Người chơi có thể có **nhiều đơn hàng đang chờ đồng thời**, được quyền chọn thứ tự xỏ và chiên; không buộc hoàn thành tuần tự từng khách.
+- Có thể chiên đồng thời các xiên thuộc nhiều đơn khác nhau trong các vị trí chảo hiện có. **Số đơn tối đa, thời gian chờ và công suất cuối cùng chưa chốt**.
+- Bổ sung **khay thành phẩm**: xiên chiên xong được đưa vào khay chung, không cần gán thủ công cho từng khách.
+- Mỗi đơn có thao tác **Giao**. Chỉ khi khay có đủ **toàn bộ món đúng yêu cầu của đơn** mới cho giao; hệ thống tự đối chiếu, lấy/trừ đúng số món trong khay và hoàn thành đơn, không cần người chơi chọn từng xiên cho khách.
+- Khi đối chiếu món phải dựa trên **công thức/món hoàn chỉnh**, không chỉ tên nguyên liệu, để tránh nhầm các món cùng nguyên liệu nhưng khác cách chế biến/hương vị khi hệ thống công thức được hoàn thiện.
+- Chưa chốt sức chứa khay, giới hạn tồn, xử lý món để lâu, giao một phần, cách hiển thị khay và UI danh sách đơn. **Đồ họa quyết bố cục, kích thước và sprite**; Claude Code chỉ triển khai sau khi phối hợp giao diện.
