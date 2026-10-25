@@ -75,3 +75,9 @@ Tài liệu điều phối giữa chat Gameplay, chat Đồ họa và Claude Cod
 - **Cần phối hợp Đồ họa:** thiết kế vị trí khay thành phẩm, cách hiển thị nhiều đơn, trạng thái đủ/thiếu món và nút Giao trong giao diện mobile. Thứ tự bố cục prototype cũ cần được điều chỉnh có chủ đích để bổ sung khay; không tự chốt tọa độ.
 - **Cần phối hợp Claude Code:** cập nhật logic nhiều đơn, kho thành phẩm và tự khớp/giao đúng đơn sau khi layout được duyệt.
 - **Chưa chốt:** giới hạn số đơn, sức chứa khay, thời gian chờ, công suất chiên cuối cùng và cơ chế món để lâu. Không tự biến các ví dụ brainstorm thành thông số bắt buộc.
+
+## Xác nhận phối hợp Gameplay–Đồ họa — 2026-10-25
+- Chủ dự án đồng ý bố cục mobile do Đồ họa đề xuất: **[Thẻ nhiều đơn cuộn ngang] → [Chảo dầu] → [Khay thành phẩm chung] → [Bàn chế biến]**. Đây là bố cục mới thay cho bố cục ba vùng của prototype.
+- Gameplay chốt **HYBRID** cho thao tác xiên đã chín → khay: chạm để chuyển tự động hoặc kéo thả; không buộc kéo.
+- Cho phép chạm món trong khay để **xem tên công thức và chi tiết phân biệt** (thành phần/hương vị khi có), kể cả khi sprite giống nhau.
+- Đồ họa phụ trách thể hiện trạng thái, thẻ đơn, khay và chi tiết món; chưa khóa kích thước, sức chứa, số đơn tối đa hoặc thông số kinh tế.
