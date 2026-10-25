@@ -66,3 +66,12 @@ Tài liệu điều phối giữa chat Gameplay, chat Đồ họa và Claude Cod
 ## Kiểm tra đồng bộ GitHub — 2026-10-25
 - Kiểm tra khả năng ghi từ chat Gameplay vào repository chung theo yêu cầu của chủ dự án.
 - Đây là dòng kiểm thử kết nối, **không thay đổi quyết định thiết kế hoặc yêu cầu triển khai**.
+
+## Cập nhật gameplay đã chốt: xử lý nhiều đơn và khay thành phẩm — 2026-10-25
+- **Thay thế mô hình một đơn tại một thời điểm của prototype** bằng khả năng nhiều đơn chờ đồng thời; người chơi tự chọn thứ tự chế biến và tận dụng các vị trí chiên để làm món cho nhiều khách.
+- **Thêm khay thành phẩm chung** để chứa xiên đã chiên, không buộc gán xiên vào đơn ngay khi nấu.
+- **Giao theo đơn bằng một thao tác:** nút Giao chỉ khả dụng khi khay đủ tất cả món đúng yêu cầu; bấm Giao sẽ tự lấy/trừ các món tương ứng và hoàn thành đơn. Không yêu cầu kéo từng xiên đến từng khách.
+- Khi đối chiếu đơn phải xét **đúng món/công thức**, không chỉ loại nguyên liệu; cấu trúc công thức chi tiết vẫn chưa chốt.
+- **Cần phối hợp Đồ họa:** thiết kế vị trí khay thành phẩm, cách hiển thị nhiều đơn, trạng thái đủ/thiếu món và nút Giao trong giao diện mobile. Thứ tự bố cục prototype cũ cần được điều chỉnh có chủ đích để bổ sung khay; không tự chốt tọa độ.
+- **Cần phối hợp Claude Code:** cập nhật logic nhiều đơn, kho thành phẩm và tự khớp/giao đúng đơn sau khi layout được duyệt.
+- **Chưa chốt:** giới hạn số đơn, sức chứa khay, thời gian chờ, công suất chiên cuối cùng và cơ chế món để lâu. Không tự biến các ví dụ brainstorm thành thông số bắt buộc.
