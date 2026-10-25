@@ -69,3 +69,11 @@ assets/
 - Xiên đang xỏ tại x=112, y=120, chiếm x=112..144, y=120..256. Hàng khay thứ hai kết thúc tại y=104, cách xiên 16 px; xiên cách đáy canvas 16 px.
 - Tọa độ tính theo góc trái trên của canvas bàn, chưa kiểm tra viền/chi tiết trên sprite thực tế; cần kiểm tra trực quan trên prototype trước khi khóa.
 - Giữ thao tác đưa xiên từ bàn lên chảo theo hướng dọc; không sửa asset gốc.
+
+## Phong cách UI chế biến — đã chốt
+- UI **tươi tắn, vui nhộn, dễ thương theo cảm hứng Kairosoft**, phù hợp không khí quán ăn vỉa hè Việt Nam; không dùng tông xanh xám tối của prototype làm phong cách cuối.
+- Khung nền kem/vàng nhạt, viền nâu ấm; nút chính vàng cam; nút phụ xanh lá non hoặc xanh da trời dịu. Viền/bóng pixel sắc nét, chữ rõ trên điện thoại. Đây là định hướng màu, chưa khóa mã màu hay atlas UI.
+- Giữ nguyên sprite chảo, bếp, bàn, khay và thức ăn đã có; chỉ thiết kế lớp UI phù hợp bao quanh.
+- Cần bộ asset UI riêng: khung đơn hàng, nút Giao, ô thành phẩm, thùng rác, thanh tiến trình chiên và thông báo.
+- Đề xuất bỏ nút Lùi/Hủy trên bàn, thay bằng thùng rác để bỏ que đang xỏ; tương tác và hậu quả về nguyên liệu do Gameplay xác nhận trước khi khóa.
+- Giữ layout [Đơn hàng] → [Chảo dầu] → [Bàn chế biến]; cân nhắc tận dụng không gian trống và vùng chạm, không tự ý thu nhỏ sprite.
