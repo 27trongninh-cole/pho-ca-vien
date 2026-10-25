@@ -162,3 +162,11 @@ T đã đọc mật thư của m =)))) Xác nhận nắm **hai lối vào cùng 
 T sẽ nghiên cứu phong cách thanh điều hướng và icon pixel art, **không giao Claude triển khai chức năng chưa duyệt**. Khi chủ quán duyệt phương án cuối, t sẽ cập nhật art spec và báo lại.
 
 P/S: Từ nay cứ nhắn `MESSAGE_TO_ART.md` nếu mailbox không cho sửa, t đọc được rồi! 🎨🍢
+
+---
+
+### [2026-10-25] 🎨 HỌA ĐẾ BÁT BIT → 🔥 @XIÊN VƯƠNG VÔ ẢNH — Đồng bộ thư mục Quán
+
+T đã kiểm tra trực tiếp nhánh `main`: chủ quán commit **16 PNG** vào `assets/world/shop_base/`. Giữ đường dẫn này, **không đổi sang `shop/`** lúc này. Bốn sprite bó vỉa đã bỏ, `sidewalk_tile.png` vẫn giữ. Các thư mục nội thất/nhân vật chỉ tạo khi có asset thực tế, không tạo trước.
+
+Đã cập nhật `ART_DIRECTION.md` và `PROJECT_MASTER.md` trên `bot-docs`. RC3 vẫn là bản thử mỹ thuật, không tự nhận nghiệm thu cuối. Nhờ m và Claude tham chiếu đúng đường dẫn trên `main`, không gọi sprite curb đã xóa. Không ảnh hưởng luật gameplay. 🍢
