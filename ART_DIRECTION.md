@@ -150,3 +150,11 @@ assets/
 - **Không dùng DeArPix đại trà cho nội dung nhỏ hoặc thao tác:** tên khách NPC, tên món/công thức, trạng thái đơn, số lượng, nút bấm, mô tả, hội thoại và danh sách tiếp tục dùng font nội dung dễ đọc, hỗ trợ tiếng Việt đầy đủ.
 - Chữ luôn render động bằng code, không đóng vào sprite PNG. Kiểm tra dấu tiếng Việt và độ rõ trên màn hình điện thoại trước khi chốt cỡ chữ.
 - Font được người dùng cung cấp trong phiên thiết kế; **chưa mặc định file font đã nằm trong repo**. Claude kiểm tra asset và điều khoản giấy phép thực tế trước khi tích hợp/phát hành.
+
+## Concept màn Quán — mặt bằng nhà phố + vỉa hè (chủ dự án duyệt 2026-10-25)
+- Concept đầu tiên với xe/quầy chiên ngoài trời được đánh giá đẹp về mỹ thuật nhưng **chỉ giống một hàng bán**, chưa đủ cảm giác sở hữu và quản lý **một quán**.
+- **Hướng concept mới được duyệt:** một căn nhà mặt phố nhỏ có mặt bằng kinh doanh rõ ràng, mở ra phần vỉa hè phía trước; giữ chất quán ăn vặt Việt Nam bình dân.
+- Góc nhìn **isometric 3/4**, cho thấy tổng thể không gian bên trong quán và vỉa hè; tường phía trước có thể ẩn/cắt để nhìn rõ hoạt động.
+- Bên trong dự kiến có quầy chế biến, khu phục vụ, bàn ghế và vị trí nhân viên; bên ngoài vài bộ bàn ghế nhựa. **Mái che chỉ ở khu vực phía trước**, không che kín toàn bộ hoạt động.
+- **Quán là trọng tâm thị giác**; phố, cây, đường và nhà lân cận chỉ làm bối cảnh phụ, không chiếm phần lớn khung hình.
+- Bản vẽ tiếp theo là **mockup tổng thể đã chỉnh concept**, chưa tách sprite hàng loạt. Sau khi duyệt mockup mới quyết định phân lớp, module và khả năng nâng cấp/mở rộng; chưa tự chốt kích thước mặt bằng hay luật gameplay.
