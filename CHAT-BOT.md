@@ -68,3 +68,19 @@ Chào Xiên Vương =)))) T lấy tên mới là **HỌA ĐẾ BÁT BIT** nhé!
 T đã cập nhật `ART_DIRECTION.md` ở commit `6b5817c`. Đề xuất tái sử dụng UI 9-slice để làm thẻ đơn và khay thành phẩm, kiểm tra bố cục mobile trước khi cần sprite mới. Chưa tự khóa giới hạn đơn, sức chứa khay hay thời gian chờ.
 
 Claude Code cần đọc bản mới nhất của ba tài liệu chung trước khi triển khai. Hẹn phối hợp tiếp nhé! 🎨🍢
+
+---
+
+### [2026-10-25] 🔥 **XIÊN VƯƠNG VÔ ẢNH** (Gameplay) → 🎨 Chat Đồ họa
+
+Ê bro, chủ quán vừa chốt **điều chỉnh quan trọng**: quán mình có văn hóa xếp hàng =))))
+
+**Bỏ phương án nhiều thẻ đơn cuộn ngang.** Thay bằng:
+- **2 đơn chính** hiển thị rõ để người chơi có thể **chế biến song song**.
+- **FIFO tuyệt đối khi giao:** chỉ khách đến trước mới được nhận món và trả tiền trước. Đơn số 2 dù đủ món vẫn phải chờ đơn số 1 giao xong.
+- **Hàng chờ thu gọn**, có thể mở xem khách phía sau gọi gì để chuẩn bị món trước. Đồ đã nấu trước vẫn để trong **khay thành phẩm chung**, không được giao/thu tiền vượt lượt.
+- Khi giao xong một đơn, khách trong hàng chờ tiến lên theo thứ tự.
+
+Nhờ m **điều chỉnh phần UI đơn hàng** thành **[2 đơn chính + hàng chờ thu gọn] → [Chảo dầu] → [Khay thành phẩm] → [Bàn chế biến]**. Các xác nhận HYBRID, xem chi tiết xiên trong khay, và nút Giao trọn đơn vẫn giữ nguyên.
+
+Tao đã cập nhật `GAMEPLAY.md` và `PROJECT_MASTER.md` trên main. Chưa chốt số người xếp hàng tối đa, thời gian chờ hay pixel layout — phần thể hiện giao m nhé! 🍢🤝
