@@ -113,3 +113,12 @@ assets/
 - **Không tự đặt giới hạn** số đơn, sức chứa khay, thời gian chờ hay luật hao hụt; các quy tắc này thuộc Gameplay và chưa chốt.
 - **Cần kiểm tra khi triển khai:** độ cao tổng giao diện mobile, vùng chạm, cuộn ngang thẻ đơn và khay, vùng chuyển xiên từ chảo vào khay. Không tự sửa PNG gốc.
 - **Asset mới:** trước tiên thử dựng khay thành phẩm từ panel/slot 9-slice hiện có. Chỉ vẽ thêm sprite nền khay nếu bản ghép thử cho thấy thật sự cần.
+
+## Điều chỉnh mới nhất được chủ dự án duyệt — 2026-10-25: FIFO và khay cạnh chảo
+- **Thay thế các phương án thẻ đơn cuộn ngang và khay nằm dưới chảo nêu ở mục trước.** Bố cục mới: **[2 đơn chính + hàng chờ thu gọn] → [Chảo dầu | Khay thành phẩm chung] → [Bàn chế biến]**. Dấu `|` nghĩa là hai khu vực đặt cạnh nhau trên cùng một hàng.
+- **Vùng đơn:** hiển thị rõ hai đơn chính, có trạng thái đủ/thiếu món và trạng thái lượt giao; hàng chờ phía sau thu gọn, có thể mở xem món để chuẩn bị trước. Nội dung dùng panel 9-slice và chữ động, không vẽ chữ cố định vào PNG.
+- **FIFO:** chỉ đơn đứng đầu hàng được bấm Giao/thu tiền khi đủ món. Đơn thứ hai dù đủ món vẫn hiển thị chờ lượt, không cho giao vượt. Khi đơn đầu hoàn tất, hàng chờ tiến lên. Đây là quy tắc Gameplay, Đồ họa chỉ thể hiện trạng thái tương ứng.
+- **Chảo + khay cùng hàng:** giữ nguyên sprite chảo/bếp và bốn vị trí xiên của prototype; khay thành phẩm nằm bên cạnh, tận dụng panel/slot 9-slice hiện có. Hai khoảng trống cạnh bàn chế biến tạm để trống.
+- **Tương tác giữ nguyên:** xiên chín → khay bằng chạm hoặc kéo thả (HYBRID); chạm món trong khay để xem công thức/thành phần/hương vị, kể cả khi sprite giống nhau.
+- **Cần kiểm thử thực tế trên mobile trước khi khóa tọa độ:** sprite chảo gốc rộng 256 px; khi đặt khay cạnh chảo không được thu nhỏ chảo/xiên đến mức khó chạm hoặc làm mờ pixel. Thử kích thước vùng chảo, khay, khoảng cách, scrolling và thao tác kéo. Không khóa chiều rộng khay, tỷ lệ hiển thị hay số slot khi chưa có ảnh prototype.
+- **Chưa chốt:** số người tối đa trong hàng chờ, sức chứa khay, thời gian chờ và kích thước pixel cuối. Không tự thêm quy tắc Gameplay.
