@@ -122,3 +122,10 @@ assets/
 - **Tương tác giữ nguyên:** xiên chín → khay bằng chạm hoặc kéo thả (HYBRID); chạm món trong khay để xem công thức/thành phần/hương vị, kể cả khi sprite giống nhau.
 - **Cần kiểm thử thực tế trên mobile trước khi khóa tọa độ:** sprite chảo gốc rộng 256 px; khi đặt khay cạnh chảo không được thu nhỏ chảo/xiên đến mức khó chạm hoặc làm mờ pixel. Thử kích thước vùng chảo, khay, khoảng cách, scrolling và thao tác kéo. Không khóa chiều rộng khay, tỷ lệ hiển thị hay số slot khi chưa có ảnh prototype.
 - **Chưa chốt:** số người tối đa trong hàng chờ, sức chứa khay, thời gian chờ và kích thước pixel cuối. Không tự thêm quy tắc Gameplay.
+
+## Khay thành phẩm nhỏ gọn, xiên xếp chồng — chủ dự án xác nhận 2026-10-25
+- **Không cần hiển thị mỗi xiên thành một ô nằm ngang.** Khay thành phẩm đặt cạnh chảo có thể nhỏ vì các xiên đã chín **xếp chồng/lệch lớp** trong cùng khay, giống khay đựng đồ chiên thực tế.
+- Ưu tiên giữ chảo và bốn vị trí chiên đủ lớn, dễ chạm; khay chiếm ít chiều ngang hơn so với phương án dãy slot trước đó.
+- Xiên trong khay có thể lệch vài pixel để gợi số lượng; không dựa vào số xiên nhìn thấy để thể hiện chính xác toàn bộ món khi bị che khuất.
+- Chạm khay mở danh sách/chi tiết món và số lượng để người chơi phân biệt các công thức, kể cả khi sprite trùng nhau. Đây là đề xuất cách thể hiện chi tiết, chưa khóa kiểu popup.
+- Giữ thao tác chạm hoặc kéo xiên chín vào khay; chưa khóa kích thước khay, sức chứa hay quy tắc xếp lớp.
