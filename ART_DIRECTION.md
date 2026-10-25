@@ -158,3 +158,36 @@ assets/
 - Bên trong dự kiến có quầy chế biến, khu phục vụ, bàn ghế và vị trí nhân viên; bên ngoài vài bộ bàn ghế nhựa. **Mái che chỉ ở khu vực phía trước**, không che kín toàn bộ hoạt động.
 - **Quán là trọng tâm thị giác**; phố, cây, đường và nhà lân cận chỉ làm bối cảnh phụ, không chiếm phần lớn khung hình.
 - Bản vẽ tiếp theo là **mockup tổng thể đã chỉnh concept**, chưa tách sprite hàng loạt. Sau khi duyệt mockup mới quyết định phân lớp, module và khả năng nâng cấp/mở rộng; chưa tự chốt kích thước mặt bằng hay luật gameplay.
+
+## Quy ước thư mục màn Quán — đối chiếu `main` ngày 2026-10-25
+
+**Quyết định hiện hành:** Giữ `assets/world/shop_base/` là đường dẫn chính thức của bộ sprite kiến trúc cơ sở. **Không đổi tên thành `shop/`**, không di chuyển các PNG đã commit chỉ để khớp sơ đồ thư mục dự kiến trước đây. Tên `shop/` từng được nêu là định hướng tổ chức asset mở rộng, **không phải yêu cầu cấu trúc bắt buộc của giai đoạn hiện tại**.
+
+Đã kiểm tra cây file thực tế trên nhánh `main`: có **16 PNG** ở `assets/world/shop_base/`:
+```text
+assets/world/shop_base/
+├── floor_tile.png
+├── sidewalk_tile.png
+├── wall_back_segment.png
+├── wall_side_segment.png
+├── wall_corner.png
+├── wall_end.png
+├── entrance_transition.png
+├── entrance_jamb_left.png
+├── entrance_jamb_right.png
+├── entrance_lintel.png
+├── entrance_shutter_closed.png
+├── awning_bracket.png
+├── awning_roof_segment.png
+├── awning_fascia_segment.png
+├── awning_end_left.png
+└── awning_end_right.png
+```
+
+**Đã chốt bỏ bó vỉa hè** để giảm độ phức tạp và lỗi ghép. Không đưa trở lại `sidewalk_curb.png`, `curb_corner_left.png`, `curb_corner_right.png`, `curb_end.png`; giữ `sidewalk_tile.png` để thể hiện nền vỉa hè phẳng.
+
+**Quy chuẩn hiện tại:** màn Quán dùng isometric 2:1, footprint tile 64×32 px; mặt bằng thử 6×5 và có khả năng ghép mở rộng 8×5, 8×7 bằng cùng sprite. Sàn/tường/cửa là thành phần nền; mái hiên có thể bật/tắt độc lập và phải tránh che khuất hoạt động bên trong. **RC3 mới là bản thử, chưa được nghiệm thu mỹ thuật cuối cùng**, đặc biệt độ che khuất của mái hiên. Sự hiện diện của PNG trên `main` không đồng nghĩa mọi chi tiết đã được duyệt 10/10.
+
+**Mở rộng về sau (chưa tạo thư mục, chưa yêu cầu di chuyển):** khi có sprite mới, ưu tiên đặt các module bổ sung theo chức năng dưới `assets/world/`, chẳng hạn `shop_furniture/`, `shop_decor/`, `shop_characters/` nếu thực sự cần; tên cuối sẽ chốt theo đợt sản xuất và đường dẫn code. Có thể cân nhắc cấu trúc `shop/` nhiều thư mục con trong một đợt tái cấu trúc có kế hoạch, **không làm lúc này**.
+
+**Giao Claude Code:** đọc đúng đường dẫn `assets/world/shop_base/` trên `main`, không giả định `assets/world/shop/` tồn tại; không import sprite bó vỉa đã bỏ. Nếu script ghép cũ vẫn tham chiếu các PNG bị xóa, loại bỏ các tham chiếu đó và kiểm tra kết quả. Không thay đổi gameplay.
