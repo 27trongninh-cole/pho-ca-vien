@@ -144,3 +144,9 @@ assets/
 - Trên thẻ vẫn hiển thị icon món, số lượng/tiến độ đủ-thiếu, nút Giao và trạng thái FIFO. **Tên món/công thức đầy đủ nằm trong phần chi tiết đơn khi chạm**, không xóa thông tin cần thiết để chế biến.
 - Tên NPC dài phải nằm trong vùng kích thước cố định: giới hạn một dòng, ellipsis nếu cần; xem tên đầy đủ trong chi tiết. Không làm thẻ hay nút tự giãn theo chữ.
 - Tên ví dụ chỉ dùng để minh họa UI, chưa chốt hệ thống tên/nhân vật NPC hay quy tắc tạo tên.
+
+## Quy chuẩn typography — chủ dự án duyệt 2026-10-25
+- **DeArPix (`dearpix.ttf`) là font pixel dành cho tiêu đề/heading**, ví dụ tên game, tiêu đề màn hình, tiêu đề popup và tên khu vực khi đủ lớn để đọc rõ.
+- **Không dùng DeArPix đại trà cho nội dung nhỏ hoặc thao tác:** tên khách NPC, tên món/công thức, trạng thái đơn, số lượng, nút bấm, mô tả, hội thoại và danh sách tiếp tục dùng font nội dung dễ đọc, hỗ trợ tiếng Việt đầy đủ.
+- Chữ luôn render động bằng code, không đóng vào sprite PNG. Kiểm tra dấu tiếng Việt và độ rõ trên màn hình điện thoại trước khi chốt cỡ chữ.
+- Font được người dùng cung cấp trong phiên thiết kế; **chưa mặc định file font đã nằm trong repo**. Claude kiểm tra asset và điều khoản giấy phép thực tế trước khi tích hợp/phát hành.
