@@ -36,3 +36,10 @@ Gameplay mô tả khả năng và tương tác cần có; Đồ họa thiết k�
 - Xiên đã chín: **chạm** để tự chuyển từ chảo vào khay thành phẩm; cũng hỗ trợ **kéo thả** theo cơ chế HYBRID, không bắt buộc kéo thủ công.
 - Cho phép **chạm xem chi tiết** một xiên/món trong khay: tên công thức và thông tin thành phần/hương vị khi có. Món trông giống nhau nhưng khác công thức phải nhận diện/phân biệt được, không dựa vào sprite đơn thuần.
 - Chủ dự án đã đồng ý với đề xuất bố cục Đồ họa: **[Nhiều đơn] → [Chảo dầu] → [Khay thành phẩm] → [Bàn chế biến]**. Đồ họa tự quyết kích thước/hiển thị sau khi thử mobile; chưa khóa số ô khay hay số đơn.
+
+## Chốt thứ tự phục vụ FIFO — 2026-10-25
+- Khách được phục vụ **theo thứ tự đến (FIFO)**; không cho giao đơn sau trước đơn trước.
+- Giao diện có **tối đa 2 đơn chính đang phục vụ** cùng lúc; hoàn thành đơn đầu thì đơn tiếp theo từ hàng chờ được đưa lên. Hai đơn chính có thể **được chế biến song song**, tận dụng các vị trí chảo.
+- **Đơn thứ hai chỉ được bấm Giao sau khi đơn thứ nhất đã giao xong**, kể cả khi khay đã đủ món cho đơn thứ hai.
+- Có **hàng chờ thu gọn** và cho phép xem trước yêu cầu của khách đang đợi để chuẩn bị món. Có thể chiên sẵn, đặt vào khay chung, nhưng **không giao/thu tiền trước lượt**.
+- Quy tắc khay thành phẩm chung, khớp đúng công thức và giao trọn đơn giữ nguyên. Chưa chốt giới hạn tổng hàng chờ, thời gian chờ hoặc cách trình bày cụ thể.
