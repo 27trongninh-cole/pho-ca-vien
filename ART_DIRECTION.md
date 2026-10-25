@@ -85,3 +85,21 @@ assets/
 - Thanh tiến trình chiên là asset có thể thay đổi chiều dài và phần fill theo giá trị, không vẽ một sprite riêng cho mỗi phần trăm.
 - Đồ họa pixel sắc nét: giữ góc 9-slice không scale méo; cạnh/giữa có thể lặp texture pixel thay vì stretch gây mờ.
 - Khi thiết kế atlas/UI spec, cần chỉ rõ kích thước gốc, độ dày viền, vùng slice, padding chữ và kích thước chạm tối thiểu trên mobile.
+
+## Bộ UI sprite v0.1 — đã duyệt (2026-10-25)
+- Người dùng đã gửi `UI.zip` gồm 10 sprite. Chat Đồ họa đã kiểm tra hình thức, kích thước và thử 9-slice; **đã duyệt bộ UI v0.1 để tích hợp prototype**.
+- Các file cần đặt tại:
+  - `assets/ui/panels/panel_cream.png` (48×48, slice 12/12/12/12)
+  - `assets/ui/buttons/button_primary_normal.png` (48×32, slice 8/8/8/8)
+  - `assets/ui/buttons/button_primary_pressed.png` (48×32, slice 8/8/8/8)
+  - `assets/ui/buttons/button_primary_disabled.png` (48×32, slice 8/8/8/8)
+  - `assets/ui/buttons/button_secondary_normal.png` (48×32, slice 8/8/8/8)
+  - `assets/ui/buttons/button_secondary_pressed.png` (48×32, slice 8/8/8/8)
+  - `assets/ui/slots/slot_empty.png` (32×32, slice 8/8/8/8)
+  - `assets/ui/progress/progress_track.png` (32×16, slice 6/5/6/5)
+  - `assets/ui/progress/progress_fill.png` (32×16, slice 6/5/6/5)
+  - `assets/ui/icons/icon_trash.png` (32×32, icon thường, không 9-slice)
+- Thử 9-slice đã đạt: panel 48×48 → 240×100; nút 48×32 → 120×40; ô 32×32 → 80×70. Không được kéo giãn toàn bộ PNG làm méo góc.
+- **Việc tiếp theo cho Claude Code:** tích hợp các sprite UI vào prototype, thay khung/nút HTML xanh xám bằng UI pixel art kem/cam/xanh, render chữ động bằng code, giữ layout [Đơn hàng] → [Chảo dầu] → [Bàn chế biến]. Không thay đổi logic đơn hàng, công thức hoặc thời gian chiên.
+- Icon thùng rác thay thế vị trí nút Lùi/Hủy trên bàn về mặt UI; hành vi xóa xiên và hậu quả về nguyên liệu cần chat Gameplay xác nhận. Trong prototype có thể dùng hành vi hủy xiên hiện tại, không tự thêm luật hao hụt.
+- Chỉ cập nhật tài liệu; **không có nghĩa là PNG đã được commit vào repo**. Claude cần kiểm tra đường dẫn file thực tế trước khi tích hợp.
