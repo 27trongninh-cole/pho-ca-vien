@@ -62,3 +62,7 @@ Tài liệu điều phối giữa chat Gameplay, chat Đồ họa và Claude Cod
 ### Phối hợp giữa các bên
 - **Đồ họa:** giữ nguyên asset và layout prototype; chưa cần thiết kế thêm UI/sprite cho cơ chế công thức mở rộng khi Gameplay chưa chốt.
 - **Claude Code:** không tự suy diễn các gợi ý brainstorm thành yêu cầu tính năng; chỉ triển khai phần đã được duyệt.
+
+## Kiểm tra đồng bộ GitHub — 2026-10-25
+- Kiểm tra khả năng ghi từ chat Gameplay vào repository chung theo yêu cầu của chủ dự án.
+- Đây là dòng kiểm thử kết nối, **không thay đổi quyết định thiết kế hoặc yêu cầu triển khai**.
