@@ -45,3 +45,47 @@ img,canvas,.btn,.card,.sl,.pt,.pf,#toast{image-rendering:pixelated}img,canvas{di
 #toast{position:fixed;top:8px;left:50%;transform:translateX(-50%);padding:2px 6px;font-weight:800;opacity:0;transition:opacity .2s;pointer-events:none;z-index:100;text-align:center;color:var(--ink)}
 #toast.show{opacity:1}
 .fx{display:flex;align-items:center;gap:6px;margin-top:6px}
+.orders{display:flex;gap:6px;align-items:stretch}.oc{flex:1;min-width:0;margin-bottom:6px;padding:0 0 2px}
+.nm{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px}
+.ic{display:flex;gap:0;margin:2px 0;overflow:hidden}
+.ft{display:flex;align-items:center;justify-content:space-between;gap:4px;font-size:11px;font-weight:800}
+.ft .btn{min-height:36px;min-width:60px;font-size:13px}.btn.pri.off{border-image-source:url(../assets/ui/button_primary_disabled.png);color:#eee;text-shadow:none}
+.qbar{display:flex;gap:6px;margin-bottom:6px}.qbar .btn{flex:1;min-height:40px;font-size:12px}.qbar #rs{flex:none;width:44px}
+#ql{margin-bottom:6px;font-size:12px}.qr{margin-bottom:4px}
+.mid{display:flex;gap:6px;align-items:flex-start;margin-bottom:6px}
+.mid .stove{margin:0}.mid #strip{margin:4px 0 0;flex:none}.stwrap{flex:none;width:256px}
+#tray{flex:1;min-width:82px;height:228px;position:relative;text-align:center;padding:0;font-size:11px;font-weight:800;cursor:pointer;overflow:hidden}
+#tray.hov{outline:3px dashed #2f8a3a;outline-offset:-2px}
+.tt{height:14px;line-height:14px;margin-top:2px}.ts{position:relative;height:142px;margin:4px 0 0 8px;width:66px}
+#md{position:fixed;inset:0;background:#0006;z-index:90;display:flex;align-items:center;justify-content:center;padding:12px}#md[hidden],#ql[hidden]{display:none}
+#mc{width:100%;max-width:380px;max-height:85vh;overflow:auto;background:none;font-size:13px}
+.gr{display:flex;align-items:center;gap:6px;margin-top:6px}.gi{flex:1;font-size:12px}
+/* ===== Kích thước CỐ ĐỊNH theo breakpoint (không co giãn theo nội dung) ===== */
+:root{--W:344px;--oc-h:124px;--tray-w:82px;--mh:440px}
+@media(min-width:390px){:root{--W:374px;--tray-w:112px}}
+@media(min-width:430px){:root{--W:414px;--tray-w:152px}}
+body{padding-top:env(safe-area-inset-top)}
+#app{width:var(--W);max-width:none;padding:8px 0 24px}
+.orders{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+.oc{height:var(--oc-h);min-width:0;margin:0;padding:0;overflow:hidden;cursor:pointer}
+.oc.empty{display:flex;align-items:center;justify-content:center;font-size:12px;opacity:.7;cursor:default}
+.nm{display:block;height:16px;line-height:16px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ic{height:32px;margin:2px 0;display:flex;overflow:hidden}.ic img{flex:none}
+.ft{height:36px;display:flex;align-items:center;gap:4px}
+.st{flex:1;min-width:0;display:flex;flex-direction:column;font-size:11px;line-height:13px}
+.st i{font-style:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ft .btn{flex:none;width:60px;height:36px;min-height:0;min-width:0;padding:0;font-size:13px}
+.qbar{width:var(--W)}.qbar .btn{height:44px;min-height:0;padding:0;font-size:12px;white-space:nowrap;overflow:hidden}
+.qbar #qt{flex:1}.qbar #qa{flex:none;width:92px}.qbar #rs{flex:none;width:44px}
+.mid{width:var(--W);gap:6px}#tray{flex:none;width:var(--tray-w)}
+#md{padding:8px}
+#mc{width:var(--W);max-width:100%;height:min(var(--mh),88vh);overflow:hidden;display:flex;flex-direction:column;padding:0}
+.mh{flex:none;display:flex;align-items:center;justify-content:space-between;height:44px;font-size:14px}
+.mh .btn{width:44px;height:40px;min-height:0;padding:0}
+.mb{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;padding-right:2px}
+.qr{height:78px;padding:2px 0;border-bottom:2px dashed #5a3a2233;overflow:hidden}.qr:only-child{height:auto;border:0}
+.rn{height:14px;line-height:14px;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dt{font-size:13px;line-height:20px}.dt .ic{margin:6px 0}
+.gr{height:44px;margin-top:6px;overflow:hidden}.gr .btn{flex:none;width:44px;height:40px;min-height:0;padding:0}
+.gi{min-width:0;line-height:15px;font-size:12px}.gi .nm{height:15px;line-height:15px}
+#toast{top:auto;bottom:calc(14px + env(safe-area-inset-bottom));width:max-content;max-width:calc(100vw - 24px)}

@@ -5,5 +5,6 @@ const PVC={
  SLOTS:[[52,24],[92,24],[132,24],[172,24]], // lệch +4px x so với giả thuyết (48..168) để cân tâm chảo
  FRY:{cook:6,burn:7,bub:180}, // giây — TẠM, do Gameplay chốt; không còn điều chỉnh lửa
  PREP:{trayX:[12,60,108,156,204],trayY:[16,64],skewer:[112,120]}, // phương án A (ART_DIRECTION)
+ TEST:{queue:4,qtyMax:2}, // GIẢ LẬP: số khách ban đầu & số lượng/đơn chỉ để thử, không phải luật; chưa chốt giới hạn khách, sức chứa khay, thời gian chờ
  IMG:['skewer/skewer_empty','cooking/stove/gas_stove','cooking/pan/pan_base','cooking/pan/pan_front_rim','cooking/effects/oil_bubbles','cooking/effects/oil_bubbles_v2','cooking/effects/oil_bubbles_v3','prep/prep_counter','prep/ingredient_tray_empty']
 };

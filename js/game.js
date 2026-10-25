@@ -18,3 +18,12 @@ PVC.draw=(cv,s,mode='v')=>{
  else if(s.p>0){t.fillStyle=`rgba(255,170,40,${.3*s.p})`;t.fillRect(0,0,128,136)}
  c.drawImage(tmp,0,0);
 };
+
+// Công thức (GIẢ LẬP): định danh = tập nguyên liệu đã sắp xếp; tên sinh tự động. Khi Gameplay chốt hệ công thức sẽ thay.
+PVC.fname=id=>PVC.FOODS.find(f=>f.id==id).name;
+PVC.recipe=items=>{const k=[...items].sort(),u=[...new Set(k)];return{id:k.join(),name:'Xiên '+u.slice(0,2).map(PVC.fname).join(' · ')+(u.length>2?'…':''),items:k}};
+PVC.NPC=['Cô Hoa','Chú Tư','Bé Mít','Anh Long','Bà Sáu','Chị Lan','Cậu Bin','Dì Năm']; // GIẢ LẬP: tên mẫu, chưa phải hệ NPC thật
+PVC.randOrder=n=>({num:n,customerId:'npc-'+n,customerName:PVC.NPC[(n-1)%PVC.NPC.length],r:PVC.recipe(Array.from({length:4},()=>PVC.FOODS[Math.random()*10|0].id)),qty:1+(Math.random()*PVC.TEST.qtyMax|0)});
+// Đối chiếu khay -> đơn chính theo thứ tự FIFO (chỉ để hiển thị đủ/thiếu); chỉ xiên chín (không cháy) được tính
+PVC.alloc=(tray,main)=>{const av={};tray.forEach(s=>{if(PVC.state(s)=='cooked'){const k=PVC.recipe(s.items).id;av[k]=(av[k]||0)+1}});return main.map(o=>{const g=Math.min(o.qty,av[o.r.id]||0);av[o.r.id]=(av[o.r.id]||0)-g;return g})};
+PVC.take=(tray,o)=>{let n=o.qty;for(let i=0;i<tray.length&&n;)if(PVC.state(tray[i])=='cooked'&&PVC.recipe(tray[i].items).id==o.r.id){tray.splice(i,1);n--}else i++};
