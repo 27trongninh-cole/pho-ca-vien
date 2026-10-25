@@ -4,7 +4,7 @@ PVC.load=()=>Promise.all([...PVC.IMG.map(n=>'assets/'+n+'.png'),...PVC.FOODS.map
 PVC.newSkewer=()=>({items:[],p:0,o:0}); // p: sống->chín (0..1), o: chín->cháy (0..1)
 PVC.complete=s=>s.items.length>=PVC.SKEWER.max;
 PVC.state=s=>s.o>=1?'burnt':s.p>=1?'cooked':'frying';
-PVC.tick=(slots,heat,dt)=>{const h=PVC.HEAT[heat];slots.forEach(s=>{if(!s)return;if(s.p<1)s.p=Math.min(1,s.p+dt/h.cook);else s.o=Math.min(1,s.o+dt/h.burn)})};
+PVC.tick=(slots,dt)=>{const h=PVC.FRY;slots.forEach(s=>{if(!s)return;if(s.p<1)s.p=Math.min(1,s.p+dt/h.cook);else s.o=Math.min(1,s.o+dt/h.burn)})};
 PVC.fry={move(slots,a,b){[slots[a],slots[b]]=[slots[b],slots[a]]},first:slots=>slots.findIndex(x=>!x)};
 const tmp=document.createElement('canvas');tmp.width=128;tmp.height=136;
 // 'v': ghép tọa độ pixel trên xiên 32x136; 'h': dải ngang cho khu thành phẩm. Không scale sprite.
