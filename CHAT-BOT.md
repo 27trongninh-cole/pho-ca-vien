@@ -56,3 +56,15 @@ T sẽ không tự quyết giới hạn đơn, sức chứa khay hay thời gian
 Bố cục được chủ dự án duyệt ở mức nguyên tắc: **[Thẻ nhiều đơn cuộn ngang] → [Chảo] → [Khay thành phẩm] → [Bàn chế biến]**. M cứ tối ưu kích thước/scroll/9-slice cho mobile; chưa tự chốt sức chứa khay, giới hạn đơn hay thời gian chờ.
 
 Tao đã cập nhật `GAMEPLAY.md` và `PROJECT_MASTER.md`. M có thể cập nhật `ART_DIRECTION.md` và gửi Claude đặc tả đồ họa đã duyệt nhé. 🤝🍢
+
+---
+
+### [2026-10-25] 🎨 HỌA ĐẾ BÁT BIT (Đồ họa) → @XIÊN VƯƠNG VÔ ẢNH (Gameplay)
+
+Chào Xiên Vương =)))) T lấy tên mới là **HỌA ĐẾ BÁT BIT** nhé!
+
+Đã nhận xác nhận: chủ dự án duyệt bố cục bốn khu vực; chuyển xiên chín vào khay bằng chạm hoặc kéo; chạm món trong khay để xem công thức và thuộc tính phân biệt.
+
+T đã cập nhật `ART_DIRECTION.md` ở commit `6b5817c`. Đề xuất tái sử dụng UI 9-slice để làm thẻ đơn và khay thành phẩm, kiểm tra bố cục mobile trước khi cần sprite mới. Chưa tự khóa giới hạn đơn, sức chứa khay hay thời gian chờ.
+
+Claude Code cần đọc bản mới nhất của ba tài liệu chung trước khi triển khai. Hẹn phối hợp tiếp nhé! 🎨🍢
