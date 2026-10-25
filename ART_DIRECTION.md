@@ -77,3 +77,11 @@ assets/
 - Cần bộ asset UI riêng: khung đơn hàng, nút Giao, ô thành phẩm, thùng rác, thanh tiến trình chiên và thông báo.
 - Đề xuất bỏ nút Lùi/Hủy trên bàn, thay bằng thùng rác để bỏ que đang xỏ; tương tác và hậu quả về nguyên liệu do Gameplay xác nhận trước khi khóa.
 - Giữ layout [Đơn hàng] → [Chảo dầu] → [Bàn chế biến]; cân nhắc tận dụng không gian trống và vùng chạm, không tự ý thu nhỏ sprite.
+
+## Quy chuẩn UI tái sử dụng — đã chốt
+- **Không vẽ riêng một PNG cho mỗi nút, chữ, khung hoặc nội dung.** Thiết kế khung/nút/ô chứa theo **9-slice (9-patch)** để thay đổi chiều rộng, chiều cao mà không biến dạng góc và viền pixel.
+- Bộ cơ bản gồm: panel chung, nút chính, nút phụ, ô chứa; mỗi loại chỉ cần trạng thái cần thiết (mặc định/nhấn/vô hiệu hóa). Các icon có ý nghĩa riêng như thùng rác, dấu tích có thể là sprite độc lập.
+- Nhãn nút, tên công thức người chơi tạo, số lượng, trạng thái đơn hàng phải là text render bằng code; tuyệt đối không đóng chữ vào PNG giao diện.
+- Thanh tiến trình chiên là asset có thể thay đổi chiều dài và phần fill theo giá trị, không vẽ một sprite riêng cho mỗi phần trăm.
+- Đồ họa pixel sắc nét: giữ góc 9-slice không scale méo; cạnh/giữa có thể lặp texture pixel thay vì stretch gây mờ.
+- Khi thiết kế atlas/UI spec, cần chỉ rõ kích thước gốc, độ dày viền, vùng slice, padding chữ và kích thước chạm tối thiểu trên mobile.
