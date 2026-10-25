@@ -137,3 +137,10 @@ assets/
 - Với thiết bị khác kích thước, cho phép bố cục responsive có kiểm soát (breakpoint/tỷ lệ), nhưng trong một cấu hình hiển thị, kích thước không thay đổi khi dữ liệu thay đổi.
 - Giữ layout [2 đơn chính + nút hàng chờ] → [Chảo | khay nhỏ xếp chồng] → [Bàn chế biến]. Đây là điều chỉnh giao diện, không thay luật FIFO hay gameplay.
 - Cần Claude kiểm tra overflow, vùng chạm, modal đóng/mở, scroll bên trong và chữ tiếng Việt dài trên mobile.
+
+## Tối giản thông báo và ưu tiên tên khách NPC — 2026-10-25
+- Chủ dự án quyết định **bỏ thông báo/hướng dẫn thao tác thường trực** kiểu `Xiên chín → vào khay` che khu vực đơn hàng. Người chơi có thể tự làm quen; chỉ giữ phản hồi trực quan cần thiết khi thao tác, không thêm lớp chữ hướng dẫn đè UI.
+- **Tiêu đề hai thẻ đơn chính hiển thị tên khách NPC** (có thể kèm số thứ tự #1/#2), **không dùng tên món ăn làm tiêu đề**. Mục đích tạo cảm giác phục vụ khách thật và giảm tình trạng tên món dài bị cắt.
+- Trên thẻ vẫn hiển thị icon món, số lượng/tiến độ đủ-thiếu, nút Giao và trạng thái FIFO. **Tên món/công thức đầy đủ nằm trong phần chi tiết đơn khi chạm**, không xóa thông tin cần thiết để chế biến.
+- Tên NPC dài phải nằm trong vùng kích thước cố định: giới hạn một dòng, ellipsis nếu cần; xem tên đầy đủ trong chi tiết. Không làm thẻ hay nút tự giãn theo chữ.
+- Tên ví dụ chỉ dùng để minh họa UI, chưa chốt hệ thống tên/nhân vật NPC hay quy tắc tạo tên.
