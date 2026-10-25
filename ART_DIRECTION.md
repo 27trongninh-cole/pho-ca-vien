@@ -129,3 +129,11 @@ assets/
 - Xiên trong khay có thể lệch vài pixel để gợi số lượng; không dựa vào số xiên nhìn thấy để thể hiện chính xác toàn bộ món khi bị che khuất.
 - Chạm khay mở danh sách/chi tiết món và số lượng để người chơi phân biệt các công thức, kể cả khi sprite trùng nhau. Đây là đề xuất cách thể hiện chi tiết, chưa khóa kiểu popup.
 - Giữ thao tác chạm hoặc kéo xiên chín vào khay; chưa khóa kích thước khay, sức chứa hay quy tắc xếp lớp.
+
+## Chỉnh sửa UX đã chốt — 2026-10-25: popup hàng chờ và kích thước cố định
+- **Hàng chờ không mở rộng inline** vì đẩy chảo và bàn xuống, làm layout dài và xê dịch. Chạm nút Hàng chờ sẽ mở **popup/modal phủ lên màn hình**, đóng popup thì trở về bố cục chế biến không đổi. Popup có vùng cuộn riêng khi nhiều khách.
+- **Khóa kích thước khung và nút theo vai trò UI** sau khi thiết kế trên từng breakpoint: hai thẻ đơn cao bằng nhau, nút Giao đồng nhất kích thước, khung chảo/khay/bàn giữ ổn định. Không dùng nội dung hay số lượng món để tự nở chiều cao/chiều rộng của thành phần.
+- **9-slice vẫn dùng để dựng nhiều kích thước quy định trước**, không đồng nghĩa với auto-size theo nội dung. Chữ dài được giới hạn dòng, rút gọn hoặc mở xem chi tiết; danh sách dài cuộn bên trong vùng cố định.
+- Với thiết bị khác kích thước, cho phép bố cục responsive có kiểm soát (breakpoint/tỷ lệ), nhưng trong một cấu hình hiển thị, kích thước không thay đổi khi dữ liệu thay đổi.
+- Giữ layout [2 đơn chính + nút hàng chờ] → [Chảo | khay nhỏ xếp chồng] → [Bàn chế biến]. Đây là điều chỉnh giao diện, không thay luật FIFO hay gameplay.
+- Cần Claude kiểm tra overflow, vùng chạm, modal đóng/mở, scroll bên trong và chữ tiếng Việt dài trên mobile.
