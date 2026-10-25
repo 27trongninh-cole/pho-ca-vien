@@ -89,3 +89,8 @@ body{padding-top:env(safe-area-inset-top)}
 .gr{height:44px;margin-top:6px;overflow:hidden}.gr .btn{flex:none;width:44px;height:40px;min-height:0;padding:0}
 .gi{min-width:0;line-height:15px;font-size:12px}.gi .nm{height:15px;line-height:15px}
 #toast{top:auto;bottom:calc(14px + env(safe-area-inset-bottom));width:max-content;max-width:calc(100vw - 24px)}
+
+/* Khay: cao bằng phần nhìn thấy của bếp gas (y=9..203 trong sprite 208), căn mép trên/dưới */
+#tray{height:194px;margin-top:9px;display:flex;flex-direction:column}
+#tray .ts{flex:1;min-height:0;width:auto;height:auto;margin:0;position:relative}
+#tray .tt{flex:none}

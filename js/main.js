@@ -56,9 +56,9 @@ function init(){
   $i('cnt').textContent=`Đang xỏ: ${G.cur.items.length}/4`;
   PVC.draw(prepCv,G.cur);
   const n=G.cur.items.length;nx.style.display=n<4?'block':'none';nx.style.top=120+PVC.SKEWER.ys[Math.min(n,3)]+'px';sz.classList.toggle('full',n==4);
-  const t=$i('tray');t.innerHTML='<div class=tt>KHAY</div><div class=ts></div>';
-  G.tray.slice(-6).forEach((s,i)=>{const c=cv(32,136);c.style.cssText=`position:absolute;left:${i*6}px;top:${(i%2)*3}px`;PVC.draw(c,s);t.lastChild.append(c)});
-  t.append($(`<div class=tt>×${G.tray.length}</div>`));
+  const t=$i('tray');t.innerHTML=`<div class=tt>KHAY</div><div class=ts></div><div class=tt>×${G.tray.length}</div>`;
+  const ts=t.children[1],v=G.tray.slice(-6),k=v.length,W=32+Math.max(0,k-1)*6,H=136+(k>1?3:0),ox=Math.floor((ts.clientWidth-W)/2),oy=Math.floor((ts.clientHeight-H)/2); // căn giữa cụm xiên (số nguyên px, giữ pixel sắc nét)
+  v.forEach((s,i)=>{const c=cv(32,136);c.style.cssText=`position:absolute;left:${ox+i*6}px;top:${oy+(i%2)*3}px`;PVC.draw(c,s);ts.append(c)});
   renderModal();
  }
  $i('tray').onclick=()=>{G.modal={t:'tray'};ui()};
