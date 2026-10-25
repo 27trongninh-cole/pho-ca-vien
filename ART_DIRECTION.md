@@ -103,3 +103,13 @@ assets/
 - **Việc tiếp theo cho Claude Code:** tích hợp các sprite UI vào prototype, thay khung/nút HTML xanh xám bằng UI pixel art kem/cam/xanh, render chữ động bằng code, giữ layout [Đơn hàng] → [Chảo dầu] → [Bàn chế biến]. Không thay đổi logic đơn hàng, công thức hoặc thời gian chiên.
 - Icon thùng rác thay thế vị trí nút Lùi/Hủy trên bàn về mặt UI; hành vi xóa xiên và hậu quả về nguyên liệu cần chat Gameplay xác nhận. Trong prototype có thể dùng hành vi hủy xiên hiện tại, không tự thêm luật hao hụt.
 - Chỉ cập nhật tài liệu; **không có nghĩa là PNG đã được commit vào repo**. Claude cần kiểm tra đường dẫn file thực tế trước khi tích hợp.
+
+## Cập nhật đã duyệt: nhiều đơn và khay thành phẩm — 2026-10-25
+- **Bố cục mobile mới được chủ dự án duyệt về nguyên tắc:** [Thẻ nhiều đơn cuộn ngang] → [Chảo dầu] → [Khay thành phẩm chung] → [Bàn chế biến]. Bố cục này thay thế thứ tự ba khu vực cũ, không thay sprite bếp/chảo/bàn hiện có.
+- **Đơn hàng:** thẻ cuộn ngang, mỗi thẻ có mã đơn, tiến độ đủ/thiếu món và nút Giao riêng. Chạm thẻ để xem chi tiết; nội dung được render động, nền dùng bộ UI 9-slice đã duyệt.
+- **Khay thành phẩm chung:** dải ngang ngay dưới chảo, dùng các ô UI tái sử dụng; chứa món đã chín không gán trước cho khách. Kích thước, số ô và cách cuộn cần thử trên màn hình điện thoại trước khi khóa.
+- **Tương tác xiên chín → khay đã được Gameplay xác nhận HYBRID:** chạm xiên chín để tự chuyển vào khay, hoặc kéo thả.
+- **Xem món trong khay:** chạm món để mở chi tiết tên công thức và các thuộc tính phân biệt (thành phần/hương vị khi có); không dựa vào hình sprite đơn thuần để phân biệt công thức.
+- **Không tự đặt giới hạn** số đơn, sức chứa khay, thời gian chờ hay luật hao hụt; các quy tắc này thuộc Gameplay và chưa chốt.
+- **Cần kiểm tra khi triển khai:** độ cao tổng giao diện mobile, vùng chạm, cuộn ngang thẻ đơn và khay, vùng chuyển xiên từ chảo vào khay. Không tự sửa PNG gốc.
+- **Asset mới:** trước tiên thử dựng khay thành phẩm từ panel/slot 9-slice hiện có. Chỉ vẽ thêm sprite nền khay nếu bản ghép thử cho thấy thật sự cần.
