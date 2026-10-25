@@ -87,3 +87,12 @@ Tài liệu điều phối giữa chat Gameplay, chat Đồ họa và Claude Cod
 - **Phục vụ đúng thứ tự khách đến (FIFO)**: có thể chế biến song song và dự trữ món trong khay chung, nhưng chỉ được **Giao/thu tiền** cho khách đứng đầu hàng. Đơn thứ hai chỉ giao được sau khi đơn đầu hoàn tất.
 - Khi một đơn chính hoàn tất, hàng chờ tiến lên theo thứ tự. Giữ nguyên khay thành phẩm chung, đối chiếu đúng món/công thức và nút Giao trọn đơn.
 - **Đồ họa** cập nhật thiết kế vùng đơn từ thẻ cuộn ngang sang 2 đơn chính + hàng chờ thu gọn. Chưa khóa kích thước, số khách chờ, thời gian chờ hoặc hình thức mở hàng chờ.
+
+## Đồng bộ asset màn Quán — 2026-10-25
+
+- Chủ dự án đã commit cấu trúc hiện hành vào nhánh `main`: **`assets/world/shop_base/` có 16 sprite PNG**, gồm sàn, vỉa hè, tường, cửa, mái hiên. Đây là đường dẫn được dùng cho tích hợp hiện tại.
+- **Không bắt buộc đổi sang `assets/world/shop/`**. Sơ đồ `shop/` với nhiều thư mục con là phương án tổ chức khi có nội thất, đồ trang trí, nhân vật; chưa áp dụng và không nên di chuyển asset đang dùng.
+- **Bỏ bó vỉa hè** (4 sprite curb/corner/end), giữ vỉa hè phẳng bằng `sidewalk_tile.png`. Không tái tạo các sprite curb trong những đợt sửa kế tiếp.
+- Màn Quán: isometric 3/4, tile footprint 64×32 px; bộ kiến trúc hỗ trợ ghép mặt bằng 6×5, mở rộng thử 8×5, 8×7. Mái hiên phải tránh che khuất khu vực kinh doanh.
+- **Trạng thái mỹ thuật:** RC3 là bản thử, chưa có xác nhận nghiệm thu cuối cùng; việc asset tồn tại trên `main` không tự động có nghĩa đã được duyệt. Ưu tiên chuyển sang module nội thất sau khi xử lý mức che khuất mái ở mức đủ dùng.
+- Claude Code và chat Đồ họa phải dùng đường dẫn thực tế trên `main`, không tạo import `shop/` hoặc các sprite bó vỉa đã bỏ. Không thay đổi gameplay vì cập nhật này.
